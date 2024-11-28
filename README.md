@@ -6,4 +6,4 @@
 | Sebastián Muñoz    | sebastianmunozt@gmail.com |
 
 
-[`Zotero`](https://sebastianmunozt.github.io/trucos_del_ofico/Zotero/zotero#1)
+[`Zotero`](https://sebastianmunozt.github.io/trucos_del_ofico/Zotero/zotero.html)
