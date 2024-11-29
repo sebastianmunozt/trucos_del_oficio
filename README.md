@@ -1,3 +1,5 @@
+![Banner](img/1.png)
+
 ### Bienvenidxs al curso Trucos del Oficio.
 
 
