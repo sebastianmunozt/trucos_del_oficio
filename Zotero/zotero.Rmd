@@ -104,6 +104,47 @@ class: slideInRight, fadeOutLeft
    - Inserta una cita desde Zotero.
    - Genera automáticamente la bibliografía con el estilo APA.]
 
+
+
+---
+
+
+class: slideInRight, fadeOutLeft
+# Software de Código Abierto: Ventajas y Desafíos
+
+.pull-left[
+### **Ventajas**
+- Gratuito y accesible para todos.
+- Extensible y personalizable.
+- Mejora constante gracias a la colaboración global.
+- Código abierto para auditoría y modificación.
+
+### **Desafíos**
+- Incompatibilidades entre actualizaciones del software base y extensiones.
+- Dependencia de la comunidad para soporte.
+- Curva de aprendizaje inicial.
+- Extensiones pueden tardar en actualizarse.
+]
+
+.pull-right[
+### **Ejemplo en Zotero**
+- **Ventaja:** Desarrollo de extensiones como ZotFile.
+- **Problema:** Incompatibilidad de extensiones con versiones recientes.
+
+**Consejo:** Verifica compatibilidades antes de actualizar.
+]
+
+
+---
+
+background-image: url("img/deseperada.gif")
+background-size: cover
+
+class: slideInRight, fadeOutLeft, bottom
+
+## .white[Si no resulta] 
+## .white[no desesperen!]
+
 ---
 
 class: slideInRight, fadeOutLeft
@@ -116,7 +157,9 @@ class: slideInRight, fadeOutLeft
 2. Descarga Zotero para tu sistema operativo:
    - **Windows**: Ejecuta el instalador y sigue las instrucciones.
    - **Mac**: Arrastra la aplicación a la carpeta "Aplicaciones".
-   - **Linux**: Sigue las instrucciones específicas para tu distribución.]
+   - **Linux**: Sigue las instrucciones específicas para tu distribución.
+   
+- .red[Vamos a usar la versión 6! compatible con zotFile!]]
    
 .pull-right[ 
 ![zoter](img/1.png) ]
@@ -234,7 +277,9 @@ class: slideInRight, fadeOutLeft, middle
 
 2. **Zotero PDF Translate**:
    - Permite traducir textos directamente en los PDFs.
-   - Instálalo desde: [GitHub - Zotero PDF Translate](https://github.com/windingwind/zotero-pdf-translate).
+   - Instálalo desde: [GitHub - Zotero PDF Translate](https://github.com/windingwind/zotero-pdf-translate/releases/tag/v1.0.25).
+   
+   
 
 3. **Zotero Citation Counts Manager**:
    - Permite visualizar y actualizar automáticamente las métricas de citas de tus referencias.
@@ -310,10 +355,15 @@ class: slideInRight, fadeOutLeft, middle
 **Importancia:** Estos identificadores son clave para agregar y organizar referencias en Zotero.
 ]
 
+
+---
+background-image: url("img/libroenpapel.jpg")
+background-size: contain
+background-position: center
+background-repeat: no-repeat
 ---
 background-image: url("img/6.png")
 background-size: cover
-
 
 
 ---
@@ -326,6 +376,7 @@ class: slideInRight, fadeOutLeft, middle
 2. Integralo a tu biblioteca
 3. Completa los metadatos:
    - Título, autor, año de publicación.
+   - Probar ISBN: 968-16-2445-9
 
 ---
 
