@@ -8,6 +8,9 @@
 | Sebastián Muñoz    | sebastianmunozt@gmail.com |
 
 
-[`Zotero`](https://sebastianmunozt.github.io/trucos_del_oficio/Zotero/zotero#1)
 
 
+
+| n°   | Fecha              | Contenido                           | Material                                                                                               |
+|------|--------------------|-------------------------------------|--------------------------------------------------------------------------------------------------------|
+| 1    | 30-11-2024         | Taller Zotero                       | [`Zotero`](https://sebastianmunozt.github.io/trucos_del_oficio/Zotero/zotero#1)                        |
