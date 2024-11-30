@@ -557,7 +557,8 @@ class: slideInRight, fadeOutLeft, middle
 1. Abre un PDF desde Zotero.
 2. Subraya una frase importante.
 3. Agrega una nota explicativa.
-4. Traduce un fragmento usando Zotero PDF Translate.]
+4. Traduce un fragmento usando Zotero PDF Translate.
+5. Genere una ficha y guardela]
 
 .pull-right[
 ![zoter](img/practica.gif)
