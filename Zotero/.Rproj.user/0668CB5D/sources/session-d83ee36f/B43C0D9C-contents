@@ -88,7 +88,7 @@ class: slideInRight, fadeOutLeft, middle
 ---
 
 class: slideInRight, fadeOutLeft
-# Demostración Rápida: Flujos de Trabajo en Zotero
+# ¿Qué es Zotero? Demostración Rápida de Gestión bibliográfica
 
 .pull-left[
 #### 1. **Agregar Referencias**
@@ -110,6 +110,12 @@ class: slideInRight, fadeOutLeft
    - Inserta una cita desde Zotero.
    - Genera automáticamente la bibliografía con el estilo APA.]
 
+
+
+---
+
+background-image: url("img/zotero.png")
+background-size: cover
 
 
 ---
