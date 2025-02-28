@@ -1,0 +1,712 @@
+---
+title: "Introducción a los LLM y ChatGPT"
+author: "Sebastián Muñoz-Tapia"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      font-family: "Outfit, Arial, sans-serif"
+
+
+
+---
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "black",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"), 
+  base_font_size = "30px" # Ajuste del tamaño global de la fuente
+)
+
+
+```
+
+
+
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_share_again()
+
+
+```
+
+
+
+class: slideInRight, fadeOutLeft, middle, center
+
+# Antes que nada ingrese acá:
+#### https://sebastianmunozt.github.io/trucos_del_oficio/
+
+
+
+
+  
+---
+## Índice
+
+class: slideInRight, fadeOutLeft, middle, inverse
+
+1️⃣.red[Introducción a los LLM]  
+2️⃣ Introducción a ChatGPT  
+3️⃣ Limitaciones  
+4️⃣ Bonus: ChatGPT en celular  
+5️⃣ Recapitulación y cierre  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Cómo interactuamos con la IA?  
+
+Los Modelos de Lenguaje de Gran Escala (**LLM**) han cambiado nuestra relación con la inteligencia artificial.  
+
+Factores clave en su uso:  
+
+- **Superstición e ignorancia** → Muchas personas no entienden la IA y la perciben erróneamente.  
+- **Un enfoque productivo** → Se pueden abordar los LLM desde:  
+  - **Creatividad**: Generar ideas y soluciones innovadoras.  
+  - **Habilidad**: Aprender a comunicarnos con los LLM para obtener mejores resultados.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Qué es la "IA"?  
+
+### ChatGPT y los Modelos de Lenguaje de Gran Escala (LLM)  
+
+ChatGPT es un **Modelo de Lenguaje de Gran Escala (LLM)**, lo que implica:  
+
+- Funciona como una **base de datos** entrenada con grandes volúmenes de texto.  
+- Se basa en una **red neuronal** que recibe un *input* y genera un *output*.  
+- Una **red neuronal** es un algoritmo con múltiples parámetros que ajustan su comportamiento.  
+
+Los LLM permiten interactuar con el lenguaje generando respuestas basadas en patrones aprendidos.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Cómo funciona?  
+
+Los LLM predicen patrones de lenguaje con base en probabilidades:  
+
+- **Completan frases** utilizando el contexto previo.  
+- **No generan respuestas fijas**, sino que cada salida es **variable**.  
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+**Ejemplo:**  
+Si le decimos a un bebé:  
+> "Uno, dos..."  
+Es probable que responda:  
+> "Tres."  
+
+Los LLM operan de manera similar, completando oraciones según el entrenamiento previo.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## Evolución y crecimiento de los LLM  
+
+### 1. Crecimiento de la cantidad de parámetros  
+
+- Los primeros modelos tenían **millones** de parámetros.  
+- Los modelos actuales tienen **trillones** de parámetros.  
+- **¿Más parámetros = mejor rendimiento?**  
+  - No siempre.  
+  - Más parámetros pueden mejorar la precisión, pero aumentan el consumo computacional y energético.  
+  - La tendencia actual es optimizar los modelos para mayor **eficiencia**.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+### 2. Mejoras en la arquitectura  
+
+- Mayor **coherencia y relevancia** en respuestas.  
+- **Memoria contextual** para recordar información dentro de una conversación.  
+- Reducción de **sesgos y errores** para mayor transparencia.  
+
+**Reflexión:**  
+¿Cómo podría la eficiencia de estos modelos impactar áreas como la educación, la investigación o la industria creativa?  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## Otros Modelos de Lenguaje  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## DeepSeek  
+
+- Especializado en **búsqueda de información y análisis de datos**.  
+- Integrado con grandes bases de datos.  
+- Diseñado para generar respuestas basadas en información estructurada.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## Copilot  
+
+- Desarrollado por **Microsoft y OpenAI**.  
+- Diseñado para **asistir en programación**.  
+- Puede **sugerir código y completar fragmentos** en distintos lenguajes.  
+- Integrado en **Visual Studio Code y GitHub**.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## Claude  
+
+- Creado por **Anthropic**.  
+- Optimizado para **interacciones conversacionales más naturales**.  
+- Diseñado con un enfoque en **seguridad y alineación ética**.  
+- Usado en asistencia avanzada, análisis de texto y generación de contenido.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## Actividad  
+
+**Piensa en un uso práctico de estos modelos en tu área de interés.**  
+
+1. ¿Cómo podrías beneficiarte de esta tecnología en tu campo?  
+2. ¿Qué modelo sería más útil para ti?  
+3. ¿Qué limitaciones crees que aún tienen estos modelos?  
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle, inverse
+
+1️⃣ Introducción a los LLM  
+2️⃣.red[Introducción a ChatGPT]  
+3️⃣ Limitaciones  
+4️⃣ Bonus: ChatGPT en celular  
+5️⃣ Recapitulación y cierre  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Cómo comenzar?  
+
+### 1️⃣ **Crear una cuenta**  
+- Registro con **Gmail u otro correo electrónico**.  
+- Permite acceso a diferentes versiones y configuraciones personalizadas.  
+
+### 2️⃣ **Ingresar una instrucción (prompt)**  
+- Un *prompt* es el **input** que se escribe en ChatGPT.  
+- La IA procesará el *prompt* y generará un **output**.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+💡 **Ejemplo:**  
+> **Input:** "Explica la teoría de la evolución en términos simples."  
+> **Output:** "La teoría de la evolución, propuesta por Charles Darwin (...)."  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Versiones de ChatGPT  
+
+- **GPT-3.5**  
+  - Más rápido y ligero.  
+  - Respuestas adecuadas para la mayoría de las tareas.  
+  - Menor costo computacional.  
+
+- **GPT-4**  
+  - Mayor cantidad de parámetros → mejor comprensión y generación de respuestas.  
+  - Más preciso en tareas complejas.  
+  - Mayor costo de procesamiento.  
+  
+---
+class: slideInRight, fadeOutLeft, middle
+
+> 💡 **Diferencias clave**: Los modelos más avanzados mejoran la calidad y profundidad de las respuestas, pero pueden ser más lentos y costosos.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Funcionalidades avanzadas  
+
+### **Plug-ins y extensiones**  
+
+- **AskTheCode**  
+  - Conecta con repositorios de **GitHub**.  
+  - Permite analizar y responder preguntas sobre código.  
+
+- **DALL·E**  
+  - Generación de imágenes a partir de texto.  
+  - Útil para ilustraciones y contenido gráfico.
+
+---  
+
+class: slideInRight, fadeOutLeft, middle
+
+- **Descripción de imágenes**  
+  - Interpretación de gráficos y visualizaciones de datos.  
+  - Aplicaciones en accesibilidad y análisis de datos.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Gestión del contexto en ChatGPT  
+
+### **Dirección de la conversación**  
+- ChatGPT **recuerda** el contexto dentro de una conversación.  
+- Para obtener mejores resultados en un tema nuevo, se recomienda:  
+  - **Crear una nueva conversación** para mantener el enfoque.  
+  - **Evitar mezclar múltiples temas** en una misma sesión.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## **Historial y organización**  
+
+- Se pueden **volver a conversaciones anteriores**.  
+- Es posible **organizar conversaciones en carpetas** para acceso rápido.  
+
+🔹 **Ejemplo de uso:**  
+Si se desarrolla un proyecto de investigación, se pueden agrupar conversaciones sobre teoría, metodología y análisis en distintas carpetas.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Acceso a información externa  
+
+ChatGPT puede:  
+
+- **Visitar sitios web** y extraer información relevante.  
+- Explicar **de qué trata una página** antes de abrir el enlace.  
+- Facilitar la búsqueda de fuentes confiables.  
+
+💡 **Ejemplo:**  
+Si se consulta sobre un artículo académico, ChatGPT puede resumir su contenido antes de recomendar su lectura.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Entendimiento de lenguajes  
+
+ChatGPT puede comprender y generar texto en:  
+
+- **Múltiples lenguajes naturales** (español, inglés, francés, etc.).  
+- **Lenguajes de programación** (Python, R, JavaScript, etc.).  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Ejemplo en Python  
+
+### **Creación de una red social de artistas**  
+
+Para modelar una red de colaboraciones musicales, definimos:  
+
+- **Nodos**: Representan a los artistas.  
+- **Aristas (edges)**: Representan colaboraciones entre ellos.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Definición del modelo en Python  
+
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+# Crear un grafo no dirigido
+G = nx.Graph()
+
+# Agregar nodos (artistas)
+artistas = ["Artista A", "Artista B", "Artista C", "Artista D"]
+G.add_nodes_from(artistas)
+```
+
+---
+
+
+class: slideInRight, fadeOutLeft, middle, inverse
+
+1️⃣ Introducción a los LLM  
+2️⃣ Introducción a ChatGPT  
+3️⃣.red[Limitaciones]  
+4️⃣ Bonus: ChatGPT en celular  
+5️⃣ Recapitulación y cierre
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Context Length  
+
+### ¿Qué es el context length?  
+
+- Es una de las principales **limitaciones** de ChatGPT.  
+- Se refiere a **toda la información** que el modelo tiene en cuenta para responder.  
+- Incluye:  
+  - Historial de preguntas y respuestas.  
+  - Archivos e imágenes subidas en la conversación.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Cómo influye el contexto?  
+
+- **Cada conversación influye** en las siguientes preguntas y respuestas.  
+- **Un contexto bien gestionado** permite obtener respuestas más precisas.  
+- **Cuando el límite se alcanza**, ChatGPT olvida la información más antigua.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+#### ¿Cuánta memoria puede almacenar ChatGPT?  
+
+**Límites de contexto por versión (2025)**  
+
+**GPT-4o (GPT-4 Omni)**  
+- **128,000 tokens** (~98,000 palabras).  
+- Puede manejar múltiples artículos académicos en una sola conversación.
+
+
+**GPT-4 Turbo**  
+- **32,768 tokens** (~25,000 palabras).  
+- Puede manejar **uno o dos artículos completos** en una conversación.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Límites de contexto (continuación)  
+
+**GPT-4 estándar**  
+- **8,192 tokens** (~6,000 palabras).  
+- Maneja **un artículo de menor extensión o partes de uno más largo**.  
+
+**GPT-3.5**  
+- **4,096 tokens** (~3,000 palabras).  
+- Limitado a **secciones o resúmenes de artículos académicos**.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Diferencias entre "Parámetros" y "Context Length"  
+
+| **Concepto**            | **Definición** | **Impacto en el modelo** |
+|-------------------------|---------------|--------------------------|
+| **Cantidad de parámetros** | Número de **pesos ajustables** en la red neuronal. | Determina la **capacidad de aprendizaje** y la **precisión de las respuestas**. |
+| **Context length** | Cantidad máxima de **tokens** en una conversación. | Afecta cuánto puede recordar el modelo en una sesión. |
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Cómo maneja ChatGPT el contexto?  
+
+- **Recuerda toda la conversación** hasta alcanzar el límite de tokens.  
+- **Cuando se supera el límite**, se eliminan los mensajes más antiguos.  
+- **No hay memoria persistente entre sesiones**:  
+  - Si cierras y vuelves a abrir una conversación, ChatGPT **no recordará** lo anterior.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Ejemplo de pérdida de contexto  
+
+1️⃣ **Inicio**: ChatGPT recuerda toda la información.  
+2️⃣ **Conversación larga**: Mantiene el contexto hasta acercarse al límite.  
+3️⃣ **Se supera el límite**: Se olvidan los mensajes más antiguos.  
+
+➡️ **Solución**: Resumir y reintroducir información clave en la conversación.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Se guarda la conversación?  
+
+- **Sí**, la conversación queda en el historial de ChatGPT.  
+- **No**, el modelo no recuerda la información de conversaciones anteriores.  
+- Si vuelves a una conversación guardada, **solo la verás tú**, pero ChatGPT **no la recordará**.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+
+## Conclusión  
+
+📌 **El manejo del contexto es clave** para obtener respuestas precisas.  
+📌 **El límite de tokens define cuánto puede recordar ChatGPT en una conversación.**  
+📌 **Para conversaciones largas, es útil resumir información clave regularmente.**  
+
+class: slideInRight, fadeOutLeft, middle
+
+---
+class: slideInRight, fadeOutLeft, middle
+# ¿Preguntas?  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+# **Limitaciones de ChatGPT (2025)**  
+
+## **1. Alucinaciones en respuestas**  
+
+- ChatGPT puede generar información que **parece correcta pero no lo es**.  
+- Esto ocurre con **datos muy específicos o poco comunes**.  
+- **Ejemplo en Ciencias Sociales:**  
+  - Puede inventar referencias bibliográficas o citar autores incorrectamente.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **2. Respuestas incompletas**  
+
+- Puede omitir detalles importantes en sus respuestas.  
+- **Solución:** Pedir más ejemplos o reformular la pregunta.  
+- **Ejemplo en Ciencias Sociales:**  
+  - Si se le pregunta por teorías de estratificación social, puede mencionar solo a **Weber y Marx**, ignorando autores contemporáneos.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **3. Información desactualizada**  
+
+- La información depende de la **versión de ChatGPT utilizada**:  
+  - **GPT-3.5 (Gratuito)** → Datos hasta **enero de 2022**.  
+  - **GPT-4o (Pago)** → Datos hasta **abril de 2023**.  
+- **Ejemplo en Ciencias Sociales:**  
+  - Puede no reflejar los últimos **cambios en metodologías cualitativas** o estudios recientes sobre desigualdad.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **4. Sesgos en los datos de entrenamiento**  
+
+- ChatGPT refleja **sesgos históricos y sociales** presentes en sus datos de entrenamiento.  
+- Puede reforzar estereotipos o presentar interpretaciones parciales.  
+- **Ejemplo en Ciencias Sociales:**  
+  - En temas de género o raza, podría reflejar narrativas dominantes en lugar de perspectivas críticas o alternativas.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+### **Diferencias entre versiones gratuita y de pago**  
+
+| **Característica**    | **GPT-3.5 (Gratis)** | **GPT-4o (Pago)** |
+|----------------------|---------------------|------------------|
+| **Modelo utilizado**  | GPT-3.5             | GPT-4o |
+| **Límite de tokens**  | 4,096 (~3,000 palabras) | 128,000 (~98,000 palabras) |
+| **Acceso a Internet** | No                 | Sí (con navegador) |
+| **Análisis de datos** | No                 | Sí |
+| **Carga de archivos** | No                 | Sí |
+| **Modo de voz**       | No                 | Sí |
+| **Memoria extendida** | No                 | Sí |
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+# **Impacto de estas diferencias en las limitaciones**  
+
+1. **Alucinaciones** → Más frecuentes en **GPT-3.5** por menos parámetros.  
+2. **Respuestas incompletas** → Menos evidentes en **GPT-4o** gracias a su capacidad ampliada.  
+3. **Información desactualizada** → **GPT-3.5** solo llega a **2022**, mientras que **GPT-4o** a **2023** y tiene acceso web.  
+4. **Sesgos** → Persisten en ambas versiones, pero **GPT-4o** tiene mejor ajuste y moderación de respuestas.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+# **Privacidad en conversaciones**  
+
+- **Las conversaciones con ChatGPT no son privadas**.  
+- **Pueden ser usadas para entrenar futuros modelos**.  
+- **No compartir información sensible o confidencial**.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+# **Tarea 📌**  
+
+✅ **Explorar las limitaciones de ChatGPT en tu área de estudio**.  
+✅ **Formular preguntas complejas y ver cómo responde**.  
+✅ **Comparar respuestas en versión gratuita y de pago**.  
+✅ **Reflexionar sobre los posibles sesgos en sus respuestas**.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+# **Conclusión**  
+
+📌 **Verificar siempre la información proporcionada por ChatGPT**.  
+📌 **La versión de pago tiene ventajas, pero no elimina todas las limitaciones**.  
+📌 **El modelo sigue presentando sesgos y limitaciones en información especializada**.  
+📌 **Para un uso crítico en ciencias sociales, es necesario complementar con otras fuentes**.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+# **¿Preguntas?**  
+---
+class: slideInRight, fadeOutLeft, middle
+
+## **Herramientas para evitar alucinaciones en ChatGPT**  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **1. [Scispace](https://www.scispace.com/)**  
+
+- Buscador de IA especializado en **literatura científica**.  
+- Evalúa información basada en **papers revisados por pares**.  
+- **Proporciona fuentes verificables** para cada respuesta.  
+- Útil para **iniciar investigaciones académicas** con referencias confiables.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **2. [Consensus.app](https://consensus.app/)**  
+
+- Motor de búsqueda basado en IA para investigadores.  
+- Usa un **medidor de consenso** que muestra el nivel de acuerdo en un tema.  
+- Cada resultado enlaza a un **artículo científico** con detalles como **número de citas y tipo de estudio**.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **3. [Litmaps](https://www.litmaps.com/)**  
+
+- Herramienta gráfica para descubrir **literatura científica**.  
+- Permite crear un **"mapa semilla"** que visualiza papers según **fecha de publicación y número de citas**.  
+- Facilita la identificación de los **estudios más influyentes** en un área.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **4. ChatGPT como herramienta complementaria**  
+
+- Funciona como un **"cuchillo suizo" de la IA**:  
+  - Puede hacer de todo, pero no siempre con la precisión de herramientas especializadas.  
+- No tiene un sistema nativo de verificación de fuentes.  
+- Se recomienda **combinarlo con herramientas académicas** para garantizar precisión.  
+
+---
+
+
+class: slideInRight, fadeOutLeft, middle, inverse
+
+1️⃣ Introducción a los LLM  
+2️⃣ Introducción a ChatGPT  
+3️⃣ Limitaciones]  
+4️⃣.red[Bonus: ChatGPT en celular]  
+5️⃣ Recapitulación y cierre
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **Diferencias con la versión de escritorio**  
+
+- La aplicación móvil permite **interacciones por voz**.  
+- Disponible para **iOS** y **Android**:  
+  - [Apple Store](https://apps.apple.com/us/app/chatgpt/id6448311069)  
+  - [Google Play Store](https://play.google.com/store/apps/details?id=com.openai.chatgpt&hl=en&gl=US)  
+- Precaución con **aplicaciones no oficiales**, especialmente en Android.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **Características de la aplicación móvil**  
+
+- Se pueden realizar conversaciones en **cualquier idioma**, no solo en inglés.  
+- Las conversaciones se **almacenan y pueden ser transcritas** en la versión web.  
+- Permite cambiar fácilmente entre **versión web y aplicación móvil**.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **Ventajas del uso en móviles**  
+
+- **Memoria de contexto más extensa** al usar **GPT-4**.  
+- Personalización con **bots** para respuestas específicas.  
+- La interacción por **voz** se está consolidando como una forma **natural de comunicación**, similar al comportamiento humano.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **Tarea 📌**  
+
+✅ **Descargar la app de ChatGPT** en tu smartphone.  
+✅ **Experimentar con el modo de voz** en lugar de escribir.  
+✅ **Familiarizarse con el uso móvil para mejorar la fluidez en interacciones.**  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## **Reflexión**  
+
+📌 ¿Cómo puede cambiar la comunicación digital con la interacción por voz?  
+📌 ¿Qué ventajas ofrece el uso de ChatGPT en un dispositivo móvil en comparación con la versión web?  
+
+---
+
+class: slideInRight, fadeOutLeft, middle, inverse
+
+1️⃣ Introducción a los LLM  
+2️⃣ Introducción a ChatGPT  
+3️⃣ Limitaciones]  
+4️⃣ Bonus: ChatGPT en celular]  
+5️⃣ .red[Recapitulación y cierre]  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+📌 **Los LLM han cambiado nuestra forma de interactuar con la IA.**  
+📌 **ChatGPT es un tipo de LLM que genera respuestas basadas en patrones aprendidos.**  
+📌 **El crecimiento de los LLM ha mejorado su precisión, pero también ha aumentado su consumo computacional.**  
+📌 **Existen otros modelos como DeepSeek, Copilot y Claude con diferentes enfoques.**  
+📌 **ChatGPT ofrece diversas funcionalidades avanzadas, incluyendo plug-ins y acceso a información externa.**  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+📌 **El contexto en ChatGPT es clave: el "context length" define cuánto puede recordar en una conversación.**  
+📌 **A pesar de sus ventajas, ChatGPT tiene limitaciones, como alucinaciones, sesgos y respuestas incompletas.**  
+📌 **Existen herramientas complementarias como Scispace y Consensus para validar la información.**  
+📌 **Es fundamental un uso crítico y responsable de ChatGPT en cualquier campo de aplicación.**  
+
+
