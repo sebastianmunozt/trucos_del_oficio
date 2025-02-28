@@ -12,7 +12,6 @@
 
 # 📅 Calendario del Curso  
 
-# 📅 Calendario del Curso  
 
 | Fechas       | Clase Tentativa | Tema | Evaluaciones/Tareas | Materiales |
 |-------------|----------------|------|---------------------|------------|
