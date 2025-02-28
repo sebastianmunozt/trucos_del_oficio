@@ -1,11 +1,11 @@
-![Banner](img/1.png)
+![Banner](img/intro.gif)
 
 ### Bienvenidxs al curso Trucos del Oficio.
 
 
 | Profesor           | email                       | 
 |--------------------|-----------------------------|
-| Sebastián Muñoz    | sebastianmunozt@gmail.com |
+| Sebastián Muñoz 👨‍💻 | sebastianmunozt@gmail.com |
 
 
 

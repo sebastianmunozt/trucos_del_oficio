@@ -53,15 +53,16 @@ class: slideInRight, fadeOutLeft, middle, center
 
   
 ---
-## Índice
 
 class: slideInRight, fadeOutLeft, middle, inverse
+## Índice
 
-1️⃣.red[Introducción a los LLM]  
-2️⃣ Introducción a ChatGPT  
-3️⃣ Limitaciones  
-4️⃣ Bonus: ChatGPT en celular  
-5️⃣ Recapitulación y cierre  
+1️⃣ <span style="font-size: 1.2em;">Introducción a los LLM</span>  
+2️⃣ <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3️⃣ <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4️⃣ <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5️⃣ <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
+ 
 
 ---
 
@@ -197,14 +198,15 @@ class: slideInRight, fadeOutLeft, middle
 
 
 ---
-
 class: slideInRight, fadeOutLeft, middle, inverse
+## Índice
 
-1️⃣ Introducción a los LLM  
-2️⃣.red[Introducción a ChatGPT]  
-3️⃣ Limitaciones  
-4️⃣ Bonus: ChatGPT en celular  
-5️⃣ Recapitulación y cierre  
+1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2️⃣ <span style="font-size: 1.2em;">Introducción a ChatGPT</span>  
+3️⃣ <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4️⃣ <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5️⃣ <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
+
 
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -345,15 +347,15 @@ G.add_nodes_from(artistas)
 ```
 
 ---
-
-
 class: slideInRight, fadeOutLeft, middle, inverse
+## Índice
 
-1️⃣ Introducción a los LLM  
-2️⃣ Introducción a ChatGPT  
-3️⃣.red[Limitaciones]  
-4️⃣ Bonus: ChatGPT en celular  
-5️⃣ Recapitulación y cierre
+1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2️⃣ <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3️⃣ <span style="font-size: 1.2em;">Limitaciones</span>  
+4️⃣ <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5️⃣ <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
+
 
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -619,16 +621,18 @@ class: slideInRight, fadeOutLeft, middle
 - No tiene un sistema nativo de verificación de fuentes.  
 - Se recomienda **combinarlo con herramientas académicas** para garantizar precisión.  
 
+
 ---
-
-
 class: slideInRight, fadeOutLeft, middle, inverse
+## Índice
 
-1️⃣ Introducción a los LLM  
-2️⃣ Introducción a ChatGPT  
-3️⃣ Limitaciones]  
-4️⃣.red[Bonus: ChatGPT en celular]  
-5️⃣ Recapitulación y cierre
+1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2️⃣ <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3️⃣ <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4️⃣ <span style="font-size: 1.2em;">Bonus: ChatGPT en celular</span>  
+5️⃣ <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
+
+
 ---
 
 class: slideInRight, fadeOutLeft, middle
@@ -681,14 +685,15 @@ class: slideInRight, fadeOutLeft, middle
 📌 ¿Qué ventajas ofrece el uso de ChatGPT en un dispositivo móvil en comparación con la versión web?  
 
 ---
-
 class: slideInRight, fadeOutLeft, middle, inverse
+## Índice
 
-1️⃣ Introducción a los LLM  
-2️⃣ Introducción a ChatGPT  
-3️⃣ Limitaciones]  
-4️⃣ Bonus: ChatGPT en celular]  
-5️⃣ .red[Recapitulación y cierre]  
+1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2️⃣ <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3️⃣ <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4️⃣ <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5️⃣ <span style="font-size: 1.2em;">Recapitulación y cierre</span>  
+ 
 
 ---
 
