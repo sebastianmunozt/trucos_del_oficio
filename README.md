@@ -1,4 +1,4 @@
-![Banner](img/intro.gif)
+<img src="img/2.gif" width="800">
 
 ### Bienvenidxs al curso Trucos del Oficio.
 
@@ -47,3 +47,7 @@
 | | **Asistencia** | | ⭐ **15%** |  |
 | | **Participación** | | ⭐ **15%** |  |
 | | **Total** | | 🎯 **100%** |  |
+
+
+
+

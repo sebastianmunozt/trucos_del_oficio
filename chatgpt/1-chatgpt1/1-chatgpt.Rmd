@@ -1,6 +1,4 @@
 ---
-title: "Introducción a los LLM y ChatGPT"
-author: "Sebastián Muñoz-Tapia"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -43,18 +41,35 @@ xaringanExtra::use_share_again()
 
 
 
+class: slideInRight, middle
+background-image: url("img/01.gif")
+background-size: cover
+
+<div style="border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; margin: auto; color: black; font-size: 30%;">
+
+<h2>¿Qué es, cómo funciona y cuáles son los sesgos de la IA generativa?</h2>
+
+</div>
+
+
+
+---
+
+
+
 class: slideInRight, fadeOutLeft, middle, center
+background-image: url("img/temp/1.png")
+background-size: cover
 
 # Antes que nada ingrese acá:
 #### https://sebastianmunozt.github.io/trucos_del_oficio/
 
 
-
-
-  
 ---
 
 class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
 ## Índice
 
 1️⃣ <span style="font-size: 1.2em;">Introducción a los LLM</span>  
@@ -67,14 +82,28 @@ class: slideInRight, fadeOutLeft, middle, inverse
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## ¿Cómo interactuamos con la IA?  
 
-Los Modelos de Lenguaje de Gran Escala (**LLM**) han cambiado nuestra relación con la inteligencia artificial.  
+ 
+.pull-left[
+Los Modelos de Lenguaje de Gran Escala (**LLM**) han cambiado nuestra relación con la inteligencia artificial. 
 
-Factores clave en su uso:  
+Factores iípicos en su uso:  
 
-- **Superstición e ignorancia** → Muchas personas no entienden la IA y la perciben erróneamente.  
+- **Superstición e ignorancia** → Muchas personas no entienden la IA y la perciben erróneamente.]
+
+.pull-right[
+![](img/01.png){width=60%}
+]
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
 - **Un enfoque productivo** → Se pueden abordar los LLM desde:  
   - **Creatividad**: Generar ideas y soluciones innovadoras.  
   - **Habilidad**: Aprender a comunicarnos con los LLM para obtener mejores resultados.  
@@ -82,22 +111,30 @@ Factores clave en su uso:
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
-## ¿Qué es la "IA"?  
-
-### ChatGPT y los Modelos de Lenguaje de Gran Escala (LLM)  
+### ¿Qué es la "IA" y los Modelos de Lenguaje de Gran Escala (LLM)? 
 
 ChatGPT es un **Modelo de Lenguaje de Gran Escala (LLM)**, lo que implica:  
 
 - Funciona como una **base de datos** entrenada con grandes volúmenes de texto.  
 - Se basa en una **red neuronal** que recibe un *input* y genera un *output*.  
-- Una **red neuronal** es un algoritmo con múltiples parámetros que ajustan su comportamiento.  
+- Una **red neuronal** es un algoritmo con múltiples parámetros que ajustan su comportamiento.
 
-Los LLM permiten interactuar con el lenguaje generando respuestas basadas en patrones aprendidos.  
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/03.png")
+background-size: cover
 
+<div style="position: absolute; bottom: 5%; left: 10%; width: 80%; background: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 10px; text-align: center; color: white;">
+Los LLM permiten interactuar con el lenguaje generando respuestas basadas en patrones aprendidos.
+</div>
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## ¿Cómo funciona?  
 
@@ -110,17 +147,24 @@ Los LLM predicen patrones de lenguaje con base en probabilidades:
 ---
 class: slideInRight, fadeOutLeft, middle
 
+.pull-left[
 **Ejemplo:**  
 Si le decimos a un bebé:  
 > "Uno, dos..."  
 Es probable que responda:  
 > "Tres."  
 
-Los LLM operan de manera similar, completando oraciones según el entrenamiento previo.  
+Los LLM operan de manera similar, **completando oraciones** según el entrenamiento previo.  ]
+
+.pull-right[
+![](img/04.png)
+]
 
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## Evolución y crecimiento de los LLM  
 
@@ -136,6 +180,8 @@ class: slideInRight, fadeOutLeft, middle
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ### 2. Mejoras en la arquitectura  
 
@@ -148,57 +194,57 @@ class: slideInRight, fadeOutLeft, middle
 
 ---
 
-class: slideInRight, fadeOutLeft, middle
+class: slideInRight, fadeOutLeft, middle, inverse
 
 ## Otros Modelos de Lenguaje  
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/2.png")
+background-size: cover
 
-## DeepSeek  
+
+.pull-left[
+
+## [DeepSeek](https://www.deepseek.com/)
 
 - Especializado en **búsqueda de información y análisis de datos**.  
 - Integrado con grandes bases de datos.  
 - Diseñado para generar respuestas basadas en información estructurada.  
+- Interesante: versión gratuita pueden cargar archivos.
+]
 
----
-
-class: slideInRight, fadeOutLeft, middle
-
-## Copilot  
-
-- Desarrollado por **Microsoft y OpenAI**.  
-- Diseñado para **asistir en programación**.  
-- Puede **sugerir código y completar fragmentos** en distintos lenguajes.  
-- Integrado en **Visual Studio Code y GitHub**.  
-
----
-
-class: slideInRight, fadeOutLeft, middle
-
-## Claude  
+.pull-right[
+## [Claude](https://claude.ai)
 
 - Creado por **Anthropic**.  
 - Optimizado para **interacciones conversacionales más naturales**.  
 - Diseñado con un enfoque en **seguridad y alineación ética**.  
 - Usado en asistencia avanzada, análisis de texto y generación de contenido.  
+- Funciona bien para la programación (**R** y **Python**).  
+]
+
 
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
 
 ## Actividad  
 
-**Piensa en un uso práctico de estos modelos en tu área de interés.**  
+*Piensa en los usos prácticos de estos modelos en tu área de interés.*  
 
-1. ¿Cómo podrías beneficiarte de esta tecnología en tu campo?  
-2. ¿Qué modelo sería más útil para ti?  
-3. ¿Qué limitaciones crees que aún tienen estos modelos?  
-
+1. ¿Cómo utilizas estas tecnologías en tu vida cotidiana y académica?  
+2. ¿Qué limitaciones observas en estos modelos?  
+3. ¿Hacia donde crees que estos modelos avanzarán?  
 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
 ## Índice
 
 1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
@@ -209,27 +255,46 @@ class: slideInRight, fadeOutLeft, middle, inverse
 
 
 ---
-class: slideInRight, fadeOutLeft, middle
 
-## ¿Cómo comenzar?  
+class: slideInRight, fadeOutLeft, bottom
+background-image: url("img/05.png")
+background-size: cover
 
-### 1️⃣ **Crear una cuenta**  
-- Registro con **Gmail u otro correo electrónico**.  
-- Permite acceso a diferentes versiones y configuraciones personalizadas.  
+<div style="font-size: 80%; line-height: 1.2;">
 
-### 2️⃣ **Ingresar una instrucción (prompt)**  
-- Un *prompt* es el **input** que se escribe en ChatGPT.  
-- La IA procesará el *prompt* y generará un **output**.  
+<strong>¿Cómo comenzar?</strong>  
+<ul>
+  <li><strong>Crear una cuenta:</strong> (1) Registro con <strong>Gmail u otro correo electrónico</strong>; (2) Permite acceso a diferentes versiones y configuraciones personalizadas.</li>  
+  <li><strong>Ingresar una instrucción (prompt):</strong> (1) Un <em>prompt</em> es el <strong>input</strong> que se escribe en ChatGPT; (2) La IA procesará el <em>prompt</em> y generará un <strong>output</strong>.</li>  
+</ul>
+
+</div>
+
+
+
+
+
+
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/06.png")
+background-size: cover
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 💡 **Ejemplo:**  
-> **Input:** "Explica la teoría de la evolución en términos simples."  
-> **Output:** "La teoría de la evolución, propuesta por Charles Darwin (...)."  
+> **Input:** "Explica que es el análisis de redes sociales (Social Network Analysis, SNA) y cómo se podría utilizar para el análisis de las redes de colaboración artística."  
+> **Output:** "El Análisis de Redes Sociales (Social Network Analysis, SNA) es un enfoque metodológico utilizado para estudiar las relaciones e interacciones entre individuos, grupos, organizaciones o cualquier entidad conectada. Se basa en la teoría de grafos, donde los nodos representan actores (personas, organizaciones, etc.), y los enlaces o aristas representan las conexiones entre ellos (amistades, colaboraciones, intercambios de información, etc.). (...)."  
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## Versiones de ChatGPT  
 
@@ -250,6 +315,9 @@ class: slideInRight, fadeOutLeft, middle
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
 
 ## Funcionalidades avanzadas  
 
@@ -263,16 +331,22 @@ class: slideInRight, fadeOutLeft, middle
   - Generación de imágenes a partir de texto.  
   - Útil para ilustraciones y contenido gráfico.
 
----  
 
+
+---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 - **Descripción de imágenes**  
   - Interpretación de gráficos y visualizaciones de datos.  
   - Aplicaciones en accesibilidad y análisis de datos.  
-
+  
 ---
+
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## Gestión del contexto en ChatGPT  
 
@@ -284,6 +358,8 @@ class: slideInRight, fadeOutLeft, middle
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## **Historial y organización**  
 
@@ -295,6 +371,8 @@ Si se desarrolla un proyecto de investigación, se pueden agrupar conversaciones
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## Acceso a información externa  
 
@@ -309,6 +387,8 @@ Si se consulta sobre un artículo académico, ChatGPT puede resumir su contenido
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## Entendimiento de lenguajes  
 
@@ -319,6 +399,8 @@ ChatGPT puede comprender y generar texto en:
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## Ejemplo en Python  
 
@@ -348,6 +430,8 @@ G.add_nodes_from(artistas)
 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
 ## Índice
 
 1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
@@ -359,6 +443,22 @@ class: slideInRight, fadeOutLeft, middle, inverse
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/07.png")
+background-size: cover
+
+<div style="border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; margin: auto; color: black; font-size: 30%;">
+
+<h2>¿Cuáles son los principales límites y problemas que han visto en ChatGPT?</h2>
+
+</div>
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
 
 ## Context Length  
 
@@ -372,17 +472,24 @@ class: slideInRight, fadeOutLeft, middle
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## ¿Cómo influye el contexto?  
 
 - **Cada conversación influye** en las siguientes preguntas y respuestas.  
 - **Un contexto bien gestionado** permite obtener respuestas más precisas.  
-- **Cuando el límite se alcanza**, ChatGPT olvida la información más antigua.  
+- **Cuando el límite se alcanza**, ChatGPT olvida la información más antigua.
+
+> Importancia de la iteración!
+pero, tiene un límite!
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
-#### ¿Cuánta memoria puede almacenar ChatGPT?  
+### ¿Cuánta memoria puede almacenar ChatGPT?  
 
 **Límites de contexto por versión (2025)**  
 
@@ -397,6 +504,8 @@ class: slideInRight, fadeOutLeft, middle
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## Límites de contexto (continuación)  
 
@@ -409,7 +518,18 @@ class: slideInRight, fadeOutLeft, middle
 - Limitado a **secciones o resúmenes de artículos académicos**.  
 
 ---
+
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+### ¿Para qué creen que sería útil saber esto?
+
+
+---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## Diferencias entre "Parámetros" y "Context Length"  
 
@@ -420,16 +540,20 @@ class: slideInRight, fadeOutLeft, middle
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## ¿Cómo maneja ChatGPT el contexto?  
 
 - **Recuerda toda la conversación** hasta alcanzar el límite de tokens.  
 - **Cuando se supera el límite**, se eliminan los mensajes más antiguos.  
-- **No hay memoria persistente entre sesiones**:  
-  - Si cierras y vuelves a abrir una conversación, ChatGPT **no recordará** lo anterior.  
+
+  
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## Ejemplo de pérdida de contexto  
 
@@ -439,17 +563,12 @@ class: slideInRight, fadeOutLeft, middle
 
 ➡️ **Solución**: Resumir y reintroducir información clave en la conversación.  
 
----
-class: slideInRight, fadeOutLeft, middle
-
-## ¿Se guarda la conversación?  
-
-- **Sí**, la conversación queda en el historial de ChatGPT.  
-- **No**, el modelo no recuerda la información de conversaciones anteriores.  
-- Si vuelves a una conversación guardada, **solo la verás tú**, pero ChatGPT **no la recordará**.  
+  
 
 ---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## Conclusión  
 
@@ -457,17 +576,22 @@ class: slideInRight, fadeOutLeft, middle
 📌 **El límite de tokens define cuánto puede recordar ChatGPT en una conversación.**  
 📌 **Para conversaciones largas, es útil resumir información clave regularmente.**  
 
-class: slideInRight, fadeOutLeft, middle
+
 
 ---
-class: slideInRight, fadeOutLeft, middle
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
 # ¿Preguntas?  
 
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
-# **Limitaciones de ChatGPT (2025)**  
+# **Otras limitaciones de ChatGPT (2025)**  
 
 ## **1. Alucinaciones en respuestas**  
 
@@ -477,8 +601,9 @@ class: slideInRight, fadeOutLeft, middle
   - Puede inventar referencias bibliográficas o citar autores incorrectamente.  
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## **2. Respuestas incompletas**  
 
@@ -488,8 +613,9 @@ class: slideInRight, fadeOutLeft, middle
   - Si se le pregunta por teorías de estratificación social, puede mencionar solo a **Weber y Marx**, ignorando autores contemporáneos.  
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## **3. Información desactualizada**  
 
@@ -500,19 +626,31 @@ class: slideInRight, fadeOutLeft, middle
   - Puede no reflejar los últimos **cambios en metodologías cualitativas** o estudios recientes sobre desigualdad.  
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## **4. Sesgos en los datos de entrenamiento**  
 
 - ChatGPT refleja **sesgos históricos y sociales** presentes en sus datos de entrenamiento.  
 - Puede reforzar estereotipos o presentar interpretaciones parciales.  
 - **Ejemplo en Ciencias Sociales:**  
-  - En temas de género o raza, podría reflejar narrativas dominantes en lugar de perspectivas críticas o alternativas.  
+  - En temas de género o raza, podría reflejar narrativas dominantes en lugar de perspectivas críticas o alternativas. 
+  
+  
+---
+
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JDTSpOPeWb0?start=63" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ### **Diferencias entre versiones gratuita y de pago**  
 
@@ -526,20 +664,12 @@ class: slideInRight, fadeOutLeft, middle
 | **Modo de voz**       | No                 | Sí |
 | **Memoria extendida** | No                 | Sí |
 
----
-
-class: slideInRight, fadeOutLeft, middle
-
-# **Impacto de estas diferencias en las limitaciones**  
-
-1. **Alucinaciones** → Más frecuentes en **GPT-3.5** por menos parámetros.  
-2. **Respuestas incompletas** → Menos evidentes en **GPT-4o** gracias a su capacidad ampliada.  
-3. **Información desactualizada** → **GPT-3.5** solo llega a **2022**, mientras que **GPT-4o** a **2023** y tiene acceso web.  
-4. **Sesgos** → Persisten en ambas versiones, pero **GPT-4o** tiene mejor ajuste y moderación de respuestas.  
 
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 # **Privacidad en conversaciones**  
 
@@ -550,17 +680,20 @@ class: slideInRight, fadeOutLeft, middle
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
-# **Tarea 📌**  
+# **Actividad 📌**  
 
 ✅ **Explorar las limitaciones de ChatGPT en tu área de estudio**.  
 ✅ **Formular preguntas complejas y ver cómo responde**.  
-✅ **Comparar respuestas en versión gratuita y de pago**.  
 ✅ **Reflexionar sobre los posibles sesgos en sus respuestas**.  
 
 ---
 
-class: slideInRight, fadeOutLeft, middle
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/3.png")
+background-size: cover
 
 # **Conclusión**  
 
@@ -572,16 +705,23 @@ class: slideInRight, fadeOutLeft, middle
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
 
 # **¿Preguntas?**  
 ---
-class: slideInRight, fadeOutLeft, middle
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## **Herramientas para evitar alucinaciones en ChatGPT**  
 
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## **1. [Scispace](https://www.scispace.com/)**  
 
@@ -593,6 +733,8 @@ class: slideInRight, fadeOutLeft, middle
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## **2. [Consensus.app](https://consensus.app/)**  
 
@@ -603,6 +745,8 @@ class: slideInRight, fadeOutLeft, middle
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## **3. [Litmaps](https://www.litmaps.com/)**  
 
@@ -613,6 +757,8 @@ class: slideInRight, fadeOutLeft, middle
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 ## **4. ChatGPT como herramienta complementaria**  
 
@@ -636,6 +782,8 @@ class: slideInRight, fadeOutLeft, middle, inverse
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## **Diferencias con la versión de escritorio**  
 
@@ -648,6 +796,8 @@ class: slideInRight, fadeOutLeft, middle
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 ## **Características de la aplicación móvil**  
 
@@ -655,34 +805,8 @@ class: slideInRight, fadeOutLeft, middle
 - Las conversaciones se **almacenan y pueden ser transcritas** en la versión web.  
 - Permite cambiar fácilmente entre **versión web y aplicación móvil**.  
 
----
 
-class: slideInRight, fadeOutLeft, middle
 
-## **Ventajas del uso en móviles**  
-
-- **Memoria de contexto más extensa** al usar **GPT-4**.  
-- Personalización con **bots** para respuestas específicas.  
-- La interacción por **voz** se está consolidando como una forma **natural de comunicación**, similar al comportamiento humano.  
-
----
-
-class: slideInRight, fadeOutLeft, middle
-
-## **Tarea 📌**  
-
-✅ **Descargar la app de ChatGPT** en tu smartphone.  
-✅ **Experimentar con el modo de voz** en lugar de escribir.  
-✅ **Familiarizarse con el uso móvil para mejorar la fluidez en interacciones.**  
-
----
-
-class: slideInRight, fadeOutLeft, middle
-
-## **Reflexión**  
-
-📌 ¿Cómo puede cambiar la comunicación digital con la interacción por voz?  
-📌 ¿Qué ventajas ofrece el uso de ChatGPT en un dispositivo móvil en comparación con la versión web?  
 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
@@ -697,7 +821,10 @@ class: slideInRight, fadeOutLeft, middle, inverse
 
 ---
 
+
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/08.gif")
+background-size: cover
 
 📌 **Los LLM han cambiado nuestra forma de interactuar con la IA.**  
 📌 **ChatGPT es un tipo de LLM que genera respuestas basadas en patrones aprendidos.**  
