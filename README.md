@@ -24,16 +24,16 @@
 ---
 
 
-
+chatgpt/1-chatgpt1/1-chatgpt.html
 
 # 📅 Calendario del Curso  
 
 
 | Fechas       | Clase Tentativa | Tema | Evaluaciones/Tareas | Materiales |
 |-------------|----------------|------|---------------------|------------|
-| **13/03/2025** | 1-a | Metodología y Cronograma; Presentaciones |  |  |
+| **13/03/2025** | 1-a | Metodología y Cronograma; Presentaciones |  |[`📑 Presentación`](https://syncmagic.live/?id=16xOi8Ove) |
 |  | 1-b | Tecnologías digitales, economía de la atención y subjetividad actual |  |  |
-| **20/04/2025** | 2-a | Qué es, cómo funciona y cuáles son los sesgos de la IA generativa | 📑 **Tarea:** Exposición aleatoria de temas |  |
+| **20/04/2025** | 2-a | Qué es, cómo funciona y cuáles son los sesgos de la IA generativa | 📑 **Tarea:** Exposición aleatoria de temas |  [`📑 Presentación`](https://sebastianmunozt.github.io/trucos_del_oficio/chatgpt/1-chatgpt1/1-chatgpt#1) |
 |  | 2-b | Hacer buenos prompt*; Taller: realización de prompt y búsqueda de sesgos |  |  |
 | **27/03/2025** | 3-a | GTD y MakeTime: Dos formas de administrar tu tiempo | 📑 **Tarea:** Mostrar prompt y los sesgos encontrados |  |
 |  | 3-b | Ordenar tus entradas (mail, WhatsApp, notas), Ordenar tus días (Horario y Google Calendar), ordenar tus tareas (Tick-Tick) |  |  |
