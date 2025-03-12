@@ -99,7 +99,9 @@ organizacion-personal/organizacion.html
 
 A continuación, encontrarás los textos disponibles para el curso:
 
-- [📄 Alvarez.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Alvarez.pdf)
+bibliografia/Alavarez.pdf
+
+- [📄 Alvarez.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Alavarez.pdf)
 - [📄 Bauman2017.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Bauman2017.pdf)
 - [📄 Becker2011.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Becker2011.pdf)
 - [📄 Becker_Trucos.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Becker_Trucos.pdf)
