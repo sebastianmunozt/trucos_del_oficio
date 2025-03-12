@@ -1,11 +1,27 @@
 <img src="img/2.gif" width="800">
 
-### Bienvenidxs al curso Trucos del Oficio.
-
+# 🎓 Bienvenidxs al curso Trucos del Oficio.
+### 🏛  Universidad Alberto Hurtado
 
 | Profesor           | email                       | 
 |--------------------|-----------------------------|
 | Sebastián Muñoz 👨‍💻 | sebastianmunozt@gmail.com |
+
+
+---
+## Forma de comunicación directa
+
+- 🔗 [**Canal de Slack para comunicación**](https://join.slack.com/t/trucosdeloficio/shared_invite/zt-31kznd6ue-lrYkeZn4qWWBMwracVxxbA)
+- 🔗 [**¿Cómo funciona Slack?**](https://www.youtube.com/watch?v=FUeHfBTLBs0&t=328s)
+
+---
+
+## **Documentos del Curso**
+📂 **Descarga el programa y la programación del curso:**
+- 📄 [**Programa**](https://sebastianmunozt.github.io/metodoscuanti2/files/programa_2025.pdf) 
+- 📅 [**Programación**](https://sebastianmunozt.github.io/metodoscuanti2/programacion_2025.pdf)
+
+---
 
 
 
