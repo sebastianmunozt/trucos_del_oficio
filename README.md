@@ -65,5 +65,52 @@ organizacion-personal/organizacion.html
 | | **Total** | | 🎯 **100%** |  |
 
 
+---
+## Evaluaciones
 
+| Actividad evaluativa                          | Modalidad  | Fecha        | Ponderación |
+|-----------------------------------------------|------------|-------------|-------------|
+| Presentación de trabajo de estudiantes en estado intermedio | Grupal     | 15/05/2025  | 30%         |
+| Presentación de trabajo de estudiantes final | Grupal     | 26/06/2025  | 40%         |
+| Asistencia y puntualidad                     | Individual |             | 15%         |
+| Participación                                | Individual |             | 15%         |
+
+---
+## Grupos de trabajo
+- Mínimo 1 y Máximo 4
+
+---
+## Aplicaciones y programas a utilizar
+
+- 🔗 [**ChatGPT**](https://chat.openai.com): Asistente de inteligencia artificial desarrollado por OpenAI que genera texto coherente y relevante en función de las indicaciones del usuario.
+- 🔗 [**Google Calendar**](https://calendar.google.com): Aplicación de Google para la gestión de calendarios y programación de eventos, facilitando la organización personal y profesional.
+- 🔗 [**TickTick**](https://ticktick.com): Herramienta de gestión de tareas y productividad que permite organizar listas, recordatorios y colaborar en proyectos.
+- 🔗 [**Endel**](https://endel.io/): Aplicación que crea paisajes sonoros personalizados en tiempo real para mejorar la concentración, relajación y sueño.
+- 🔗 [**Zotero**](https://www.zotero.org): Gestor de referencias bibliográficas gratuito que ayuda a recopilar, organizar y citar fuentes de investigación.
+- 🔗 [**AudioPen**](https://audiopen.ai/): Aplicación que convierte notas de voz en texto editable, facilitando la transcripción y organización de ideas.
+- 🔗 [**Sci-Space**](https://sci-space.org/): Plataforma que facilita el descubrimiento y acceso a literatura científica relevante mediante herramientas de búsqueda avanzadas.
+- 🔗 [**Consensus**](https://consensus.app/): Motor de búsqueda impulsado por IA que proporciona respuestas basadas en evidencia científica, extrayendo conclusiones de artículos de investigación.
+- 🔗 [**Litmaps**](https://www.litmaps.com/): Herramienta que acelera la revisión de literatura al descubrir rápidamente artículos relevantes y visualizar conexiones entre ellos.
+- 🔗 [**Obsidian**](https://obsidian.md/): Aplicación de toma de notas basada en Markdown que permite gestionar información de manera interconectada mediante un sistema de grafos.
+- 🔗 [**StackEdit**](https://stackedit.io/): Editor de texto en línea basado en Markdown que permite escribir, organizar y sincronizar documentos con múltiples plataformas.
+
+---
+## Bibliografía
+
+A continuación, encontrarás los textos disponibles para el curso:
+
+- [📄 Alvarez.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Alvarez.pdf)
+- [📄 Bauman2017.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Bauman2017.pdf)
+- [📄 Becker2011.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Becker2011.pdf)
+- [📄 Becker_Trucos.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Becker_Trucos.pdf)
+- [📄 Cardoso-de-Oliveira.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Cardoso-de-Oliveira.pdf)
+- [📄 Case2016.epub](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Case2016.epub)
+- [📄 Cone2018.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Cone2018.pdf)
+- [📄 Espluga2021.epub](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Espluga2021.epub)
+- [📄 Geertz1989.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Geertz1989.pdf)
+- [📄 Heker2019.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Heker2019.pdf)
+- [📄 Jablonka.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Jablonka.pdf)
+- [📄 Sennet.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Sennet.pdf)
+- [📄 Sirimarco.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Sirimarco.pdf)
+- [📄 Wright1959.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Wright1959.pdf)
 
