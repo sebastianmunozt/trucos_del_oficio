@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>2-chatgpt.knit</title>
+    <meta charset="utf-8" />
+    <script src="2-chatgpt_files/header-attrs-2.25/header-attrs.js"></script>
+    <link href="2-chatgpt_files/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
+    <link href="2-chatgpt_files/tachyons-4.12.0/tachyons.min.css" rel="stylesheet" />
+    <script src="2-chatgpt_files/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="2-chatgpt_files/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
+    <script src="2-chatgpt_files/shareon-1.4.1/shareon.min.js"></script>
+    <link href="2-chatgpt_files/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
+    <script src="2-chatgpt_files/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+
+
+
+class: slideInRight, middle
+background-image: url("img/00.gif")
+background-size: cover
+
+&lt;div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; color: black;"&gt;
+  
+  &lt;h2 style="font-size: 100%;"&gt;¿Cómo hacer buenos prompt?&lt;/h2&gt;
+
+  &lt;p style="font-size: 80%; margin-top: 10px;"&gt;Por: Sebastián Muñoz&lt;/p&gt;
+
+&lt;/div&gt;
+
+---
+
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png") 
+background-size: cover
+
+## Índice  
+
+1. &lt;span style="font-size: 1.2em;"&gt;Introducción&lt;/span&gt;  
+2. &lt;span style="color:gray; font-size: 1em;"&gt;Fundamentos del Prompting&lt;/span&gt;  
+3. &lt;span style="color:gray; font-size: 1em;"&gt;Formateo de prompts&lt;/span&gt;  
+4. &lt;span style="color:gray; font-size: 1em;"&gt;Técnicas adicionales&lt;/span&gt;  
+5. &lt;span style="color:gray; font-size: 1em;"&gt;Uso de emociones&lt;/span&gt;  
+6. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación&lt;/span&gt;  
+
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/16.png") 
+background-size: cover
+
+
+
+### ¿Qué es un prompt?
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+&gt; Un **prompt** es una instrucción o pregunta que le damos a una inteligencia artificial para que genere una respuesta. Es como darle indicaciones claras a un asistente virtual para que entienda lo que queremos.
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+### ¿Qué es la Ingeniería de Prompt?
+- Disciplina enfocada en el **desarrollo y optimización de prompts** para modelos de lenguaje (LLM).
+- Mejora la interacción con modelos de IA en tareas como **responder preguntas, generar texto y razonamiento aritmético**.
+- Aplicada en **investigación** y **desarrollo de aplicaciones avanzadas**.
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png") 
+background-size: cover
+
+## Índice  
+
+1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción&lt;/span&gt;  
+2. &lt;span style="font-size: 1.2em;"&gt;Fundamentos del Prompting&lt;/span&gt;  
+3. &lt;span style="color:gray; font-size: 1em;"&gt;Formateo de prompts&lt;/span&gt;  
+4. &lt;span style="color:gray; font-size: 1em;"&gt;Técnicas adicionales&lt;/span&gt;  
+5. &lt;span style="color:gray; font-size: 1em;"&gt;Uso de emociones&lt;/span&gt;  
+6. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación&lt;/span&gt;  
+
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png") 
+background-size: cover
+
+- Abran sus cuentas de ChatGPT
+- Vayan haciéndolo en sus propias cuentas de ChatGPT
+
+---
+class: slideInRight, fadeOutLeft
+background-image: url("img/15.png") 
+background-size: cover
+
+&lt;div style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); 
+            background: rgba(255, 255, 255, 0.7); padding: 15px; 
+            border: 3px solid black; border-radius: 10px; text-align: center; width: 80%;"&gt;
+
+🔹 Vamos mejorando el prompt
+
+&lt;/div&gt;
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+```
+### Contexto
+Curso de escritura creativa en magister de poesía
+
+### Rol
+Estudiante de poesía experto que gusta del autor Jorge Tellier, que se dirige a su profesor.
+
+### Instrucción
+Escribe un poema a partir de la frase siguiente, con referencias al campo chileno.
+
+### Input
+El cielo es
+
+```
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+```
+### Ejemplo
+BLUE
+
+Veré nuevos rostros
+Veré nuevos días
+Seré olvidado
+Tendré recuerdos
+Veré salir el sol cuando sale el sol
+Veré caer la lluvia cuando llueve
+Me pasearé sin asunto
+De un lado a otro
+Aburriré a medio mundo
+Contando la misma historia
+Me sentaré a escribir una carta
+Que no me interesa enviar
+O a mirar a los niños
+En los parques de juego.
+Siempre llegaré al mismo puente
+A mirar el mismo río
+```
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+```
+Iré a ver películas tontas
+Abriré los brazos para abrazar el vacío
+Tomaré vino si me ofrecen vino
+Tomaré agua si me ofrecen agua
+Y me engañaré diciendo:
+«Vendrán nuevos rostros
+Vendrán nuevos días».
+
+```
+
+---
+
+class: slideInRight, fadeOutLeft, bottom
+background-image: url("img/teclas.jpg") 
+background-size: cover
+
+- Use shift + enter para ir haciendo saltos de linea.
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+##### Salida
+
+```
+El cielo es
+El cielo es un potrero de nubes gastadas,
+los álamos altos sus cercos de humo.
+El viento lo arrea con manos callosas,
+como un viejo peón que nunca descansa.
+
+El cielo es la espera en la estación dormida,
+un tren que no llega, un tren que no parte.
+Los rieles de plata se pierden al fondo,
+donde pastan las horas, donde nada arde.
+
+El cielo es un vaso con vino vertido,
+la tarde en la acequia, el trueno en el surco.
+Los perros lo miran con ojos de polvo,
+los bueyes lo sienten hondo en el yugo.
+
+Y cuando oscurece, el cielo es la casa
+de un dios campesino que enciende su lámpara.
+```
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+📌 Un **prompt** puede incluir:
+
+- **Contexto**: Información relevante adicional.
+- **Rol**: Como quieres que actúe y con quién (tu audiencia)
+- **Instrucción**: Lo que queremos que haga el modelo.
+- **Datos de entrada**: La pregunta o texto a analizar.
+- **Indicador de salida**: Formato o tipo de respuesta esperada.
+-- **Ejemplos**: De otro tipo de salidas que gustaría que la tuya refiera.
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+#### Actividad
+
+Pruebe un prompt siguiendo este esquema.
+
+```markdown
+
+### Contexto
+
+
+### Rol
+
+
+### Instrucción
+
+
+### Input
+
+
+### Output
+
+
+```
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+&lt;iframe width="800" height="450" src="https://www.youtube.com/embed/vnv9yl1ddx0?list=PL0vgVRoORhXLEEAEBaIX3E8XEupluBv1D" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+📌 **Entonces:**
+Cuanto más clara sea la instrucción, más preciso será el resultado.
+
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+
+### Consejos clave
+
+- ✅ Comenzar con prompts simples y  ajustar iterativamente.
+- ✅ Usar separadores como "###" para mejorar estructura.
+- ✅ Ser específico y claro en la instrucción.
+- ✅ Evitar imprecisiones y detalles innecesarios.
+- ✅ Priorizar lo que se debe hacer en vez de lo que no se debe hacer.
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+## **Errores Comunes al Diseñar Prompts**  
+
+❌ **Instrucciones ambiguas o abiertas.**  
+❌ **Usar negaciones en lugar de instrucciones afirmativas.**  
+❌ **No proporcionar ejemplos cuando es necesario.**  
+❌ **Exceso de detalles irrelevantes.**  
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse 
+background-image: url("img/temp/4.png") 
+background-size: cover
+
+## Índice  
+
+1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción&lt;/span&gt;  
+2. &lt;span style="color:gray; font-size: 1em;"&gt;Fundamentos del Prompting&lt;/span&gt;  
+3. &lt;span style="font-size: 1.2em;"&gt;Formateo de prompts&lt;/span&gt;  
+4. &lt;span style="color:gray; font-size: 1em;"&gt;Técnicas adicionales&lt;/span&gt;  
+5. &lt;span style="color:gray; font-size: 1em;"&gt;Uso de emociones&lt;/span&gt;  
+6. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación&lt;/span&gt;  
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+
+- El formateo adecuado mejora la claridad en los prompts largos.
+- Markdown y XLM facilitan la legibilidad y es nativo de ChatGPT.
+- Aprender a usar títulos, listas y resaltados con Markdown es clave.
+
+---
+
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+### Markdown
+### XML
+
+```
+&lt;format&gt;
+Autor: {Nombre del autor}
+Título: {Título de la publicación}
+Año: {Año de publicación}
+&lt;/format&gt;
+```
+- Markdown estructura el prompt; XML define bloques internos.
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+### **Uso de Markdown en Prompting**  
+ **¿Qué es Markdown?**  
+
+- **Markdown** es un lenguaje ligero de marcado.  
+- Se usa para **formatear texto de manera simple y estructurada**.  
+- Permite mejorar la **claridad y organización** en prompts para modelos de lenguaje.  
+
+- Posibilidad de usar:  **&lt;span style="color: blue; text-decoration: underline;"&gt;[Stackedit](https://stackedit.io/)&lt;/span&gt;**  
+- Tutorial recomendado: **&lt;span style="color: blue; text-decoration: underline;"&gt;[Markdown Guide](https://www.markdownguide.org/basic-syntax/)&lt;/span&gt;**  
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+### **¿Por qué usar Markdown en prompts?**  
+
+✅ **Mejora la legibilidad del prompt**.  
+✅ **Organiza la información de manera clara**.  
+✅ **Facilita la estructuración de datos** para los modelos de lenguaje.  
+✅ **Compatible con múltiples plataformas**.  
+✅ **Permite una mejor interpretación por parte del modelo**.  
+
+---
+
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+# **Reglas Básicas de Markdown**  
+
+## **1. Encabezados**  
+Se utilizan `#` para definir títulos y subtítulos.  
+
+```markdown
+# Encabezado 1  
+## Encabezado 2  
+### Encabezado 3  
+#### Encabezado 4 
+```
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+📌 **¿Por qué es útil?**
+
+- Permite estructurar claramente diferentes secciones del prompt.
+- Facilita la organización de la **instrucción, contexto y ejemplos** dentro del prompt.
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+```markdown
+
+### Contexto
+
+
+### Rol
+
+
+### Instrucción
+
+
+### Input
+
+
+### Output
+
+
+```
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+
+## 2. Listas 
+
+```markdown
+- Elemento 1  
+- Elemento 2  
+  - Sub-elemento  
+- Elemento 3
+```
+
+---
+
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+## 3. Listas Ordenadas
+
+```markdown
+1. Primer elemento  
+2. Segundo elemento  
+   1. Sub-elemento  
+3. Tercer elemento
+
+```
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+## 4. Destacar
+
+Se hace con doble asterisco `(**así**)` o con las palabras en Mayúsculas. 
+
+```markdown
+Busca **solo en el texto que te entrego** NO inventes nada fuera de él!
+```
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/2.png") 
+background-size: cover
+
+#### Actividad: 
+- Abran [Stackedit](https://stackedit.io/) y prueben hacer un prompt, siguiendo las reglas de [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
+
+---
+
+
+class: slideInRight, fadeOutLeft, middle, inverse 
+background-image: url("img/temp/4.png") 
+background-size: cover
+
+### Comparemos este promp en la versión gratuita de ChatGPT, DeepSeek y Claude.
+- pegue la instrucción y modifique si así lo desea. 
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+```markdown
+### ROL:  
+Eres un docente especializado en inteligencia artificial y humanidades digitales, con experiencia en la enseñanza de modelos de lenguaje como ChatGPT. Diseñas clases interactivas para estudiantes de pregrado, combinando teoría y práctica para facilitar la comprensión del impacto y uso de la IA.
+### CONTEXTO:  
+Los estudiantes de pregrado tienen poca experiencia con **modelos de lenguaje** y no están familiarizados con **cómo funciona ChatGPT** ni sus aplicaciones en investigación y escritura académica.  
+El objetivo de la clase es que comprendan **qué es ChatGPT, cómo funciona y cómo pueden aprovecharlo en su formación universitaria**.
+La sesión incluirá:  
+- Una **explicación teórica** sobre modelos de lenguaje.  
+- Un **ejemplo práctico** de uso de ChatGPT.  
+- Un **ejercicio interactivo** donde los estudiantes diseñan un prompt eficaz.
+```
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+```markdown
+### INSTRUCCIÓN:  
+Diseña una **clase de 90 minutos** sobre **ChatGPT y su aplicación en la educación universitaria**. La clase debe incluir:  
+
+1. **Introducción (20 min):**  
+   - Explicación breve sobre qué es ChatGPT y cómo funciona.  
+   - Diferencias entre **GPT-3.5** y **GPT-4**.  
+   - ¿Cómo "piensa" ChatGPT? Explicación de predicción de tokens.  
+   - Casos de uso en la educación y la investigación.  
+
+2. **Ejemplo práctico (20 min):**  
+   - Demostración en vivo de ChatGPT respondiendo preguntas.  
+   - Comparación entre prompts bien diseñados y mal estructurados.  
+
+3. **Ejercicio interactivo (30 min):**  
+   - Los estudiantes diseñan un **prompt óptimo** según un caso académico.  
+   - Se prueban los prompts en ChatGPT y se comparan resultados.
+```
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+```markdown
+4. **Discusión y cierre (20 min):**  
+   - Reflexión sobre el impacto de ChatGPT en la escritura y la investigación.  
+   - Limitaciones del modelo (alucinaciones, sesgo en datos, desactualización).  
+   - Ética y uso responsable de la IA en el ámbito académico.  
+
+El contenido debe estar **adaptado a estudiantes de pregrado**, evitando tecnicismos innecesarios y utilizando ejemplos aplicados a su vida académica.  
+```
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+```markdown
+### OUTPUT:
+- Dame la clase en formato Markdown, para así realizar una presentación en Xaringam del lenguaje R. 
+- Considera que cada slide no tenga tanta palabras por lo que utiliza separadores para mejorar la visión.
+- usa lenguaje consiso, utiliza emojis formales.
+  ```  
+  
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png") 
+background-size: cover
+
+## Índice  
+
+1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción&lt;/span&gt;  
+2. &lt;span style="color:gray; font-size: 1em;"&gt;Fundamentos del Prompting&lt;/span&gt;  
+3. &lt;span style="color:gray; font-size: 1em;"&gt;Formateo de prompts&lt;/span&gt;  
+4. &lt;span style="font-size: 1.2em;"&gt;Técnicas adicionales&lt;/span&gt;  
+5. &lt;span style="color:gray; font-size: 1em;"&gt;Uso de emociones&lt;/span&gt;  
+6. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación&lt;/span&gt;  
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+#### 4.1 Cantidad de ejemplos 
+
+---
+
+| Estrategia            | Descripción breve | Ejemplo de Uso | Cuándo Usarlo |
+|-----------------------|------------------|---------------|--------------|
+| **Zero-Shot** | Solo se da una instrucción, sin ejemplos. | Resumir un texto sin ejemplos. | Para tareas simples o conocidas. |
+| **One-Shot** | Se da una instrucción con un solo ejemplo. | Convertir una oración informal a académica con un ejemplo previo. | Cuando se necesita mayor precisión. |
+| **Few-Shot** | Se dan varios ejemplos antes de la tarea. | Transformar múltiples frases informales en académicas con varios ejemplos. | Para tareas complejas con patrones. |
+| **Multi-Shot** | Se proporcionan muchos ejemplos para mejorar la precisión. | Analizar una red social con múltiples ejemplos. | Para imitar un estilo o proceso con fidelidad. |
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+#### **Zero-Shot Prompting**
+- **Prompt 1:** "Resume el siguiente texto en una sola oración: [texto]."
+- **Prompt 2:** "Extrae los conceptos clave de este texto : [texto]."
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+#### **One-Shot Prompting**
+- **Prompt 1:** 
+
+```markdown
+### INSTRUCCION
+Convierte la siguiente respuesta en lenguaje académico. 
+
+### EJEMPLO
+'Me pareció raro' → 'La experiencia resultó inusual'. 
+
+### INPUT 
+[texto]
+
+```
+- **Prompt 2:** "Reformula el siguiente párrafo en un tono más divulgativo. Ejemplo: 'El neoliberalismo ha modificado la estructura económica' → 'Los cambios económicos recientes reflejan el impacto del neoliberalismo'. Input: [texto]."
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+#### **Few-Shot Prompting**
+
+```markdown
+### INSTRUCCIÓN 
+Extrae categorías de análisis de las siguientes transcripciones de entrevistas.
+### EJEMPLOS 
+- Texto 1: "Los entrevistados mencionaron la precariedad laboral como un problema recurrente."  Categorías: Condiciones laborales, Precarización, Seguridad social.
+- Texto 2: "Muchos estudiantes sienten ansiedad por la inestabilidad económica". Categorías: Educación, Ansiedad económica, Futuro laboral.
+- Texto 3: "Las mujeres en comunidades rurales destacan la falta de oportunidades laborales." Categorías: Desigualdad de género, Oportunidades laborales, Desarrollo rural.
+- Texto 4: "Los jóvenes en barrios marginales mencionan la falta de acceso a educación superior." Categorías: Acceso educativo, Desigualdad social, Juventud.
+###INPUT
+"Los trabajadores migrantes resaltaron la falta de acceso a la salud y bajos salarios."
+```
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+#### 4.2 🧠 Chain of Thought - Para Tareas Complejas
+
+- Agregar: **"Razona paso a paso"** a una instrucción mejora el razonamiento simbólico y aritmético.
+- Según [Wei 2022](https://arxiv.org/abs/2201.11903), esta estrategia ayuda a descomponer tareas en sub-pasos, obteniendo mejores resultados.
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+✍️ **Ejemplo:**
+
+📌 **Pregunta:** Un tren sale de una ciudad a las 8:00 AM a una velocidad de 80 km/h. Otro tren sale de otra ciudad a las 9:00 AM a una velocidad de 100 km/h en la misma dirección. ¿A qué hora el segundo tren alcanzará al primero?
+
+##### **Paso 1 - Prompt inicial**  
+❓ **Prompt:** Calcula a qué hora el segundo tren alcanzará al primero.  
+✅ **Output:** A las 12:00 PM.  
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+#####**Paso 2 - Prompt con Chain of Thought**  
+❓ **Prompt:** Resuelve el problema paso a paso explicando la lógica detrás del cálculo. 
+
+✅ **Output:**  
+  - El primer tren sale a las **8:00 AM** y viaja a **80 km/h**.  
+  - El segundo tren sale una hora después, a las **9:00 AM**, y viaja a **100 km/h**.  
+  - En esa hora, el primer tren ha avanzado **80 km**.  
+  - La diferencia de velocidad entre ambos trenes es **100 km/h - 80 km/h = 20 km/h**.  
+  - Para cerrar la distancia de **80 km**, el segundo tren necesita **80 km ÷ 20 km/h = 4 horas**.  
+  - **Conclusión:** El segundo tren alcanzará al primero a las **1:00 PM**. 
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+**📌 Mejora obtenida con Chain of Thought:** En la primera respuesta, el resultado era incorrecto. Con la estrategia "razona paso a paso", se desglosa el problema y se obtiene el resultado correcto (**1:00 PM en lugar de 12:00 PM**), evitando errores de cálculo.  
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+#### 4.3 🔍 Selección e Inferencia en el Prompting
+
+- Método de dos pasos:
+    1. **Selección** de información relevante.
+    2. **Inferencia** basada en la información seleccionada.
+- Según [Creswell 2022](https://arxiv.org/abs/2205.09712), los modelos suelen desempeñarse bien en tareas de inferencia de un solo paso, pero fallan en razonamientos encadenados.
+- Separar la tarea en selección y luego inferencia permite mejorar la precisión y evitar errores.
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+##### ✍️ Ejemplo:
+
+📌 **Texto Original:** "En 2023, varios países han experimentado olas de calor extremo, lo que ha generado incendios forestales y afectado la producción agrícola."  
+
+- **Paso 1 - Prompt de Selección**  
+❓ **Prompt:** Extrae los datos clave del siguiente texto.  
+✅ **Output:** Año: 2023. Fenómeno: olas de calor extremo. Consecuencias: incendios forestales, impacto en la producción agrícola.  
+
+-  **Paso 2 - Prompt de Inferencia**  
+❓ **Prompt:** ¿Qué conclusiones podemos inferir a partir de la información clave?  
+✅ **Output:** El cambio climático está contribuyendo a eventos climáticos extremos que afectan la seguridad alimentaria y el medio ambiente.  
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+**📌 Mejora obtenida con Selección e Inferencia:** En lugar de dar una conclusión genérica desde el principio, la información se estructura en dos pasos, asegurando precisión y relevancia en la inferencia.  
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+#### 4.4 🔄 Crítica Recursiva en los Prompts
+
+- Inspirado en [Kim 2023](https://arxiv.org/abs/2303.17491).
+- Consiste en mejorar iterativamente la salida mediante autoevaluación.
+- Pasos:
+    1. **Generar una respuesta inicial** con un prompt básico.
+    2. **Evaluar la respuesta** con un segundo prompt crítico.
+    3. **Mejorar la respuesta** en base a la crítica.
+    4. **Repetir hasta alcanzar una versión óptima.**
+    
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+##### ✍️ Ejemplo:
+
+📌 **Texto Original:** "La Revolución Industrial fue importante."
+
+- **Paso 1 - Prompt inicial**  
+❓ **Prompt:** Explica qué fue la Revolución Industrial en una oración.  
+✅ **Output:** "La Revolución Industrial marcó un cambio en la producción y la economía."  
+
+- **Paso 2 - Prompt de evaluación crítica**  
+❓ **Prompt:** ¿La respuesta explica claramente cómo cambió la producción y la economía?  
+✅ **Output:** No, falta especificar el papel de la maquinaria.  
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+- **Paso 3 - Prompt de mejora**  
+❓ **Prompt:** Mejora la respuesta explicando cómo la maquinaria influyó en la Revolución Industrial.  
+✅ **Output:** "La Revolución Industrial transformó la producción al introducir maquinaria, lo que aumentó la eficiencia y el crecimiento económico."  
+
+- **Paso 4 - Prompt de refinamiento**  
+❓ **Prompt:** ¿Se puede hacer la respuesta aún más clara y precisa?  
+✅ **Output:** "La Revolución Industrial introdujo maquinaria que automatizó la producción, aumentando la eficiencia y transformando la economía global."  
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+
+## Índice  
+
+1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción&lt;/span&gt;  
+2. &lt;span style="color:gray; font-size: 1em;"&gt;Fundamentos del Prompting&lt;/span&gt;  
+3. &lt;span style="color:gray; font-size: 1em;"&gt;Formateo de prompts&lt;/span&gt;  
+4. &lt;span style="color:gray; font-size: 1em;"&gt;Técnicas adicionales&lt;/span&gt;  
+5. &lt;span style="font-size: 1.2em;"&gt;Uso de emociones&lt;/span&gt;  
+6. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación&lt;/span&gt;  
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/17.png")
+background-size: cover
+
+.pull-left[
+## ¿Puede la IA mostrar emociones?
+]
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+- La IA no tiene emociones reales, pero su comportamiento puede parecer emocional.
+- Se basa en patrones aprendidos de datos humanos.
+- Ejemplos:
+    - 📌 Respuestas más largas cuando se ofrece una recompensa ([fuente](https://twitter.com/voooooogel/status/1730726744314069190)).
+    - ❄️ Respuestas más cortas en invierno, sugiriendo "depresión estacional" ([fuente](https://arstechnica.com/information-technology/2023/12/is-chatgpt-becoming-lazier-because-its-december-people-run-tests-to-find-out/)).
+    - 🧘‍♂️ Mejor desempeño cuando se le dice "respira hondo y analiza paso a paso" ([fuente](https://arstechnica.com/information-technology/2023/09/telling-ai-model-to-take-a-deep-breath-causes-math-scores-to-soar-in-study/)).
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Uso estratégico de la emoción en prompts
+
+- Los mensajes con carga emocional pueden influir en la respuesta de la IA.
+- No genera cambios drásticos, pero puede afinar el comportamiento del modelo.
+- Se puede jugar con estilos y formatos para enfatizar la importancia de una tarea.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+#### Ejemplos de prompts emocionales
+
+- **Precisión**
+  - "Cada detalle importa. Aborda esta tarea con la precisión de un joyero montando un diamante."
+- **Consecuencia**
+  - "El fracaso aquí no solo te afecta a ti, sino también al futuro de todo el equipo."
+- **Responsabilidad**
+  - "Llevas el peso de esta tarea sobre tus hombros. Su éxito o fracaso depende de ti."
+- **Enfoque**
+  - "Concéntrate como un láser. Tu atención total es clave para superar este desafío."
+- **Recompensa**
+  - "El éxito trae recompensas invaluables. Sobresale en esta tarea y abrirás puertas inimaginables."
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Más estrategias emocionales en prompts
+
+- **Éxito:** "Visualiza el éxito. Este logro será un hito en tu carrera."
+- **Cumplimiento:** "Adhiérete estrictamente a las reglas. No seguirlas es una falta grave."
+- **Estrategia:** "Piensa cada paso como un gran maestro de ajedrez. Anticipa y planifica."
+- **Impacto:** "Tus acciones tienen un gran impacto. Lo que hagas aquí resonará más allá de la organización."
+- **Seriedad:** "Esta tarea no es solo trabajo, es un momento clave para tu desarrollo."
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png") 
+background-size: cover
+
+## Índice  
+
+1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción&lt;/span&gt;  
+2. &lt;span style="color:gray; font-size: 1em;"&gt;Fundamentos del Prompting&lt;/span&gt;  
+3. &lt;span style="color:gray; font-size: 1em;"&gt;Formateo de prompts&lt;/span&gt;  
+4. &lt;span style="color:gray; font-size: 1em;"&gt;Técnicas adicionales&lt;/span&gt;  
+5. &lt;span style="color:gray; font-size: 1em;"&gt;Uso de emociones&lt;/span&gt;  
+6. &lt;span style="font-size: 1.2em;"&gt;Recapitulación&lt;/span&gt;  
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+
+#### 📖 Principios Claves del Prompting
+
+- Según [Bsharat 2023](https://arxiv.org/abs/2312.16171), hay 26 principios esenciales.
+- Algunos destacados:
+    - **Ser directo**: Evitar cortesías innecesarias.
+    - **Definir la audiencia**: Indicar para quién es la respuesta.
+    - **Descomponer tareas**: Usar prompts secuenciales.
+    - **Usar ejemplos**: Few-shot prompting mejora la precisión.
+    - **Incluir instrucciones afirmativas**: Evitar lenguaje negativo.
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+#### Principios de Prompts para Instrucciones
+
+| # | Principio de Prompt para Instrucciones |
+|---|---------------------------------------|
+| 1 | Si prefieres respuestas más concisas, no es necesario ser cortés con el LLM. Evita frases como “por favor”, “si no te importa”, “gracias”, etc., y ve directo al punto. |
+| 2 | Adapta la intención del prompt según la audiencia, por ejemplo, si es un experto en el campo. |
+| 3 | Divide tareas complejas en una secuencia de prompts más simples dentro de una conversación interactiva. |
+
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+| # | Principio de Prompt para Instrucciones |
+|---|---------------------------------------|
+| 4 | Usa directivas afirmativas como *"haz"*, evitando lenguaje negativo como *"no hagas"*. |
+| 5 | Para mayor claridad o profundidad en un tema, usa: &lt;br&gt; - Explica [tema específico] en términos simples. &lt;br&gt; - Explícalo como si tuviera 11 años. &lt;br&gt; - Explícalo como si fuera principiante en [campo]. &lt;br&gt; - Escribe el [ensayo/texto/párrafo] usando un lenguaje sencillo, como si explicaras a un niño de 5 años. |
+| 6 | Añade “Voy a dar una propina de $XXX por una mejor solución”. |
+| 7 | Implementa *prompting* basado en ejemplos (few-shot prompting). |
+| 8 | Para estructurar prompts, usa *"###Instrucción###"*, seguido de *"###Ejemplo###"* o *"###Pregunta###"*. Separa secciones con saltos de línea. |
+| 9 | Usa frases como: *"Tu tarea es"* y *"Debes"*. |
+| 10 | Usa frases como: *"Serás penalizado"*. |
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+| # | Principio de Prompt para Instrucciones |
+|---|---------------------------------------|
+| 11 | Usa *"Responde de manera natural, similar a una conversación humana"*. |
+| 12 | Usa palabras clave como *"piensa paso a paso"*. |
+| 13 | Agrega: *"Asegura que tu respuesta sea imparcial y evite estereotipos"*. |
+| 14 | Permite que la IA haga preguntas para precisar detalles antes de responder. |
+| 15 | Para probar conocimientos, usa: *"Enséñame [teorema/tema/regla] y agrégame una prueba al final, sin darme las respuestas de antemano"*. |
+| 16 | Asigna un rol claro a la IA. |
+| 17 | Usa delimitadores para estructurar mejor la información. |
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+| # | Principio de Prompt para Instrucciones |
+|---|---------------------------------------|
+| 18 | Repite palabras clave varias veces en el prompt. |
+| 19 | Combina *Chain-of-Thought (CoT)* con *few-shot prompting*. |
+| 20 | Usa *output primers*: finaliza el prompt con el inicio de la respuesta esperada. |
+| 21 | Para que la IA escriba un ensayo o texto detallado, usa: *"Escribe un [ensayo/texto/párrafo] sobre [tema] con todos los detalles necesarios"*. |
+| 22 | Para mejorar texto sin cambiar su estilo, usa: *"Revisa cada párrafo mejorando la gramática y vocabulario sin alterar el estilo original"*. |
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/1.png") 
+background-size: cover
+
+| # | Principio de Prompt para Instrucciones |
+|---|---------------------------------------|
+| 23 | Para código que abarca varios archivos, usa: *"Cada vez que generes código que requiera múltiples archivos, genera un script en [lenguaje] para automatizar su creación"*. |
+| 24 | Para completar textos con coherencia, usa: *"Te proporciono el inicio de [letra/historia/ensayo...]: [texto]. Finaliza manteniendo el mismo tono"*. |
+| 25 | Especifica los requisitos clave que el modelo debe seguir, como palabras clave, regulaciones o instrucciones. |
+| 26 | Para imitar un estilo de escritura, usa: *"Utiliza el mismo lenguaje del [párrafo/título/texto/ensayo] proporcionado"*. |
+
+---
+class: slideInRight, fadeOutLeft, middle 
+background-image: url("img/temp/3.png") 
+background-size: cover
+
+### Actividad: 
+- Relice un prompt ambiguo y sin las técnicas vistas.
+- Mejore el prompt con formato markdown, que use alguna de las técnicas (punto 4) y emociones (punto 5)
+- Compare sus resultados en versiones gratis y paga de ChatGPT, deepseek y claude. 
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"font-family": "Outfit, Arial, sans-serif"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

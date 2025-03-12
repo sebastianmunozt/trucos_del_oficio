@@ -11,7 +11,6 @@ output:
       font-family: "Outfit, Arial, sans-serif"
 
 
-
 ---
 
 
@@ -45,11 +44,16 @@ class: slideInRight, middle
 background-image: url("img/01.gif")
 background-size: cover
 
-<div style="border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; margin: auto; color: black; font-size: 30%;">
+<div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; color: black;">
+  
+  <h2 style="font-size: 100%;">¿Qué es, cómo funciona y cuáles son los sesgos de la IA generativa?</h2>
 
-<h2>¿Qué es, cómo funciona y cuáles son los sesgos de la IA generativa?</h2>
+  <p style="font-size: 80%; margin-top: 10px;">Por: Sebastián Muñoz</p>
 
 </div>
+
+
+
 
 
 
@@ -72,11 +76,11 @@ background-image: url("img/temp/4.png")
 background-size: cover
 ## Índice
 
-1️⃣ <span style="font-size: 1.2em;">Introducción a los LLM</span>  
-2️⃣ <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
-3️⃣ <span style="color:gray; font-size: 1em;">Limitaciones</span>  
-4️⃣ <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
-5️⃣ <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
+1. <span style="font-size: 1.2em;">Introducción a los LLM</span>  
+2.  <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3. <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4.  <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5. <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
  
 
 ---
@@ -152,7 +156,6 @@ class: slideInRight, fadeOutLeft, middle
 Si le decimos a un bebé:  
 > "Uno, dos..."  
 Es probable que responda:  
-> "Tres."  
 
 Los LLM operan de manera similar, **completando oraciones** según el entrenamiento previo.  ]
 
@@ -247,11 +250,11 @@ background-size: cover
 
 ## Índice
 
-1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
-2️⃣ <span style="font-size: 1.2em;">Introducción a ChatGPT</span>  
-3️⃣ <span style="color:gray; font-size: 1em;">Limitaciones</span>  
-4️⃣ <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
-5️⃣ <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
+1. <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2. <span style="font-size: 1.2em;">Introducción a ChatGPT</span>  
+3. <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4. <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5. <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
 
 
 ---
@@ -309,9 +312,13 @@ background-size: cover
   - Mayor costo de procesamiento.  
   
 ---
-class: slideInRight, fadeOutLeft, middle
+class: slideInRight, fadeOutLeft, bottom
+background-image: url("img/7.png")
+background-size: cover
 
-> 💡 **Diferencias clave**: Los modelos más avanzados mejoran la calidad y profundidad de las respuestas, pero pueden ser más lentos y costosos.  
+<div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;">
+💡 **Diferencias clave**: Los modelos más avanzados mejoran la calidad y profundidad de las respuestas, pero pueden ser más lentos y costosos.
+</div>
 
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -331,6 +338,11 @@ background-size: cover
   - Generación de imágenes a partir de texto.  
   - Útil para ilustraciones y contenido gráfico.
 
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/8.png")
+background-size: cover
+
 
 
 ---
@@ -343,7 +355,22 @@ background-size: cover
   - Aplicaciones en accesibilidad y análisis de datos.  
   
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/10.png")
+background-size: cover
 
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/11.png")
+background-size: cover
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/12.png")
+background-size: cover
+
+---
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/3.png")
 background-size: cover
@@ -357,6 +384,17 @@ background-size: cover
   - **Evitar mezclar múltiples temas** en una misma sesión.  
 
 ---
+class: slideInRight, fadeOutLeft, bottom
+background-image: url("img/13.png")
+background-size: cover
+
+<div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;">
+💡 Si cambio de tema es mejor hacerlo en un nuevo chat!
+</div>
+
+
+
+---
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png")
 background-size: cover
@@ -368,6 +406,15 @@ background-size: cover
 
 🔹 **Ejemplo de uso:**  
 Si se desarrolla un proyecto de investigación, se pueden agrupar conversaciones sobre teoría, metodología y análisis en distintas carpetas.  
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/14.png")
+background-size: cover
+
+<div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;">
+💡 En la versión gratuita puedo volver a los chats anteriores, pero no hay desarrollo de proyecto. 
+</div>
 
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -434,11 +481,11 @@ background-image: url("img/temp/4.png")
 background-size: cover
 ## Índice
 
-1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
-2️⃣ <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
-3️⃣ <span style="font-size: 1.2em;">Limitaciones</span>  
-4️⃣ <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
-5️⃣ <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
+1. <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2. <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3. <span style="font-size: 1.2em;">Limitaciones</span>  
+4. <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5. <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
 
 
 ---
@@ -557,9 +604,9 @@ background-size: cover
 
 ## Ejemplo de pérdida de contexto  
 
-1️⃣ **Inicio**: ChatGPT recuerda toda la información.  
-2️⃣ **Conversación larga**: Mantiene el contexto hasta acercarse al límite.  
-3️⃣ **Se supera el límite**: Se olvidan los mensajes más antiguos.  
+1. **Inicio**: ChatGPT recuerda toda la información.  
+2. **Conversación larga**: Mantiene el contexto hasta acercarse al límite.  
+3. **Se supera el límite**: Se olvidan los mensajes más antiguos.  
 
 ➡️ **Solución**: Resumir y reintroducir información clave en la conversación.  
 
@@ -704,12 +751,12 @@ background-size: cover
 
 ---
 
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
 background-size: cover
 
 
-# **¿Preguntas?**  
+# ¿Preguntas? 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
 background-image: url("img/temp/3.png")
@@ -760,23 +807,33 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png")
 background-size: cover
 
-## **4. ChatGPT como herramienta complementaria**  
-
+ 
+.pull-left[
+**4. ChatGPT como herramienta complementaria** 
 - Funciona como un **"cuchillo suizo" de la IA**:  
   - Puede hacer de todo, pero no siempre con la precisión de herramientas especializadas.  
 - No tiene un sistema nativo de verificación de fuentes.  
-- Se recomienda **combinarlo con herramientas académicas** para garantizar precisión.  
+- Se recomienda **combinarlo con herramientas académicas** para garantizar precisión. ]
 
+.pull-right[
+![](img/15.png)]
+
+---
+class: slideInRight, fadeOutLeft, bottom
+background-image: url("img/05.png")
+background-size: cover
+
+### Explora los GTPs como SciSpace o Consensus
 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
 ## Índice
 
-1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
-2️⃣ <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
-3️⃣ <span style="color:gray; font-size: 1em;">Limitaciones</span>  
-4️⃣ <span style="font-size: 1.2em;">Bonus: ChatGPT en celular</span>  
-5️⃣ <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
+1. <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2. <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3. <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4. <span style="font-size: 1.2em;">Bonus: ChatGPT en celular</span>  
+5. <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
 
 
 ---
@@ -812,33 +869,42 @@ background-size: cover
 class: slideInRight, fadeOutLeft, middle, inverse
 ## Índice
 
-1️⃣ <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
-2️⃣ <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
-3️⃣ <span style="color:gray; font-size: 1em;">Limitaciones</span>  
-4️⃣ <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
-5️⃣ <span style="font-size: 1.2em;">Recapitulación y cierre</span>  
+1. <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2. <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3. <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4. <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5. <span style="font-size: 1.2em;">Recapitulación y cierre</span>  
  
 
 ---
 
 
 class: slideInRight, fadeOutLeft, middle
-background-image: url("img/08.gif")
+background-image: url("img/temp/1.png")
 background-size: cover
 
 📌 **Los LLM han cambiado nuestra forma de interactuar con la IA.**  
 📌 **ChatGPT es un tipo de LLM que genera respuestas basadas en patrones aprendidos.**  
 📌 **El crecimiento de los LLM ha mejorado su precisión, pero también ha aumentado su consumo computacional.**  
-📌 **Existen otros modelos como DeepSeek, Copilot y Claude con diferentes enfoques.**  
+📌 **Existen otros modelos como DeepSeek y Claude con diferentes enfoques.**  
 📌 **ChatGPT ofrece diversas funcionalidades avanzadas, incluyendo plug-ins y acceso a información externa.**  
 
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 📌 **El contexto en ChatGPT es clave: el "context length" define cuánto puede recordar en una conversación.**  
 📌 **A pesar de sus ventajas, ChatGPT tiene limitaciones, como alucinaciones, sesgos y respuestas incompletas.**  
 📌 **Existen herramientas complementarias como Scispace y Consensus para validar la información.**  
 📌 **Es fundamental un uso crítico y responsable de ChatGPT en cualquier campo de aplicación.**  
 
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+# Tarea: 
+- Realice una serie de prompts y trate de encontrar limitaciones (contexto), alucinaciones y sesgos, idenfiquelos y muestrelos en clase
 

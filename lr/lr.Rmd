@@ -1,0 +1,520 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom.css"]  # Se añade custom.css aquí
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      font-family: "Outfit, Arial, sans-serif"
+---
+
+
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "black",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"), 
+  base_font_size = "30px", # Ajuste del tamaño global de la fuente
+)
+
+# Crear un archivo CSS para personalizar inverse y citas
+css_code <- "
+.inverse strong { color: #b0b0b0 !important; } /* Texto en negrita en gris */
+.inverse em { color: #b0b0b0 !important; } /* Texto en cursiva en gris */
+.inverse a { color: #b0b0b0 !important; text-decoration: underline; } /* Enlaces en gris */
+.inverse a:hover { color: #d0d0d0 !important; } /* Color más claro al pasar el mouse */
+
+/* 🔹 Citas normales */
+blockquote {
+  color: #555555 !important;  /* Texto en gris oscuro */
+  font-style: italic;
+  font-size: 1.2em;  /* Aumenta el tamaño */
+  border-left: 5px solid #999999; /* Borde lateral gris */
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+/* 🔹 Citas en inverse */
+.inverse blockquote {
+  color: #bbbbbb !important;  /* Texto más claro */
+  border-left: 4px solid #d0d0d0;
+}
+"
+
+writeLines(css_code, "custom.css") # Guarda el CSS en un archivo
+
+
+```
+
+
+
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_share_again()
+
+
+```
+
+
+
+
+
+class: slideInRight, middle, bottom
+background-image: url("img/00.gif")
+background-size: cover
+
+<div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); 
+            background: rgba(255, 255, 255, 0.7); padding: 15px; 
+            border: 3px solid black; border-radius: 10px; text-align: center; width: 80%;">
+
+Revisión bibliográfica potenciada
+
+</div>
+
+---
+
+class: slideInRight, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+## 0. Introducción
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+
+### ¿Qué es una Revisión de Literatura con IA?
+
+- Uso de herramientas de IA para realizar revisiones de literatura.
+- Cambio en la metodología de búsqueda y análisis de artículos científicos.
+- Comparación entre dos enfoques: **La Mentalidad del Detective** vs **La Mentalidad del Coleccionista**.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### La Mentalidad del Coleccionista 📚
+
+- Método tradicional basado en recopilar **todos** los artículos antes de leer.
+- Útil para revisiones sistemáticas de literatura.
+- Riesgo de **sobrecarga de información** y dificultad para organizar ideas.
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+### La Mentalidad del Detective 🕵️‍♂️
+
+- Enfoque basado en **recolectar pistas** en lugar de artículos.
+- Construcción de una lista de lectura con **propósito claro**.
+- Relación entre artículos basada en **conexiones conceptuales**.
+- Estrategias:
+  - Explorar referencias de los artículos.
+  - Identificar literatura relevante **sobre la marcha**.
+  - Uso de IA para explorar conexiones futuras.
+
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Herramientas y Técnicas para Optimizar el Proceso 🛠️
+
+- Las herramientas pueden **ahorrar tiempo**, pero la revisión sigue dependiendo del investigador.
+- **Métodos tradicionales:**
+  - Uso de `Google Scholar` y listas de referencias.
+- **Métodos modernos:**
+  - Uso de herramientas para navegar redes de artículos conectados.
+  - Ejemplo: **Litmaps**.
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Inteligencia Artificial en la Revisión de Literatura 🤖
+
+- La IA amplía el alcance de la búsqueda mediante **frases y textos completos**.
+- Herramientas clave:
+  - **Consensus** y **SciSpace**.
+  - Trataremos de utilizar las alternativas gratuitas
+  
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Caso de Estudio: 
+- Cooperación en canciones de Música Urbana Chilena mediante análisis de redes
+
+
+---
+
+
+class: slideInRight, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+## 1. Paso 1: Comprender el Tema y Encontrar los artículos semilla
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+- **Personalizar ChatGPT** para mejorar la búsqueda de información.
+- **Configurar pautas** para que comprenda el tono y enfoque deseado.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+####¿Qué cualidades debería tener ChatGPT?
+- Las afirmaciones y opiniones que cites deben estar respaldadas por referencias a fuentes publicadas. No inventes ninguna fuente. Si no conoces una fuente, simplemente dime que no conoces ninguna fuente relevante.
+- Para el caso de los papers, responde con un estilo de redacción formal, profesional y académico, con explicaciones exhaustivas y excluyendo la redacción innecesaria; ve siempre directo al grano.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+#### ¿Algo más que ChatGPT deba saber sobre ti?
+Soy un investigador posdoctoral. Mi principal rol es realizar investigación sobre música, sociología cultural, análisis de redes sociales y antropología cultural. Escribo papers académicos con el objetivo de publicar en revistas especializadas, posteos de Instagram para difundir mi investigación en un público amplio en el instagram rap y tecnologías y, finalmente, lo utilizo para traducciones de textos. Mi audiencia principal para los papers son académicos de sociología de la cultura y las artes. Pensando también en las revistas Cultural Sociology y Poetics u otras revistas sobre sociología de la cultura, musicología o antropología cultural indexadas en Wos o Scopus.
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- **Tipos de búsqueda:**
+  - **Lexical (Google):** basada en palabras clave.
+  - **Semántica (IA):** basada en temas y conexiones conceptuales.
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+### **Estrategia 1: Dirección en la Búsqueda de Temas con asistencia de IA**
+
+- Explorar nuevos temas.
+- Conectar conceptos entre sí.
+- Identificar direcciones de investigación.
+- Encontrar palabras clave útiles (para luego hacer búsqueda léxica)
+
+> **Mapa mental:** Ayuda a orientar la dirección de la investigación.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### Preguntas Clave para ChatGPT
+
+1. **Teorías y metodologías**
+
+   - ¿Cuáles son las principales teorías sobre X en Y disciplina?
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- teorías sobre colaboración artística en ciencias sociales
+
+```markdown
+### ROL
+Estudiante de posdoctorado que va escribir un artículo en una revista WOS o Scopus. 
+
+###CONTEXTO
+Revisión bibliográfica para un artículo sobre colaboración en canciones en música urbana chilena, mediante análisis de redes sociales. 
+
+### INSTRUCCIÓN
+- ¿Cuáles son las principales teorías sobre la colaboración artística en ciencias sociales?
+- Razona paso a paso. 
+- Debes tener la precisión de un joyero y no equivocarte en las referencias. 
+```
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+> Vayan probando estas formas con Claude y DeepSeek
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- teorías sobre colaboración artística en etnomusicología
+
+```markdown
+### ROL
+Estudiante de posdoctorado que va escribir un artículo en una revista WOS o Scopus. 
+
+###CONTEXTO
+Revisión bibliográfica para un artículo sobre colaboración en canciones en música urbana chilena, mediante análisis de redes sociales. 
+
+### INSTRUCCIÓN
+- ¿Cuáles son las principales teorías sobre la colaboración artística en etnomusicología?
+- Razona paso a paso. 
+- Debes tener la precisión de un joyero y no equivocarte en las referencias.
+```
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+```markdown
+¿Qué otras disciplinas me recomiendas para estudiar el tema que te he planteado?
+
+```
+- Me sugirió economía de la cultura
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- diagrama comparativo
+
+```markdown
+### INSTRUCCIÓN
+"Genera una tabla comparativa detallada sobre las principales teorías que explican la colaboración artística en la música urbana desde distintas disciplinas (ciencias sociales y etnomusicología ). Para cada teoría, incluye los siguientes elementos:
+
+### OUTPUT
+- Nombre de la teoría y autor/a (con año de publicación).
+- Conceptos principales (definir brevemente qué postula cada teoría sobre la colaboración artística).
+- Énfasis teórico (¿En qué aspectos se centra? ¿Pone énfasis en redes, poder, industria, autenticidad, mediación, improvisación, etc.?).
+- Similitudes con otras teorías (¿Con qué otras perspectivas guarda relación y en qué coinciden?).
+- Diferencias con otras teorías (¿En qué se distancia de otras perspectivas y cuál es su aporte distintivo?).
+- Keywords esenciales (para facilitar la búsqueda y categorización de información en bibliografía y bases de datos). Entregamelas en inglés.
+
+### INPUT: 
+
+```
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- Le pido que me la entregue en `excel` y subrayo elementos que me parecen relevantes para hacer un mapa mental de las principales tendencias
+- Destaco **keywords** que me servirán para construir una búsqueda léxica más específica. 
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- teorías sobre la clasificación de los géneros musicales
+
+```markdown
+### ROL
+Estudiante de posdoctorado que va escribir un artículo en una revista WOS o Scopus. 
+
+###CONTEXTO
+Revisión bibliográfica para un artículo sobre colaboración en canciones en música urbana chilena, mediante análisis de redes sociales. 
+
+### INSTRUCCIÓN
+- ¿Cuáles son las principales teorías sobre la producción de géneros musicales en las ciencias sociales y la musicología?
+- Razona paso a paso. 
+- Debes tener la precisión de un joyero y no equivocarte en las referencias.
+```
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- no me dio un muy buen resultado 
+
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- le pedí que sea más específico: 
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+   - ¿Qué metodologías se han utilizado para estudiar X?
+
+```markdown
+###CONTEXTO
+Revisión bibliográfica sobre análisis de redes sociales y música urbana. 
+
+### INSTRUCCIÓN
+¿Cuáles son las principales metodologías sobre la colaboración artística en ciencias sociales?
+```
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Perfilar un primer mapa mental de la discusión bibliográfica. 
+- Recomendación: https://www.drawio.com/
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+1. **Desafíos y debates**
+   - ¿Cómo se discute el concepto de X en la literatura académica?
+
+2. **Testeo de hipótesis**
+   - Introducir un texto propio y pedir generación de hipótesis.
+
+3. **Ejemplos y casos**
+   - Proporcionar ejemplos y resultados relevantes.
+
+4. **Explicaciones detalladas**
+   - Solicitar descripciones y explicaciones de conceptos clave.
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## ChatGPT como Herramienta de Investigación
+
+- Facilita la **exploración inicial** de temas en distintas disciplinas y enfoques.
+- **Personalización de respuestas** mejora la precisión académica.
+- **Búsqueda semántica** proporciona resultados más contextuales.
+- Asiste en:
+  - **Generación de hipótesis**
+  - **Testeo de viabilidad**
+  - **Obtención de ejemplos y evidencia**
+  - **Interpretación de datos**
+- Su integración con dispositivos móviles y herramientas de notas mejora la eficiencia.
+
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### **Estrategia 2: Búsqueda Semántica**
+
+- Identificar **artículos semilla** sobre nuevos temas.
+- Solicitar **evidencia** para una afirmación.
+- Buscar **citas y referencias** para respaldar un argumento.
+- Obtener una base de investigación inicial.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### ¿De qué trata la búsqueda Semántica?
+
+- Identificar **artículos iniciales** (semillas) sobre nuevos temas.
+- Buscar **evidencias y citas** para responder preguntas de investigación.
+- ChatGPT ofrece respuestas, pero **no proporciona artículos científicos** (riesgo de errores, invenciones o alucionaciones).
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Herramienta: SciSpace
+
+- Plataforma: [https://typeset.io/](https://typeset.io/)
+- Pasos:
+  - Realizar una **pregunta general**.
+  - Personalizar **columnas de búsqueda**.
+  - Explorar la opción **Artículos Relacionados**.
+  - Se recomienda **evitar preguntas directas** en textos centrales.
+---
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Herramienta: Consensus
+
+- Plataforma: [https://consensus.app/](https://consensus.app/)
+- Pasos:
+  - Ingresar una **pregunta de investigación**.
+  - Encuentra **artículos centrales** y relevantes.
+  - Permite obtener **respuestas rápidas** a preguntas de tipo sí/no.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Organización y Gestión
+
+- **Usar Zotero** u otro gestor de referencias para organizar la revisión de literatura.
+- **Crear carpetas dedicadas** para clasificar los artículos encontrados.
+- Comparar los resultados de **SciSpace** y **Consensus** para un análisis más preciso.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Integración con ChatGPT
+
+- Utilizar **ChatGPT Store** para consolidar búsquedas y discusiones.
+- **Intercambiar entre múltiples GPTs** dentro de una sola conversación:
+  - Escribir `@` seguido del nombre del GPT para cambiar entre modelos.
+- Mejorar la eficiencia en la búsqueda y análisis de literatura científica.
+
+

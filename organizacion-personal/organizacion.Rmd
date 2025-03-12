@@ -1,0 +1,629 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom.css"]  # Se añade custom.css aquí
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      font-family: "Outfit, Arial, sans-serif"
+---
+
+
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "black",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"), 
+  base_font_size = "30px", # Ajuste del tamaño global de la fuente
+)
+
+# Crear un archivo CSS para personalizar inverse y citas
+css_code <- "
+.inverse strong { color: #b0b0b0 !important; } /* Texto en negrita en gris */
+.inverse em { color: #b0b0b0 !important; } /* Texto en cursiva en gris */
+.inverse a { color: #b0b0b0 !important; text-decoration: underline; } /* Enlaces en gris */
+.inverse a:hover { color: #d0d0d0 !important; } /* Color más claro al pasar el mouse */
+
+/* 🔹 Citas normales */
+blockquote {
+  color: #555555 !important;  /* Texto en gris oscuro */
+  font-style: italic;
+  font-size: 1.2em;  /* Aumenta el tamaño */
+  border-left: 5px solid #999999; /* Borde lateral gris */
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+/* 🔹 Citas en inverse */
+.inverse blockquote {
+  color: #bbbbbb !important;  /* Texto más claro */
+  border-left: 4px solid #d0d0d0;
+}
+"
+
+writeLines(css_code, "custom.css") # Guarda el CSS en un archivo
+
+
+```
+
+
+
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_share_again()
+
+
+```
+
+
+
+class: slideInRight, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+## GTD y MakeTime: Dos formas de administrar tu tiempo
+
+
+---
+class: slideInRight, middle, bottom
+background-image: url("img/pomodoro.gif")
+background-size: cover
+
+<div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); 
+            background: rgba(255, 255, 255, 0.7); padding: 15px; 
+            border: 3px solid black; border-radius: 10px; text-align: center; width: 80%;">
+
+¿Cuáles son sus principales estrategias para ordenar su tiempo en la universidad y la vida cotidiana?
+
+</div>
+
+
+---
+class: slideInRight, fadeOutLeft, inverse
+background-image: url("img/1.png")
+background-size: cover
+
+.pull-left[
+## El problema
+
+- ¿Cómo gestionar el tiempo en el mundo académico?
+- Horas dedicadas al estudio, horas dedicada a las redes sociales, hora dedicadas al ocio. 
+- saber priorizar y cómo hacerlo.
+
+
+> "La anarquía es la más alta expresión del orden". Éliseo Reclus
+
+]
+
+
+
+---
+
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+## Índice  
+
+1. <span style="font-size: 1.2em; font-weight: bold;">Bases y Principios de la gestión personal</span>  
+2. <span style="color:gray; font-size: 1em;">Tipos de acciones</span>  
+3. <span style="color:gray; font-size: 1em;">Los 'lazers': momentos de concentración</span>  
+4. <span style="color:gray; font-size: 1em;">Mantener y recargas enegergía</span>  
+5. <span style="color:gray; font-size: 1em;">Reflexión</span>  
+6. <span style="color:gray; font-size: 1em;">Recapitulación</span>
+
+
+
+---
+class: inverse, animated, slideInRight,  middle
+background-image: url("img/2.png")
+background-size: cover
+
+
+.pull-left[
+
+### 1. Bases y Principios de la gestión personal
+#### 1.1 GTD: "Getting Things Done"]
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+##### *Un sistema para la productividad sin estrés*.
+
+- **Objetivo**: Mantener la *mente despejada* para enfocar la atención en las tareas importantes.
+- **Tres pilares fundamentales**:
+  - Capturar todo lo que necesita atención.
+  - Tomar decisiones sobre las acciones necesarias.
+  - Organizar el trabajo de manera clara y sistemática.
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+- Todo muy gringo
+> _David Allen (nacido el 28 de diciembre de 1945) es consultor e instructor de productividad. Es el creador de **Getting Things Done (GTD)**, un método de productividad personal...Su carrera profesional incluye trabajos como mago, camarero, instructor de karate, instructor de desarrollo personal y gerente de una agencia de viajes. El asegura haber tenido 35 profesiones antes de tener 35 años._
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+### Disclaimer sociológico
+  
+  
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### 1.1.1 Los pasos del Método GTD
+
+- **Capturar**: Recoger todo lo que requiere acción en una *bandeja de entrada*.
+- **Clarificar**: Decidir qué hacer con cada tarea.
+- **Organizar**: Clasificar las tareas y proyectos según su *importancia*.
+- **Reflexionar**: Revisar frecuentemente el sistema para mantenerlo actualizado.
+- **Actuar**: Ejecutar las tareas más relevantes de manera efectiva.
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+#### 1.1.3. El paso clave - Capturar
+
+- **Importancia de Capturar**:
+  - *Liberar la mente* de compromisos pendientes.
+  - Crear un sistema confiable para almacenar toda la información.
+- **Herramientas para Capturar**:
+  - Uso de bandejas de entrada, cuadernos, aplicaciones digitales: TickTick, Mail, Whatsapp
+
+> Todo lo que necesita atención debe estar fuera de la cabeza.
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+#### 1.1.4. Clarificación y Organización
+
+- Clarificar:
+  - Cada tarea debe ser procesada y asignada a una acción clara.
+  - Preguntas clave: ¿Es accionable? ¿Se puede hacer en **menos de dos minutos**?
+- Organización:
+  - Agrupar tareas en listas según su contexto o prioridad.
+  - Crear un sistema donde sea fácil acceder a lo que se debe hacer en cada momento.
+  
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### 1.1.5. Acción y Reflexion
+
+- **Acción**:
+  - Decidir qué hacer en cada momento basado en el contexto, el tiempo disponible y la energía.
+  - Priorizar las tareas más importantes y actuar de manera eficiente.
+- **Reflexión**:
+  - Revisión semanal del sistema para asegurarse de que esté actualizado.
+  - Ajustar prioridades y mantener el control.  
+  
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/gtd.png")
+background-size: cover
+
+  
+  
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+#### 1.1.6. Tips
+
+
+- **Regla de los dos minutos**: Si una tarea se puede hacer en menos de dos minutos, hazla de inmediato.
+- **Divide grandes proyectos en pasos**: Desglosa tareas grandes en acciones concretas y manejables: e.g. no anote en las tareas "hacer la tesis", sino más bien "buscar textos de bibliografía", "leer textos de bibliografía", "sistematizar bibliografía". 
+- **Revisión semanal**: Dedica tiempo cada semana para revisar tus tareas, organizar tu sistema y ajustar prioridades: ponerse un dia para ordenarse, por ejemplo, el domingo. 
+- **Contextos**: Organiza las tareas por contexto (en casa, en la oficina, llamadas) para facilitar su ejecución según las circunstancias.
+- **Mantén tus listas simples**: Evita listas sobrecargadas y mantén solo lo esencial para que no te abrumen.
+
+---
+class: inverse, animated, slideInRight, middle
+background-image: url("img/3.png")
+background-size: cover
+
+
+
+.pull-left[
+
+### 1.2 Make Time: "Como enfocarte en lo que importa cada día" - Knapp y Zeratski]
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### Jake Knapp:
+Experiencia: Es conocido por haber desarrollado el proceso de **Design Sprint** durante su tiempo en **Google Ventures**. Este método permite a equipos resolver problemas y probar ideas en solo cinco días. Trabajó en productos icónicos como Gmail y Google Hangouts.
+Enfoque: Su trabajo se centra en cómo **diseñar hábitos y sistemas que mejoren la productividad** y el enfoque personal, basándose en su experiencia en empresas tecnológicas donde la distracción es común.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+#### John Zeratsky:
+Experiencia: También fue socio de **Google Ventures**, donde trabajó en la implementación de **Design Sprints**. Antes de eso, desempeñó un papel clave como diseñador en empresas de tecnología como YouTube y Google.
+Enfoque: Zeratsky se ha especializado en optimizar la manera en que las personas **interactúan con la tecnología** para mejorar su concentración y enfoque. Sus ideas se basan en cómo las distracciones digitales afectan la productividad y cómo contrarrestarlas de manera efectiva.]
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+
+.pull-left[
+##### ¿Se sienten que les falta el tiempo?
+##### ¿Se sienten muy distraídos con las RRSS y las notificaciones?
+]
+
+.pull-right[
+![](img/01.png)
+]
+
+---
+
+#### 1.2.1 Modos y propuestas
+
+##### **Modos predeterminados**:
+- **Club de los ajetreados**: creencia de que nunca hay tiempo y debes estar siempre ocupado.
+- **Piscinas infinitas**: distracciones constantes de aplicaciones y contenido sin fin.
+##### **Propuesta de Make Time**:
+- No ahorrar tiempo, sino ganar tiempo para *lo que te importa*.
+- Controlar la atención y crear tus propios *"ajustes predeterminados"*.
+  
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+#### 1.2.2 El Método de Make Time
+
+##### Cuatro pasos clave:
+  - **Prioridad**: Escoge una *tarea diaria* (highlight) que sea importante para ti.
+  - **Láser**: Mantente enfocado en tu Prioridad y evita distracciones.
+  - **Energía**: Recarga tu cuerpo para mantener una atención efectiva (comida, ejercicio, sueño, dar  un paseo).
+  - **Reflexión**: Revisa cómo te fue al final del día y ajusta para mejorar.
+  
+  
+---
+
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+> La perfección es una distracción —otro objeto brillante que aleja nuestra atención de las prioridades verdaderas. 
+
+---
+
+background-image: url("img/7.png")
+background-size: cover
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### 1.2.3. Paso 1: Prioridad
+
+- **Definir Prioridad del día**
+  - ¿Qué es lo más importante que tengo que si o si hacer hoy?
+  - ¿Qué actividad o logroserá significativo?
+- **Criterios para elegir una Prioridad**:
+  - **Urgencia**: ¿Qué es lo más importante que debes hacer hoy?
+  - **Satisfacción**: ¿Qué actividad te dará mayor sentido de logro?
+  - **Alegría**: ¿Qué te hará feliz hoy?
+  
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+### Actividad: 
+- ¿Cómo priorizas?
+- Recomendación https://ticktick.com/ (en computador y celular)
+
+  
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+#### 1.2.4. Paso 2: Lázer (Enfoque)
+
+- **Elimina distracciones**: 
+  - Las redes sociales, correos y aplicaciones son las principales distracciones.
+  - Usa tácticas para **mantenerte enfocado**:
+    - Apaga notificaciones del celular y en el computador.
+    - Configura tiempos para revisar correos y redes. No los revises todo el tiempo. 
+    - Crea un ambiente de trabajo sin interrupciones.
+- **Desconexión intencional**: Aprende a decir "no" y bloquea espacios de tiempo solo para tu Prioridad.
+  
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- Elige un pomodoro (25m. focus - 5m. descanso, 50m. focus -10m. descanso)
+- Recomendación: **https://app.endel.io/**
+
+- Ve cuántos pomodoros puedes hacer según el día. 
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+### Actividad: 
+-Describe tus lugares de concentración, cómo se rompen y qué podrías hacer para evitar distraerte. 
+  
+  
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### 1.2.5.  Paso 3 y 4 – Energía y Reflexión
+- **Energía**:
+  - Cuidar el cuerpo para mantener la concentración.
+  - Prácticas recomendadas: ejercicios cortos, buena alimentación, descanso adecuado.
+- **Reflexión**:
+  - Al final del día, evalúa:
+  - ¿Lograste trabajar en tu Prioridad?
+  - ¿Qué distracciones tuviste? ¿Cómo mejorarás mañana?
+  - Ajusta las tácticas según lo que mejor funcione para ti.
+  
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+1. <span style="color:gray; font-size: 1em;">Bases y Principios de la gestión personal</span>  
+2. <span style="font-size: 1.2em; font-weight: bold;">Tipos de acciones</span>  
+3. <span style="color:gray; font-size: 1em;">Los 'lazers': momentos de concentración</span>  
+4. <span style="color:gray; font-size: 1em;">Mantener y recargas enegergía</span>  
+5. <span style="color:gray; font-size: 1em;">Reflexión</span>  
+6. <span style="color:gray; font-size: 1em;">Recapitulación</span>
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+
+### 2.1 Grandes proyectos
+- Listas a largo plazo
+- Listas algún día
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### En términos concretos 
+
+- Hago esas **listas**: 
+  - ¿Que quiere/tiene que hacer en el año?
+- Organizo un **calendario**: 
+  - recomendación: **https://www.cuandoenelmundo.com/calendario/pdf/anual-tabla**
+  - los hitos: laborales, académicos, profesionales
+  - baje, imprima y pegue el calendario en un lugar donde lo vea!
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+#### Actividad
+- Baje los materiales
+- Anote sus prioridades del año: por ejemplo: aprender inglés, terminar x curso.
+- Anote las actividades más importantes del año
+- Pegue ese calendario en un lugar que lo pueda ver. 
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### 2.2 Tareas recurrentes
+- Hago mi horario!
+- Posiciono **actividades habituales** imperativas
+- Posiciono actividades que **quiero que sean habituales**
+- Incluya tiempos de **desplazamiento**
+- Incluya ayuda a familiares y todo lo que estime conveniente
+- Sea realista
+- **Bloquee horarios!** (para estudio, ocio)
+
+> Unx trabajadorx trabaja 8 horas diarias, en otros países 6. 
+> ¿Usted cuánto puede "trabajar" incluyendo el tiempo que va a clases?  
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/22.png")
+background-size: cover
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+### Actividad: 
+- Lleve sus tareas a google calendar: escritorio y celular
+
+---
+
+background-image: url("img/4.png")
+background-size: cover
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+### 2.3. Los deadlines: la agenda
+- Lo que tiene si o si una fecha límite
+- Llévelos a google calendar
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### 2.4 Las tareas
+- No tienen necesariamente fecha límite, pero pueden ser partes de un proyecto mayor 
+- Uso de TikTik: https://ticktick.com/
+- Establecer la prioridad del día
+- Utilizar acciones
+- Desagregue en acciones concretas como verbos: comprar pasta de dientes, buscar lentes, etcétera. 
+
+
+
+---
+background-image: url("img/8.png")
+background-size: cover
+
+---
+background-image: url("img/5.png")
+background-size: cover
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+#### Actividad 
+En `ticktick` (alternativa puede ser `notion`, o `todolist`), puede organizar en tags de tres tipos de actividad: 
+1. Acción próxima: la tengo que hacer lo antes posible.
+2. En espera: no tiene fecha límite cercana, pero hay que hacerla.
+3. En algún momento: no tiene fecha límtie clara. 
+
+- La actividad "Acción próxima" puede ponerle *Priority* red (que es la más importante)
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### Actividad 
+
+- Ordenar el mail con etiquetas: @acción próxima, @en_espera, @referencia_académica, @gestion_personal
+- Ordenar whatsapp: archivar lo resuelto
+- Otras cosas: directamente a TickTick
+
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+
+1. <span style="color:gray; font-size: 1em;">Bases y Principios de la gestión personal</span>  
+2. <span style="color:gray; font-size: 1em;">Tipos de acciones</span>  
+3. <span style="font-size: 1.2em; font-weight: bold;">Los 'lazers': momentos de concentración</span>  
+4. <span style="color:gray; font-size: 1em;">Mantener y recargar energía</span>  
+5. <span style="color:gray; font-size: 1em;">Reflexión</span>  
+6. <span style="color:gray; font-size: 1em;">Recapitulación</span>  
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+- Olauncher en smartphone
+- Uso técnica Pomodoro
+- Uso de música para concentrarse:
+  - Binaural beats: https://www.youtube.com/watch?v=wgcszZNaCfo&list=PLt-P_DkeQXb9s1QBqGt2P1xFyIVQXqLsK
+  - Ambient: https://open.spotify.com/playlist/12lPxwl1SVPlZ8LPO6ECHa
+  - Endel: https://app.endel.io/
+  
+---
+
+background-image: url("img/9.png")
+background-size: cover
+  
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+1. <span style="color:gray; font-size: 1em;">Bases y Principios de la gestión personal</span>  
+2. <span style="color:gray; font-size: 1em;">Tipos de acciones</span>  
+3. <span style="color:gray; font-size: 1em;">Los 'lazers': momentos de concentración</span>  
+4. <span style="font-size: 1.2em; font-weight: bold;">Mantener y recargar energía</span>  
+5. <span style="color:gray; font-size: 1em;">Reflexión</span>  
+6. <span style="color:gray; font-size: 1em;">Recapitulación</span>  
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+
+- Identificar si soy nocturno, diurno: ¿Cuándo rindo más?
+- Uso de café, te, mate, chocolate (30 minutos después!)
+- Siesta
+- Buena alimentación
+- Deporte
+- Meditación
+- Vida Social y tiempo de ocio
+
+---
+background-image: url("img/20.png")
+background-size: cover
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/21.png")
+background-size: cover
+
+.pull-left[
+#### 8. Reflexión y experimentación]
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/tempo/4.png")
+background-size: cover
+
+#### Recapitulación
