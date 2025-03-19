@@ -101,6 +101,8 @@ A continuación, encontrarás los textos disponibles para el curso:
 
 bibliografia/Alavarez.pdf
 
+- [📄 Ahrens-2020.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Ahrens-2020.pdf)
+- [📄 Allen-2015.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Allen-2015.pdf)
 - [📄 Alvarez.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Alavarez.pdf)
 - [📄 Bauman2017.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Bauman2017.pdf)
 - [📄 Becker2011.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Becker2011.pdf)
@@ -112,6 +114,7 @@ bibliografia/Alavarez.pdf
 - [📄 Geertz1989.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Geertz1989.pdf)
 - [📄 Heker2019.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Heker2019.pdf)
 - [📄 Jablonka.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Jablonka.pdf)
+- [📄 Knapp.epub](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Knapp.epub)
 - [📄 Sennet.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Sennet.pdf)
 - [📄 Sirimarco.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Sirimarco.pdf)
 - [📄 Wright1959.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Wright1959.pdf)
