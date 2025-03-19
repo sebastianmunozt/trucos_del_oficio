@@ -88,7 +88,7 @@ organizacion-personal/organizacion.html
 - 🔗 [**Endel**](https://endel.io/): Aplicación que crea paisajes sonoros personalizados en tiempo real para mejorar la concentración, relajación y sueño.
 - 🔗 [**Zotero**](https://www.zotero.org): Gestor de referencias bibliográficas gratuito que ayuda a recopilar, organizar y citar fuentes de investigación.
 - 🔗 [**AudioPen**](https://audiopen.ai/): Aplicación que convierte notas de voz en texto editable, facilitando la transcripción y organización de ideas.
-- 🔗 [**Sci-Space**](https://sci-space.org/): Plataforma que facilita el descubrimiento y acceso a literatura científica relevante mediante herramientas de búsqueda avanzadas.
+- 🔗 [**Sci-Space**](https://scispace.com/): Plataforma que facilita el descubrimiento y acceso a literatura científica relevante mediante herramientas de búsqueda avanzadas.
 - 🔗 [**Consensus**](https://consensus.app/): Motor de búsqueda impulsado por IA que proporciona respuestas basadas en evidencia científica, extrayendo conclusiones de artículos de investigación.
 - 🔗 [**Litmaps**](https://www.litmaps.com/): Herramienta que acelera la revisión de literatura al descubrir rápidamente artículos relevantes y visualizar conexiones entre ellos.
 - 🔗 [**Obsidian**](https://obsidian.md/): Aplicación de toma de notas basada en Markdown que permite gestionar información de manera interconectada mediante un sistema de grafos.
