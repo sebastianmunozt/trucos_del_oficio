@@ -93,7 +93,7 @@ background-size: cover
 
 
 ### ¿Qué es la Ingeniería de Prompt?
-- Disciplina enfocada en el **desarrollo y optimización de prompts** para modelos de lenguaje (LLM).
+- Disciplina enfocada en el **desarrollo y .red[optimización] de prompts** para modelos de lenguaje (LLM).
 - Mejora la interacción con modelos de IA en tareas como **responder preguntas, generar texto y razonamiento aritmético**.
 - Aplicada en **investigación** y **desarrollo de aplicaciones avanzadas**.
 
@@ -118,7 +118,7 @@ background-image: url("img/temp/4.png")
 background-size: cover
 
 - Abran sus cuentas de ChatGPT
-- Vayan haciéndolo en sus propias cuentas de ChatGPT
+- Vayan haciéndo estos ejercicios en sus propias cuentas de ChatGPT
 
 ---
 class: slideInRight, fadeOutLeft
@@ -140,7 +140,7 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png") 
 background-size: cover
 
-```
+```markdown
 ### Contexto
 Curso de escritura creativa en magister de poesía
 
@@ -159,7 +159,7 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png") 
 background-size: cover
 
-```
+```markdown
 ### Ejemplo
 BLUE
 
@@ -214,7 +214,7 @@ background-size: cover
 ##### Salida
 
 ```
-El cielo es
+El cielo 
 El cielo es un potrero de nubes gastadas,
 los álamos altos sus cercos de humo.
 El viento lo arrea con manos callosas,
@@ -244,8 +244,8 @@ background-size: cover
 - **Contexto**: Información relevante adicional.
 - **Rol**: Como quieres que actúe y con quién (tu audiencia)
 - **Instrucción**: Lo que queremos que haga el modelo.
-- **Datos de entrada**: La pregunta o texto a analizar.
-- **Indicador de salida**: Formato o tipo de respuesta esperada.
+- **Datos de entrada - Input**: La pregunta o texto a analizar.
+- **Indicador de salida - Output**: Formato o tipo de respuesta esperada.
 -- **Ejemplos**: De otro tipo de salidas que gustaría que la tuya refiera.
 
 ---
@@ -291,6 +291,11 @@ background-size: cover
 
 📌 **Entonces:**
 Cuanto más clara sea la instrucción, más preciso será el resultado.
+
+- Pero no siempre es necesario poner todo lo anterior. 
+- Si la instrucción es compleja se recomienda mayor precisión.
+- Luego de tal instrucción compleja unx puede ir iterando (preguntando y volviendo a preguntar)
+- Finalmente, cuándo estés conforme puedes pedirle que te resuma todas las instrucciones en un nuevo prompt y puedes guardar ese prompt. 
 
 
 
@@ -832,6 +837,13 @@ background-size: cover
     - 📌 Respuestas más largas cuando se ofrece una recompensa ([fuente](https://twitter.com/voooooogel/status/1730726744314069190)).
     - ❄️ Respuestas más cortas en invierno, sugiriendo "depresión estacional" ([fuente](https://arstechnica.com/information-technology/2023/12/is-chatgpt-becoming-lazier-because-its-december-people-run-tests-to-find-out/)).
     - 🧘‍♂️ Mejor desempeño cuando se le dice "respira hondo y analiza paso a paso" ([fuente](https://arstechnica.com/information-technology/2023/09/telling-ai-model-to-take-a-deep-breath-causes-math-scores-to-soar-in-study/)).
+
+---
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ehkECk2KJjY?start=150" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 ---
 class: slideInRight, fadeOutLeft, middle
