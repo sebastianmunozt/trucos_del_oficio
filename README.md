@@ -99,7 +99,7 @@ organizacion-personal/organizacion.html
 
 A continuación, encontrarás los textos disponibles para el curso:
 
-bibliografia/Alavarez.pdf
+
 
 - [📄 Ahrens-2020.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Ahrens-2020.pdf)
 - [📄 Allen-2015.pdf](https://sebastianmunozt.github.io/trucos_del_oficio/bibliografia/Allen-2015.pdf)
