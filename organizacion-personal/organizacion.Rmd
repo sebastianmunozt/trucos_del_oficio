@@ -528,8 +528,9 @@ class: slideInRight, fadeOutLeft, middle, inverse
 background-image: url("img/temp/4.png")
 background-size: cover
 
-#### Actividad 
-En `ticktick` (alternativa puede ser `notion`, o `todolist`), puede organizar en tags de tres tipos de actividad: 
+#### Actividad 1
+
+En **ticktick** (alternativa puede ser **notion**, o **todolist**), puede organizar en tags de tres tipos de actividad: 
 1. Acción próxima: la tengo que hacer lo antes posible.
 2. En espera: no tiene fecha límite cercana, pero hay que hacerla.
 3. En algún momento: no tiene fecha límtie clara. 
@@ -542,7 +543,7 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png")
 background-size: cover
 
-#### Actividad 
+#### Actividad 2
 
 - Ordenar el mail con etiquetas: @acción próxima, @en_espera, @referencia_académica, @gestion_personal
 - Ordenar whatsapp: archivar lo resuelto
@@ -571,11 +572,11 @@ background-size: cover
 
 
 - Olauncher en smartphone
-- Uso técnica Pomodoro
+- Uso técnica Pomodoro: Endel: https://app.endel.io/
 - Uso de música para concentrarse:
   - Binaural beats: https://www.youtube.com/watch?v=wgcszZNaCfo&list=PLt-P_DkeQXb9s1QBqGt2P1xFyIVQXqLsK
   - Ambient: https://open.spotify.com/playlist/12lPxwl1SVPlZ8LPO6ECHa
-  - Endel: https://app.endel.io/
+
   
 ---
 
@@ -626,4 +627,61 @@ class: slideInRight, fadeOutLeft, middle, inverse
 background-image: url("img/tempo/4.png")
 background-size: cover
 
-#### Recapitulación
+
+## Recapitulación: Gestión del Tiempo
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+- **Desafío**: Cómo administrar el tiempo de forma eficiente.
+- **Métodos principales**:
+  - **GTD (Getting Things Done)**: Captura, Clarifica, Organiza, Reflexiona y Actúa.
+  - **Make Time**: Priorizar, Lazer (focalizar), Reflexionar, Energía (Recargar).
+- **Herramientas clave**:
+  - Pomodoro, TickTick, Google Calendar, Horario, Plan Anual, Metas
+  - Eliminación de distracciones digitales y uso de música de concentración.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+## Claves para una Gestión Efectiva
+
+- **Definir prioridades**: Elegir la tarea clave del día.
+- **Evitar distracciones**: Controlar notificaciones y uso de redes.
+- **Optimizar energía**:
+  - Alimentación, descanso, ejercicio y pausas activas.
+  - Reconocer los momentos de mayor rendimiento personal.
+- **Revisión y ajuste**:
+  - Reflexionar sobre la productividad y hacer mejoras continuas.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+## Acciones Concretas
+
+- **Organizar tareas y proyectos**:
+  - Usar listas de acción próxima, en espera y a largo plazo.
+  - Implementar un calendario visible y realista.
+- **Crear hábitos efectivos**:
+  - Establecer rutinas y bloquear horarios específicos.
+  - Usar técnicas como Pomodoro para mejorar la concentración.
+- **Evaluar y ajustar**:
+  - Revisar cada semana y adaptar estrategias según lo que funcione mejor.
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+## Tarea
+
+- Muestre su sistema de organización adaptado a lo visto en clases:
+1. Momento de focus (Pomodoro, Música)
+2. Selección de prioridad (TickTick)
+3. Ordenar Deadlines y Horarios (Google Calendar y Horario)
+4. Plan Anual (Lista larga)

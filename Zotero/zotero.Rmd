@@ -1,10 +1,7 @@
-
 ---
-title: "Taller Zotero para la gestión bibliográfica"
-author: "Sebastián Muñoz-Tapia"
 output:
   xaringan::moon_reader:
-    css: xaringan-themer.css
+    css: ["xaringan-themer.css", "custom.css"]  # Se añade custom.css aquí
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
@@ -17,17 +14,43 @@ output:
 
 
 
-
-
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanExtra)
 library(xaringanthemer)
 style_mono_accent(
-  base_color = "#1c5253",
+  base_color = "black",
   header_font_google = google_font("Josefin Sans"),
   text_font_google   = google_font("Montserrat", "300", "300i"),
-  code_font_google   = google_font("Fira Mono")
+  code_font_google   = google_font("Fira Mono"), 
+  base_font_size = "30px", # Ajuste del tamaño global de la fuente
 )
+
+# Crear un archivo CSS para personalizar inverse y citas
+css_code <- "
+.inverse strong { color: #b0b0b0 !important; } /* Texto en negrita en gris */
+.inverse em { color: #b0b0b0 !important; } /* Texto en cursiva en gris */
+.inverse a { color: #b0b0b0 !important; text-decoration: underline; } /* Enlaces en gris */
+.inverse a:hover { color: #d0d0d0 !important; } /* Color más claro al pasar el mouse */
+
+/* 🔹 Citas normales */
+blockquote {
+  color: #555555 !important;  /* Texto en gris oscuro */
+  font-style: italic;
+  font-size: 1.2em;  /* Aumenta el tamaño */
+  border-left: 5px solid #999999; /* Borde lateral gris */
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+/* 🔹 Citas en inverse */
+.inverse blockquote {
+  color: #bbbbbb !important;  /* Texto más claro */
+  border-left: 4px solid #d0d0d0;
+}
+"
+
+writeLines(css_code, "custom.css") # Guarda el CSS en un archivo
+
 
 ```
 
@@ -41,31 +64,14 @@ xaringanExtra::use_share_again()
 
 ```
 
-class: slideInRight, fadeOutLeft, middle, center
+class: slideInRight, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
 
-# Antes que nada ingrese acá:
-## https://sebastianmunozt.github.io/trucos_del_oficio/
-### Presentación 
-
-
----
-
-class: slideInRight, fadeOutLeft, middle
-# El Tiempo Disponible como Riqueza
-
-> “*El .red[tiempo disponible es riqueza en sí mismo], tanto más cuanto que las fuerzas productivas han desarrollado la capacidad de producción de todos los bienes materiales, de modo que la cantidad mínima de tiempo necesario para el trabajo de la sociedad se reduce a un mínimo, lo que posibilita el pleno desarrollo del individuo. [...] .red[El desarrollo de la maquinaria] aparece como la base material para que el .red[tiempo libre deje de ser un privilegio y se convierta en un derecho universal]*.”  
->
-> ¿Quién lo dice?
+# La gestión bibliográfica con Zotero
+## Prof. Sebastián Muñoz-Tapia
 
 ---
-
-background-image: url("img/marx.gif")
-background-size: content
-
-
----
-
-
 class: slideInRight, fadeOutLeft, middle
 
 
@@ -82,28 +88,38 @@ class: slideInRight, fadeOutLeft, middle
 -mail: sebastianmunozt@gmail.com
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
-.pull-left[
+
 # Agenda del Taller
 
-0. **Demostración Rápida** (10 min)
-1. **Configuración Inicial de Zotero** (15 min)
-2. Gestión de Referencias (20 min)
-3. Trabajo con PDFs (20 min)
-4. Interludio: Integración con Obsidian (5 min)
-5. Citas y Bibliografía en Word (25 min)
-6. Cierre y preguntas (5 min)]
+0. **Demostración Rápida** 
+1. **Configuración Inicial de Zotero** 
+2. Gestión de Referencias 
+3. Trabajo con PDFs 
+4. Interludio: Integración con Obsidian
+5. Citas y Bibliografía en Word 
+6. Cierre y preguntas
 
-.pull-right[ 
-![zoter](img/plan.gif)
-
-]
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/plan.gif")
+background-size: cover
 
-class: slideInRight, fadeOutLeft
-# ¿Qué es Zotero? Demostración Rápida de Gestión bibliográfica
+
+
+---
+background-image: url("img/temp/4.png")
+background-size: cover
+class: slideInRight, fadeOutLeft, middle, inverse
+### ¿Qué es Zotero? Demostración Rápida de Gestión bibliográfica
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 .pull-left[
 #### 1. **Agregar Referencias**
@@ -134,32 +150,43 @@ background-size: cover
 
 
 ---
+background-image: url("img/temp/4.png")
+background-size: cover
+class: slideInRight, fadeOutLeft, middle, inverse
 
+### Software de Código Abierto: Ventajas y Desafíos
 
-class: slideInRight, fadeOutLeft
-# Software de Código Abierto: Ventajas y Desafíos
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 .pull-left[
-### **Ventajas**
-- Gratuito y accesible para todos.
-- Extensible y personalizable.
-- Mejora constante gracias a la colaboración global.
-- Código abierto para auditoría y modificación.
-
-### **Desafíos**
-- Incompatibilidades entre actualizaciones del software base y extensiones.
-- Dependencia de la comunidad para soporte.
-- Curva de aprendizaje inicial.
-- Extensiones pueden tardar en actualizarse.
-]
+#### **Ventajas**
+   - Gratuito y accesible para todos.
+   - Extensible y personalizable.
+   - Mejora constante gracias a la colaboración global.
+   - Código abierto para auditoría y modificación.]
 
 .pull-right[
+#### **Desafíos**
+   - Incompatibilidades entre actualizaciones del software base y extensiones.
+   - Dependencia de la comunidad para soporte.
+   - Curva de aprendizaje inicial.
+   - Extensiones pueden tardar en actualizarse.
+]
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
 ### **Ejemplo en Zotero**
 - **Ventaja:** Desarrollo de extensiones como ZotFile.
 - **Problema:** Incompatibilidad de extensiones con versiones recientes.
 
 **Consejo:** Verifica compatibilidades antes de actualizar.
-]
+
 
 
 ---
@@ -179,15 +206,21 @@ background-size: cover
 
 
 ---
+background-image: url("img/temp/4.png")
+background-size: cover
+class: slideInRight, fadeOutLeft, middle, inverse
 
-class: slideInRight, fadeOutLeft
-# Configuración Inicial de Zotero
+### Configuración Inicial de Zotero
 
-## **Paso 1: Instalación de Zotero**
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
+### **Paso 1: Instalación de Zotero**
 .pull-left[
 1. Accede a [zotero.org](https://www.zotero.org/download/).
-2. Descarga Zotero para tu sistema operativo:
+2. Descarga Zotero para:
    - **Windows**: Ejecuta el instalador y sigue las instrucciones.
    - **Mac**: Arrastra la aplicación a la carpeta "Aplicaciones".
    - **Linux**: Sigue las instrucciones específicas para tu distribución.
@@ -205,11 +238,12 @@ background-size: cover
 
 
 ---
-
-class: slideInRight, fadeOutLeft. middle
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 .pull-left[
-## **Paso 2: Instalar el Conector del Navegador**
+### **Paso 2: Instalar el Conector del Navegador**
 
 1. Desde la misma página de Zotero, descarga el **conector** para tu navegador:
    - Disponible para **Chrome**, **Firefox**, **Safari**, o **Edge**.
@@ -221,9 +255,11 @@ class: slideInRight, fadeOutLeft. middle
 
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
-## **Paso 3: Crear una Cuenta de Zotero**
+background-image: url("img/temp/3.png")
+background-size: cover
+
+### **Paso 3: Crear una Cuenta de Zotero**
 
 1. Regístrate en [zotero.org](https://www.zotero.org/) para sincronizar tus datos.
 2. Ingresa con tu cuenta desde Zotero:
@@ -231,9 +267,10 @@ class: slideInRight, fadeOutLeft, middle
    - Introduce tus credenciales y activa la sincronización automática.
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
-## **Paso 4: Instalar Extensiones Útiles**
+background-image: url("img/temp/3.png")
+background-size: cover
+### **Paso 4: Instalar Extensiones Útiles**
 
 .pull-left[
 1. **ZotFile**:
@@ -264,9 +301,10 @@ class: bottom
 
 ---
 class: slideInRight, fadeOutLeft, middle
-# Cómo Instalar y Configurar ZotFile
+background-image: url("img/temp/3.png")
+background-size: cover
 
-### **1. Instalar ZotFile**
+#### **1. Instalar ZotFile**
 
 1. Asegúrate de tener Zotero instalado en tu computadora.
 2. Descarga el archivo de extensión `.xpi` desde el sitio oficial de ZotFile:
@@ -276,17 +314,19 @@ class: slideInRight, fadeOutLeft, middle
    - Selecciona **Instalar complemento desde archivo** y elige el archivo `.xpi` que descargaste.
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
 .pull-left[
-### **2. Cambiar la Carpeta de Origen para Archivos Nuevos**
+#### **2. Cambiar la Carpeta de Origen para Archivos Nuevos**
 
 1. ZotFile utiliza la carpeta especificada por el usuario para adjuntar los archivos más recientes (por ejemplo, los recién descargados).
-2. Para configurar esto en Zotero Standalone:
+2. Para configurar esto en Zotero:
    - Ve a **Herramientas -> Preferencias de ZotFile -> Configuración General**.
    - Cambia la carpeta de origen al directorio de descargas de tu navegador (por ejemplo, `~/Downloads` en Mac o "Descargas" en Windows).]
    
-#### .red[CREE UNA CARPETA EN SU COMPUTADOR DONDE DEJARÁ SUS TEXTOS!]   
+- .red[Cree una carpeta en su computador específica para los textos!]   
    
 .pull-right[ 
 ![zoter](img/4.png) ]
@@ -297,9 +337,11 @@ background-image: url("img/4.png")
 background-size: cover
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
-### **3. Cambiar otras Opciones (opcional)**
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### **3. Cambiar otras Opciones (opcional)**
 
 1. ZotFile ofrece varias opciones adicionales configurables por el usuario.
 2. Estas opciones se encuentran en:
@@ -308,8 +350,13 @@ class: slideInRight, fadeOutLeft, middle
    - Renombrar automáticamente archivos PDF.
    - Organizar carpetas de manera personalizada.
    - Mover archivos adjuntos a ubicaciones específicas.
+   
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
-### **Resumen Rápido: ZotFile**
+#### **Resumen Rápido: ZotFile**
 
 - **Funcionalidad clave:** Gestiona archivos adjuntos (PDFs) de manera eficiente.
 - **Ventajas:**
@@ -322,29 +369,27 @@ background-image: url("img/5.png")
 background-size: cover
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
-## **Paso 4: Instalar Extensiones Útiles**
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### **Paso 4: Instalar Extensiones Útiles**
 
 2. **Zotero PDF Translate**:
    - Permite traducir textos directamente en los PDFs.
    - Instálalo desde: [GitHub - Zotero PDF Translate](https://github.com/windingwind/zotero-pdf-translate/releases/tag/v1.0.25).
    
    
-
-3. **Zotero Citation Counts Manager**:
-   - Permite visualizar y actualizar automáticamente las métricas de citas de tus referencias.
-   - Descarga desde: [GitHub - Zotero Citation Counts Manager](https://github.com/eschnett/zotero-citationcounts).
-
-
 ---
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+
+
 
 .pull-left[
-## **Práctica: Configuración Inicial**
-
-### Tarea:
+#### **Práctica: Configuración Inicial**
 
 1. **Descarga Zotero** y asegúrate de tenerlo instalado.
 2. **Instala el conector de tu navegador** (según tu preferencia).
@@ -366,15 +411,16 @@ background-size: cover
 
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
-class: slideInRight, fadeOutLeft. middle
 .pull-left[
-# Organización de Referencias
+### Organización de Referencias
 
-### **Carpetas **
+#### **Carpetas **
 
 - **Carpetas temáticas:** Organiza referencias por proyecto o capítulo.
-### Tarea
 1. Cree una carpeta para un tema de interés: taller zotero
 2. Cree subcarpetas: prueba ]
 
@@ -389,16 +435,23 @@ background-size: cover
 
 
 ---
+background-image: url("img/temp/4.png")
+background-size: cover
+class: slideInRight, fadeOutLeft, middle, inverse
 
+### Gestión de Referencias
+#### ¿Cómo importar referencias? 
+
+---
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
-# Gestión de Referencias
-### ¿Cómo importar referencias? 
 .pull-left[
-#### 1. A través de ISBN, DOI o URL (desde 0), si es que se puede!
+#### 1. Si se puede mediante:
 - **ISBN (International Standard Book Number)**
   - Identificador único para libros y publicaciones.
-  - Ejemplo: `978-3-16-148410-0`.
+  - Ejemplo: `978-3-16-148410`.
 - **DOI (Digital Object Identifier)**
   - Identificador único para recursos digitales como artículos o datasets.
   - Ejemplo: `10.1000/xyz123`.
@@ -426,9 +479,9 @@ background-size: cover
 
 ---
 class: slideInRight, fadeOutLeft, middle
-##  **Integración de Textos**
+###  **Integración de Textos**
 
-### Pasos:
+#### Pasos:
 
 1. Descarga [este libro](https://ia800206.us.archive.org/14/items/durkheim_emile_-_las_reglas_del_metodo_sociologico_0/durkheim_emile_-_las_reglas_del_metodo_sociologico_0.pdf).
 2. Integralo a tu biblioteca
@@ -443,10 +496,12 @@ background-size: cover
    
 
 ---
-class: slideInRight, fadeOutLeft. middle
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 #### 2. A través de documentos locales (PDFs o libros físicos).
-- [Articulo K-pop](https://journals.sagepub.com/doi/abs/10.1177/1748048520928254): saco su DOI
+- [Articulo](https://journals.sagepub.com/doi/abs/10.1177/1748048520928254): saco su DOI
 - [Descargo](https://sci-hub.se/): mediante su DOI
 - Guardo en Zotero
 - Modifico su Metadata: Importancia del tipo de Documento! (distintos datos)
@@ -467,11 +522,11 @@ background-size: cover
 ---
 
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
 .pull-left[
-## **Práctica: Integración de Textos**
-
-### Tarea:
+#### **Práctica: Integración de Textos**
 
 1. Busca un artículo en Google Scholar.
 2. Usa la opción de exportar cita a Zotero o integralo.
@@ -494,9 +549,12 @@ background-size: cover
 ---
 
 class: slideInRight, fadeOutLeft, middle
-# Trabajo con PDFs (Doble click al texto)
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Trabajo con PDFs (Doble click al texto)
 .pull-left[
-## **Herramientas Clave**
+#### **Herramientas Clave**
 
 1. Subrayado de ideas clave.
 2. Inserción de notas contextuales.
@@ -512,14 +570,15 @@ background-size: cover
 
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
 
-class: slideInRight, fadeOutLeft
-# ¿Qué pasa si el texto no se puede subrayar?
-### Usar OCR (Reconocimiento Óptico de Caracteres)
-#### **¿Qué es OCR?**
+## ¿Qué pasa si el texto no se puede subrayar?
+#### Usar OCR (Reconocimiento Óptico de Caracteres)
 - Tecnología que permite convertir texto en imágenes escaneadas o documentos PDF en texto editable y buscable.
 - Utiliza algoritmos avanzados para identificar caracteres, palabras y estructuras de texto.
-- Una opción es [esta](https://tools.pdf24.org/es): busquen OCR en la lupa. 
+- Una opción es **[esta](https://tools.pdf24.org/es)**: busquen OCR en la lupa. 
 
 ---
 
@@ -545,7 +604,7 @@ background-size: cover
 background-image: url("img/21.png")
 background-size: cover
 
-## Emprolijar via ChatGPT 2
+
 
 
 ---
@@ -560,14 +619,12 @@ class: slideInRight, fadeOutLeft, middle
 ## Generación rápida de Ficha]
 
 ---
-
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 .pull-left[
-## **Práctica: Trabajo con PDFs**
-
-### Tarea:
+#### **Práctica: Trabajo con PDFs**
 
 1. Abre un PDF desde Zotero.
 2. Subraya una frase importante.
@@ -584,10 +641,16 @@ class: slideInRight, fadeOutLeft, middle
 
 ---
 
+background-image: url("img/temp/4.png")
+background-size: cover
 class: slideInRight, fadeOutLeft, middle, inverse
 
 ## Bonus: ¿Cómo tomar notas y resumir activamente un texto? - Búsquen ustedes!
 
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 .pull-left[
 ### 1. Método Cornell
@@ -602,10 +665,7 @@ class: slideInRight, fadeOutLeft, middle, inverse
 .pull-right[
 ### 2. Método Zettelkasten
 - Sistema basado en fichas o notas conectadas.
-- Proceso:
-  - Cada idea o concepto se escribe en una ficha independiente.
-  - Las fichas se relacionan entre sí mediante referencias cruzadas.
-  - Utiliza categorías amplias y etiquetas para agrupar ideas.
+- Proceso: (1)Cada idea o concepto se escribe en una ficha independiente; (2) Las fichas se relacionan entre sí mediante referencias cruzadas; (3) Utiliza categorías amplias y etiquetas para agrupar ideas.
 - Ventaja: Promueve la conexión entre ideas y fomenta el pensamiento crítico.]
 
 ---
@@ -636,9 +696,11 @@ background-size: cover
 ---
 
 class: slideInRight, fadeOutLeft, middle
-# Citas y Bibliografía en Word
-.pull-left[
-## **Exposición: Configuración y Formato**
+background-image: url("img/temp/3.png")
+background-size: cover
+
+#### Citas y Bibliografía en Word
+##### **Exposición: Configuración y Formato**
 
 1. Selección del estilo de cita (APA, Chicago, etc.).
 2. Inserción de citas en texto.
@@ -658,13 +720,12 @@ background-image: url("img/18.png")
 background-size: cover
 
 ---
-
 class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
 .pull-left[
 ## **Práctica: Citas en Word**
-
-### Última Tarea:
 
 1. Abre un documento en Word.
 2. Inserta una cita usando Zotero.
@@ -684,7 +745,7 @@ background-image: url("img/end.gif")
 background-size: cover
 
 class: slideInRight, fadeOutLeft, bottom
-# Cierre y Preguntas
+### Cierre y Preguntas
 
 .red[
 - ¿Qué funciones te parecieron más útiles?
@@ -692,5 +753,4 @@ class: slideInRight, fadeOutLeft, bottom
 
 - Recomendación final:
 Explora Zotero para todos tus proyectos académicos y sigue experimentando con nuevas extensiones.
-
-¡Gracias por participar!]
+]
