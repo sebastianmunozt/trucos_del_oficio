@@ -85,7 +85,6 @@ class: slideInRight, fadeOutLeft, middle
 - Trabajar con documentos PDF: anotaciones, notas y traducción.
 - Integrar Zotero con Word para la redacción académica.
 
--mail: sebastianmunozt@gmail.com
 
 ---
 class: slideInRight, fadeOutLeft, middle
