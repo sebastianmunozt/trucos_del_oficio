@@ -259,6 +259,44 @@ background-size: 70%
 
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### Niveles de abstracción en el marco teórico (Sautú)
+1. **Paradigma**: (+ o - Filosofías):
+  - Sistema de creencias básicas que determinar el modo de orientarse y mirar la realidad (similitud nivel ontológico): Sustancialismo, relacionalismo social, realismo
+2. **Teorías generales**: (+ o – Teoría Antropológica):
+  - Proposiciones lógicamente interrelacionadas que se utilizan para explicar procesos y fenómenos. Visión de sociedad, lugar de personas y características todo y partes: Estructuralismo, Funcionalismo, Culturalismo, Marxismo, etc. 
+3. **Teorías sustantivas**: (Investigaciones específicas/empíricas de sus temas)
+  - Proposiciones teóricas específicas a la parte de la realidad que se pretende estudiar. 
+  - Permiten definir objetivos específicos de la investigación y orientan etapas del diseño
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Primera búsqueda: 
+
+> ¿Su caso es un caso de qué?  
+> ¿A qué nivel teórico más general remite lo que está estudiando?
+
+- esto le permite integrarse en una disciplina
+- otro elemento: ¿Por qué su caso es relevante y en qué sentido?
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Actividad:
+Preguntese respecto a su tema de investigación
+> ¿Su caso es un caso de qué?  
+> ¿A qué nivel teórico más general remite lo que está estudiando?
+
+
+---
 
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png")
@@ -879,3 +917,5 @@ background-size: cover
 - Leo el resumen de scispace
 - Leo la lista de lectura 
 - Observo puntos claves que podría organizar en un mapa
+
+---
