@@ -321,6 +321,8 @@ background-size: cover
 
 1. **Teorías y metodologías**
 
+Explorando aproximadamente a qué grandes conceptos y teorías remite mi caso, trato de encontrar el campo de discusiones que existe en torno a tales teorías y conceptos.
+
    - ¿Cuáles son las principales teorías sobre X en Y disciplina?
 
 ---
@@ -565,8 +567,7 @@ background-size: cover
 
 ## ChatGPT como Herramienta de Investigación
 
-- Facilita la **exploración inicial** de temas en distintas disciplinas y enfoques.
-- **Personalización de respuestas** mejora la precisión académica.
+- Facilita la **exploración inicial** de temas *amplios* en distintas disciplinas y enfoques.
 - **Búsqueda semántica** proporciona resultados más contextuales.
 - Asiste en:
   - **Generación de hipótesis**
@@ -592,6 +593,21 @@ background-size: cover
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/00.jpg")
 background-size: 70%
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+#### Niveles de abstracción en el marco teórico (Sautú)
+1. **Paradigma**: (+ o - Filosofías):
+  - Sistema de creencias básicas que determinar el modo de orientarse y mirar la realidad (similitud nivel ontológico): Sustancialismo, relacionalismo social, realismo
+2. **Teorías generales**: (+ o – Teoría Antropológica):
+  - Proposiciones lógicamente interrelacionadas que se utilizan para explicar procesos y fenómenos. Visión de sociedad, lugar de personas y características todo y partes: Estructuralismo, Funcionalismo, Culturalismo, Marxismo, etc. 
+3. **Teorías sustantivas**: (Investigaciones específicas/empíricas de sus temas)
+  - Proposiciones teóricas específicas a la parte de la realidad que se pretende estudiar. 
+  - Permiten definir objetivos específicos de la investigación y orientan etapas del diseño
+
 
 ---
 
@@ -679,7 +695,7 @@ background-size: cover
 - Pasos:
   - Ingresar una **pregunta de investigación**.
   - Encuentra **artículos centrales** y relevantes.
-  - Permite obtener **respuestas rápidas** a preguntas de tipo sí/no.
+
   
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -868,10 +884,10 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/3.png")
 background-size: cover
 
-### Prompt sugerido (en español)
+### Prompt sugerido 
 
 ```markdown
-- El texto a continuación contiene artículos con autor, título y resumen.  
+- El archivo a continuación contiene artículos con autor, título y resumen.  
 - Quiero que leas los resúmenes y me ayudes con la siguiente tarea:  Mi objetivo es: XXXX (por ejemplo: análizar como la colaboración artística entre músicos incide en la producción de géneros musicales novedosos).  
 1. Analiza los artículos mencionados. Usa solo estos textos y nada más.   
 2. Crea una lista de lectura que me lleve de principiante a avanzado, comenzando con textos generales y terminando con los más específicos.  
@@ -919,3 +935,13 @@ background-size: cover
 - Observo puntos claves que podría organizar en un mapa
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/3.png")
+background-size: cover
+
+- Utilizo Atlas Ti u Obsidian para ordenar mis ideas.
+
+---
+
+### FIN
+
