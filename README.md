@@ -78,6 +78,15 @@ organizacion-personal/organizacion.html
 | Asistencia y puntualidad                     | Individual |             | 15%         |
 | Participación                                | Individual |             | 15%         |
 
+
+---
+
+## Material Evaluaciones
+
+- 📄 [**Revisión Bibliográfica**](https://sebastianmunozt.github.io/trucos_del_oficio/evaluacion-1.pdf) 
+
+
+
 ---
 ## Grupos de trabajo
 - Mínimo 1 y Máximo 4
