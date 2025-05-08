@@ -324,6 +324,17 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/8.png")
 background-size: cover
 
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Ejercicio
+- Realice una búsqueda en WOS de su tema de investigación
+- Utilice la búsqueda por abstract
+- Baje la lista de textos o bájelos a partir de Zotero
+
 ---
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/9.png")
@@ -335,6 +346,14 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/10.png")
 background-size: cover
 
+
+
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
 
-
+## Ejercicio
+- Realice una búsqueda en Scielo de su tema de investigación
+- Utilice la búsqueda por abstract
+- Baje la lista de textos o bájelos a partir de Zotero
