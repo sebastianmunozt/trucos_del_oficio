@@ -1,0 +1,303 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom.css"]  # Se añade custom.css aquí
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      font-family: "Outfit, Arial, sans-serif"
+---
+
+
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "black",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"), 
+  base_font_size = "30px", # Ajuste del tamaño global de la fuente
+)
+
+# Crear un archivo CSS para personalizar inverse y citas
+css_code <- "
+.inverse strong { color: #b0b0b0 !important; } /* Texto en negrita en gris */
+.inverse em { color: #b0b0b0 !important; } /* Texto en cursiva en gris */
+.inverse a { color: #b0b0b0 !important; text-decoration: underline; } /* Enlaces en gris */
+.inverse a:hover { color: #d0d0d0 !important; } /* Color más claro al pasar el mouse */
+
+/* 🔹 Citas normales */
+blockquote {
+  color: #555555 !important;  /* Texto en gris oscuro */
+  font-style: italic;
+  font-size: 1.2em;  /* Aumenta el tamaño */
+  border-left: 5px solid #999999; /* Borde lateral gris */
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+/* 🔹 Citas en inverse */
+.inverse blockquote {
+  color: #bbbbbb !important;  /* Texto más claro */
+  border-left: 4px solid #d0d0d0;
+}
+"
+
+writeLines(css_code, "custom.css") # Guarda el CSS en un archivo
+
+
+```
+
+
+
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_share_again()
+
+
+```
+
+
+
+
+
+class: slideInRight, middle, bottom
+background-image: url("img/00.gif")
+background-size: cover
+
+<div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); 
+            background: rgba(255, 255, 255, 0.7); padding: 15px; 
+            border: 3px solid black; border-radius: 10px; text-align: center; width: 80%;">
+
+Revisión bibliográfica potenciada n°2
+
+</div>
+
+---
+
+class: slideInRight, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+## 0. Introducción
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+
+### ¿Qué es una Revisión de Literatura con IA?
+
+- Uso de herramientas de IA para realizar revisiones de literatura.
+- Cambio en la metodología de búsqueda y análisis de artículos científicos.
+- Comparación entre dos enfoques: **La Mentalidad del Detective** vs **La Mentalidad del Coleccionista**.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### La Mentalidad del Coleccionista 📚
+
+- Método tradicional basado en recopilar **todos** los artículos antes de leer.
+- Útil para revisiones sistemáticas de literatura.
+- Riesgo de **sobrecarga de información** y dificultad para organizar ideas.
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+### La Mentalidad del Detective 🕵️‍♂️
+
+- Enfoque basado en **recolectar pistas** en lugar de artículos.
+- Construcción de una lista de lectura con **propósito claro**.
+- Relación entre artículos basada en **conexiones conceptuales**.
+- Estrategias:
+  - Explorar referencias de los artículos.
+  - Identificar literatura relevante **sobre la marcha**.
+  - Uso de IA para explorar conexiones futuras.
+
+
+---
+class: slideInRight, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+## Estrategia coleccionista
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## ¿Dónde buscar bibliografía?
+
+- **Google Scholar**: amplio, rápido, no siempre especializado.
+- **Web of Science (WOS)**: artículos indexados con alto estándar.
+- **Scielo**: literatura académica latinoamericana, acceso abierto.
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Búsqueda con operadores booleanos
+
+- **AND**: obliga a que aparezcan ambas palabras  
+  `desigualdad AND educación`
+- **OR**: busca cualquiera de los términos  
+  `juventud OR adolescencia`
+- **NOT**: excluye un término  
+  `migración NOT Venezuela`
+- **""**: comillas todo lo que está dentro
+- Uso recomendado en **título** y **resumen**.
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Uso de keywords
+
+- Utiliza los **keywords sugeridos por ChatGPT** para iniciar la búsqueda.
+- Varía los **idiomas** (español, inglés, portugués, francés):  
+  Ej: `"educación superior"` OR `"higher education"` OR `"ensino superior"`
+- Agrega un **autor relevante**:  
+  Ej: `"Boaventura de Sousa Santos"`, `"Bourdieu"`
+- Añade un **país o región**:  
+  Ej: `Chile`, `"América Latina"`, `Sudáfrica`
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Ejemplos prácticos con operadores booleanos
+
+- `interculturalidad AND educación AND "América Latina"`
+- `"social movements" AND Brazil AND "environmental justice"`
+- `"violencia de género" OR "gender-based violence" AND México`
+- `"digital divide" AND Africa NOT smartphones`
+
+- Consejo: inicia con búsquedas amplias y luego afina usando más filtros o palabras clave.
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Google Scholar
+
+- Sitio: [https://scholar.google.com](https://scholar.google.com)
+- Uso sencillo: buscar por título, autor o palabras clave.
+- Permite ver citas, versiones y acceso a PDFs.
+- Ideal para una primera exploración.
+- Ingresar al **perfil del autor** permite:
+  - Ver todas sus publicaciones ordenadas por fecha o citas.
+  - Acceder a redes de colaboración y evolución temática.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Google Scholar
+- Intervalo específico: por ejemplo, los últimos 5 años
+- Ordenar por fecha
+- Revisar algún autor
+- Pueden crearse un perfil de investigador/a
+- Pueden hacer una biblioteca (pero para eso usan Zotero)
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Acceso desde la cuenta UAH
+
+- Ingresar desde el portal de la biblioteca UAH.
+- Buscar **Recursos de información**: 
+  - Bases de Datos: contienen artículos de revistas indexadas en catálogos (los más famosos son WOS y Scopus)
+  - Revistas Electrónicas 
+  - Tesis
+  - Acceder con usuario institucional (correo UAH).
+
+  
+---  
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Ejercicio
+- Vamos a las tesis
+- Busquemos 5
+- Busque tesis de su carrera, con temas similares al suyo
+- Busque considerando el/la director/a de tesis (que sea el mismo que el/la suyo/a)
+- Baje estas tesis a Zotero e incluyalas en su biblioteca
+- Encuentre: 
+  - La cantidad de páginas
+  - La cantidad de secciones
+  - La cantidad de textos citados
+  - Cómo se dividen las secciones y cuántas páginas tiene cada sección
+  - Si la tesis es cercana a su tema, que textos citan
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Veamos los recursos de información
+- Volvamos a https://biblioteca.uahurtado.cl/
+- Recursos de información: https://biblioteca.uahurtado.cl/recursos-de-informacion/base-de-datos/
+- Observe que hay recursos con Acceso Abierto y otros que se accede con cuenta institucional UAH
+- Para aquellas deberá entrar con su cuenta de mail de la UAH
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### Les recomiendo
+- Web of Science (WoS)
+- SAGE Humanities and Social Sciences (HSS) 
+- Taylor & Francis Online – Humanities and Social Sciences Library (HSS)
+- Wiley Online Library
+- Scielo Chile
+- SCImago Journal & Country Rank: para ver cómo está catalogada una revista
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Web of Science (WOS)
+
+- Plataforma académica internacional.
+- URL desde UAH:  
+  [https://0h11k5xix-y-https-www-webofscience-com.itmsp.museknowledge.com/wos/woscc/basic-search](https://0h11k5xix-y-https-www-webofscience-com.itmsp.museknowledge.com/wos/woscc/basic-search)
+- Filtros avanzados: año, tipo de documento, área temática.
+- Exporta fácilmente a gestores de referencia.
+
+
+---
+
