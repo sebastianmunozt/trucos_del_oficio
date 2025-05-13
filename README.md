@@ -50,6 +50,7 @@ organizacion-personal/organizacion.html
 | 2025-05-22        | 8-a            | (1) Problematizar y preguntas de investigación 1                                                                    | Tarea: Buscar tesis de pregrado y extraer datos                                                           |                                        |
 |                   | 8-b            | (2) Cómo leer, resumir y organizar artículos y método Cornell                                                       |                                                                                                          |                                        |
 | 2025-05-29        | 10-a           | Argumentar en ciencias sociales; El proceso de escritura                                                            | Tarea: Construir problema, objetivos, hipótesis y brecha de investigación                                |                                        |
+|                   | 10-b           | La articulación entre lo empírico y lo teórico                                                                      |                                                                                                          |                                        |
 | 2025-06-05        | 11-a           | Obsidian y AudioPen: generación y articulación de ideas                                                             | Tarea: Generar 4 argumentos que puedan introducir su tema de investigación; con teoría y fundamento empírico |                                        |
 | 2025-06-12        | 12-a           | Zotero 2: Incluye tu bibliografía; La edición; La asistencia de ChatGPT en la escritura.                            | Tarea: Mostrar esquema de Obsidian: Fuentes primarias, colecciones, pensamientos y outline               |                                        |
 |                   | 12-b           | Taller: incluye tu bibliografía, apuntes y emprolija con ChatGPT y finalmente revisa                                |                                                                                                          |                                        |
@@ -60,7 +61,6 @@ organizacion-personal/organizacion.html
 |                   | Asistencia     |                                                                                                                     | 15 %                                                                                                     |                                        |
 |                   | Participación  |                                                                                                                     | 15%                                                                                                      |                                        |
 |                   | Total          |                                                                                                                     | 100%                                                                                                     |                                        |
-
 
  
 
