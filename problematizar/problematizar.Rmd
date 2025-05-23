@@ -769,3 +769,9 @@ background-size: cover
 
 - La sociología busca **comprender cómo opera la realidad social**.
   - “Analizar cómo se construyen las creencias, las instituciones, las desigualdades”.
+
+
+---
+class: slideInRight, middle
+background-image: url("img/18.png")
+background-size: cover
