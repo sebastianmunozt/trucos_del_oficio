@@ -1,0 +1,144 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom.css"]  # Se añade custom.css aquí
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      font-family: "Outfit, Arial, sans-serif"
+---
+
+
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "black",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"), 
+  base_font_size = "30px", # Ajuste del tamaño global de la fuente
+)
+
+# Crear un archivo CSS para personalizar inverse y citas
+css_code <- "
+.inverse strong { color: #b0b0b0 !important; } /* Texto en negrita en gris */
+.inverse em { color: #b0b0b0 !important; } /* Texto en cursiva en gris */
+.inverse a { color: #b0b0b0 !important; text-decoration: underline; } /* Enlaces en gris */
+.inverse a:hover { color: #d0d0d0 !important; } /* Color más claro al pasar el mouse */
+
+/* 🔹 Citas normales */
+blockquote {
+  color: #555555 !important;  /* Texto en gris oscuro */
+  font-style: italic;
+  font-size: 1.2em;  /* Aumenta el tamaño */
+  border-left: 5px solid #999999; /* Borde lateral gris */
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+/* 🔹 Citas en inverse */
+.inverse blockquote {
+  color: #bbbbbb !important;  /* Texto más claro */
+  border-left: 4px solid #d0d0d0;
+}
+"
+
+writeLines(css_code, "custom.css") # Guarda el CSS en un archivo
+
+
+```
+
+
+
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_share_again()
+
+
+```
+
+
+
+
+
+class: slideInRight, middle, bottom
+background-image: url("img/00.gif")
+background-size: cover
+
+<div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); 
+            background: rgba(255, 255, 255, 0.7); padding: 15px; 
+            border: 3px solid black; border-radius: 10px; text-align: center; width: 80%;">
+
+Uso de Obsidian
+
+</div>
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## Imagina tu conocimiento como libros 📚
+
+- Todo lo que sabes vive en libros interminables de ideas y emociones.
+- Tu mente recuerda ciertas cosas... y otras se desvanecen.
+- **Obsidian** puede ser tu *biblioteca* y *bibliotecario*.
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Qué es Obsidian?
+
+- Un sistema para estructurar y organizar el conocimiento.
+- Guarda tus ideas en notas conectadas.
+- Requiere algo de esfuerzo inicial, como catalogar libros.
+- Pero a largo plazo, facilita recuperar y sintetizar información.
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Por qué usarlo como estudiante?
+
+- Te ayuda a ordenar apuntes, lecturas y reflexiones.
+- Mejora tu forma de estudiar y escribir.
+- Ideal para procesos académicos: investigar, redactar, reflexionar.
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Y técnicamente? 🛠️
+
+- Obsidian combina:
+  - Un **explorador de archivos**
+  - Con un **editor de texto** en una sola app.
+- Todo lo que creas vive dentro de una “bóveda”.
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Qué es una bóveda? - Vault
+
+- Una **carpeta** donde se guardan tus notas, imágenes, etc.
+- En el panel izquierdo verás el contenido de tu bóveda.
+- Es el “contenedor” de tu conocimiento en Obsidian.
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+
+## ¿Qué es una nota?
+
+- Un **archivo de texto** sencillo.
+- Usa formato *Markdown* para estructurar la información.
+- No necesitas saber Markdown aún: lo aprenderemos juntos 📒
+

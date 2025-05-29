@@ -1,0 +1,340 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom.css"]  # Se añade custom.css aquí
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      font-family: "Outfit, Arial, sans-serif"
+---
+
+
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "black",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"), 
+  base_font_size = "30px", # Ajuste del tamaño global de la fuente
+)
+
+# Crear un archivo CSS para personalizar inverse y citas
+css_code <- "
+.inverse strong { color: #b0b0b0 !important; } /* Texto en negrita en gris */
+.inverse em { color: #b0b0b0 !important; } /* Texto en cursiva en gris */
+.inverse a { color: #b0b0b0 !important; text-decoration: underline; } /* Enlaces en gris */
+.inverse a:hover { color: #d0d0d0 !important; } /* Color más claro al pasar el mouse */
+
+/* 🔹 Citas normales */
+blockquote {
+  color: #555555 !important;  /* Texto en gris oscuro */
+  font-style: italic;
+  font-size: 1.2em;  /* Aumenta el tamaño */
+  border-left: 5px solid #999999; /* Borde lateral gris */
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+/* 🔹 Citas en inverse */
+.inverse blockquote {
+  color: #bbbbbb !important;  /* Texto más claro */
+  border-left: 4px solid #d0d0d0;
+}
+"
+
+writeLines(css_code, "custom.css") # Guarda el CSS en un archivo
+
+
+```
+
+
+
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_share_again()
+
+
+```
+
+
+
+
+
+class: slideInRight, middle, bottom
+background-image: url("img/00.gif")
+background-size: cover
+
+<div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); 
+            background: rgba(255, 255, 255, 0.7); padding: 15px; 
+            border: 3px solid black; border-radius: 10px; text-align: center; width: 80%;">
+
+Escritura académica
+
+</div>
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Escribir lo social: literatura y ciencias sociales
+
+- Reflexión sobre la distancia entre ciencias sociales y literatura.
+- Análisis de géneros discursivos, estilo académico y figura del enunciador.
+- Propuesta de escritura académica más creativa sin perder rigurosidad.
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Objetivos de la clase
+
+- Analizar la formación histórica de los géneros académicos.
+- Explorar el estilo académico y sus efectos epistemológicos.
+- Reflexionar sobre la figura del enunciador y las citas.
+- Cuestionar la frontera entre literatura y ciencias sociales.
+- Proponer escrituras híbridas y creativas.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+
+
+## Conceptos clave
+
+- **Géneros discursivos**: Formas comunicativas estables con reglas temáticas y estilísticas.
+- **Estilo académico**: Escritura neutral, técnica y despersonalizada.
+- **Enunciador**: Voz construida en el texto, no idéntica al autor real.
+- **Polifonía**: Presencia de múltiples voces (citas, referencias).
+- **Frontera**: Límite y puente entre literatura y ciencias sociales.
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## La gran separación: literatura y ciencias sociales, imaginación y verdad
+
+- Surge a fines del siglo XVIII con el positivismo.
+- Ciencias sociales se autonomizan del campo literario.
+- Crean géneros propios para legitimar su conocimiento.
+- Jablonka cuestiona la idea de que lo literario no produce saber.
+- La escritura es forma de conocer, no solo de representar.
+
+> En la repartija de bienes, diría Jabloknka, parece que a las y los cientistas sociales les quedó lo más arduo: "a la ciencia, la verdad dificultosa, y a la literatura, los encantos de la vida" (Jablonka, 2016: 317)
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+- Supuesto: las ciencias sociales no tienen una dimensión literaria y un escritor no produce conocimientos. 
+- Discusión de ese supuesto: proponer cruces y reencuentros. 
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Géneros discursivos (según Bajtin)
+
+- Clases de enunciados propios de cada esfera social.
+- **Primarios**: orales y flexibles. **Secundarios**: escritos y codificados.
+- Incluyen: tema, estructura, enunciación.
+- Generan expectativas sobre forma y contenido: implica cierta previsibilidad. 
+- La frontera académico-literaria es una construcción histórica.
+
+---
+class: slideInRight, fadeOutLeft, middle, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+### ¿Cuáles son las características del discurso académico?
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## El estilo académico (habitual)
+
+- **Búsqueda de neutralidad**: sin primera persona ni metáforas.
+- Jablonka critica el "no-texto": estilo estandarizado y poco creativo.
+- Wright Mills vincula jerga e ininteligibilidad con el prestigio.
+- Función performativa: posiciona al autor en el campo.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## El enunciador académico
+
+- Figura construida dentro del texto, no autor empírico.
+- Estrategias: tercera persona, citas, remisiones.
+- Proyección de roles para autor y lector.
+- Citar es clave: legitima, posiciona y dialoga.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Escritura como frontera epistemológica
+
+- Las normas institucionales condicionan lo que se puede escribir.
+- Frontera como espacio de innovación (Lotman).
+- Casos como Goffman y Wacquant: **escritura narrativa** con rigor.
+- La forma de escritura produce saber, no es solo vehículo.
+- Giro epistemológico: significación, experiencia, reflexividad.
+
+---
+class: slideInRight, fadeOutLeft, inverse
+background-image: url("img/temp/4.png")
+background-size: cover
+
+### ¿Cómo combinar lo narrativo (creativo) con lo explicativo?
+
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Discurso académico: género y estructura
+
+- Género secundario: reelabora lo cotidiano desde lo científico.
+- Se basa en discursos previos para posicionarse en el campo.
+- Objetivo: comunicar avances, convencer sobre su relevancia.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Rasgos del discurso académico
+
+- **Escrito** y estructurado, aunque haya formas orales.
+- **Expositivo**: comunicar hallazgos.
+- **Argumentativo**: justificar su validez.
+- Uso metatextual explícito:
+  - Introducción "spoilea".
+  - Remisiones internas: *cf.*, *infra*, *supra*.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Géneros dentro del discurso académico
+
+- **Primarios** (para leer):
+  - *Resumen* (representativo/presentativo).
+  - *Paper* (artículo de investigación).
+  - *Tesis* (para obtener un grado académico)
+- **Secundarios** (para oír):
+  - *Ponencia*:
+    - Apoyos visuales (diapositivas, hand-out).
+    - Guías o mapas del texto si no se lee literalmente.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Estructura canónica del artículo (IMRC)
+
+- Introducción
+- Metodología
+- Resultados
+- Conclusión
+- Forma de **reloj de arena**: general → particular → general.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Introducción
+
+- Define tema, recorte, y orientación.
+- **Estado del arte**: literatura actual y relevante.
+- Búsqueda de un **nicho** no investigado.
+- Hipótesis preliminar y autopromoción del aporte.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Esquema CARS (Swales) 🧩
+
+- **Establecer territorio**: qué se ha dicho.
+- **Establecer nicho**: qué falta por decir.
+- **Ocupar el nicho**: qué voy a decir yo.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Metodología
+
+- Describe procedimientos y herramientas.
+- Presenta corpus y materiales.
+- Detalla pasos del análisis: narrativo y descriptivo.
+- Métodos cuantitativos o cualitativos según el caso.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Resultados
+
+- Presentación de datos obtenidos.
+- Interpretación teórica y referencia a literatura.
+- Movimiento obligatorio: **establecer el aporte (claim)**.
+- Señalar implicancias y generalizaciones posibles.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Conclusión del artículo
+
+- Resume y evalúa hallazgos.
+- Ratifica hipótesis inicial.
+- Explica importancia del estudio.
+- Reconoce limitaciones y propone investigaciones futuras.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Propuesta
+
+- La escritura académica no es solo forma, sino fondo epistemológico.
+- Recuperar recursos literarios puede enriquecer las ciencias sociales.
+- Propuesta: una escritura que cruce fronteras sin abandonar el rigor.
+
+
+
