@@ -1,9 +1,4 @@
----
-title: "Formulario de Problematización en Ciencias Sociales"
-author: "Sebastián Muñoz"
-date: "`r Sys.Date()`"
-output: html_document
----
+
 
 ## ROL  
 Asume el rol de un/a **investigador/a en Ciencias Sociales** que necesita formular una **problematización rigurosa** para una tesis, artículo o proyecto de investigación.  
