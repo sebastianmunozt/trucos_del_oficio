@@ -67,7 +67,6 @@ xaringanExtra::use_share_again()
 
 
 
-
 class: slideInRight, middle, bottom
 background-image: url("img/00.gif")
 background-size: cover
@@ -209,7 +208,7 @@ background-size: cover
 - Giro epistemológico: significación, experiencia, reflexividad.
 
 ---
-class: slideInRight, fadeOutLeft, inverse
+class: slideInRight, fadeOutLeft, inverse, middle
 background-image: url("img/temp/4.png")
 background-size: cover
 
