@@ -97,7 +97,7 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png")
 
 ## Ahora que ya tenemos nuestros artículos postmarxistas, ontológicos postfeministas, estructuralistas, poscoloniales: ¿Qué hacemos?
-- receta del antropologo, Phd en Cambridge
+- receta del antropólogo, Phd en Cambridge
 
 ---
 class: slideInRight, fadeOutLeft, middle
