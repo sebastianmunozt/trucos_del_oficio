@@ -133,21 +133,7 @@ background-size: cover
 - **Explicar**: transmitir saber legitimado.
 - **Argumentar**: construir sentido nuevo en diálogo crítico. Generar una posición, establecer un punto. 
 
----
 
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-## Ejercicio con IA 🤖
-
-**Actividad:** Diferencia entre opinar, explicar y argumentar.
-
-1. Escribe una opinión sobre algún tema de tu investigación.
-2. Pídele a ChatGPT:
-   - “Transforma esto en una explicación didáctica.”
-   - “Ahora conviértelo en un argumento académico con base teórica.”
-3. Reflexiona: ¿qué cambia en cada transformación?
 
 ---
 
@@ -189,6 +175,24 @@ background-size: cover
 
 ---
 
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## Ejercicio con IA 🤖
+
+**Actividad:** Diferencia entre opinar, explicar y argumentar.
+
+1. Utiliza el siguiente prompt para univer múltiples oraciones formadas a través de bullet points para armar un parrafo.
+2. Este debe tener una idea central (topic sentence), al menos una explicación, alguna evidencia de lo que señales y una conclusión.
+
+---
+
+
+
+
+---
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png")
 background-size: cover
