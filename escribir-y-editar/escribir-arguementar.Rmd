@@ -184,10 +184,12 @@ background-size: cover
 
 **Actividad:** Diferencia entre opinar, explicar y argumentar.
 
-1. Utiliza el siguiente prompt para univer múltiples oraciones formadas a través de bullet points para armar un parrafo.
-2. Este debe tener una idea central (topic sentence), al menos una explicación, alguna evidencia de lo que señales y una conclusión.
+1. Utiliza el siguiente prompt para unir múltiples oraciones formadas a través de bullet points para armar un parrafo.
+2. Este debe tener una idea central (topic sentence), al menos dos puntos que expliquen esa idea, alguna evidencia de lo que señales y una conclusión.
 
 ---
+
+[ingrese aqui](https://raw.githubusercontent.com/sebastianmunozt/trucos_del_oficio/refs/heads/main/escribir-y-editar/unir-analizar-compara-parrafo-argumentativo.md)
 
 
 
