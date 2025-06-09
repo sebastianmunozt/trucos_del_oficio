@@ -361,6 +361,10 @@ background-size: cover
 
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
 
 ## Usos de la IA 🤖
 
@@ -374,6 +378,10 @@ background-size: cover
 
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
 
 ## Usos de la IA 2
 
@@ -390,8 +398,18 @@ Aquí está el ejemplo de texto:
 ```
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
 ```markdown
 Compacta esto en un conjunto de instrucciones para una IA que pueda utilizarse para replicar este estilo de escritura. No uses listas, solo un párrafo.
 ```
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+## La vieja técnica: 
+> leer en voz alta!
