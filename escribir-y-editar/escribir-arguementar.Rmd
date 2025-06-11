@@ -69,7 +69,7 @@ xaringanExtra::use_share_again()
 
 
 class: slideInRight, middle, bottom
-background-image: url("img/00.gif")
+background-image: url("img/estudio.gif")
 background-size: cover
 
 <div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); 
@@ -123,6 +123,13 @@ background-size: cover
 
 ---
 
+class: slideInRight, middle, bottom
+background-image: url("img/dialogo1.gif")
+background-size: cover
+
+
+
+---
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png")
 background-size: cover
@@ -172,6 +179,11 @@ background-size: cover
 - Todo argumento es un **diálogo implícito** (Bajtin).
 - No hay neutralidad absoluta: hay posiciones.
 - Implica **refutar, matizar, proponer**.
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/dialogo2.gif")
+background-size: cover
 
 ---
 
@@ -240,6 +252,13 @@ background-size: cover
 - **Araña**: manipula con citas o frases hechas para neutralizar.
 
 ➡️ Todas ellas bloquean la construcción colectiva del conocimiento.
+
+---
+
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/animales.gif")
+background-size: cover
+
 
 ---
 
@@ -408,8 +427,17 @@ Compacta esto en un conjunto de instrucciones para una IA que pueda utilizarse p
 
 ---
 class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
+background-image: url("img/hb.jpg")
 background-size: cover
 
 ## La vieja técnica: 
 > leer en voz alta!
+
+
+https://www.youtube.com/watch?v=zAywXRFr6_4
+
+
+---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/polifonia.gif")
+background-size: cover
