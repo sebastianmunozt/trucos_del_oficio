@@ -81,6 +81,15 @@ Escritura académica 2: Argumentar y editar
 </div>
 
 ---
+class: slideInRight, fadeOutLeft, middle
+background-image: url("img/temp/1.png")
+background-size: cover
+
+### próxima clase: 
+https://drive.google.com/drive/folders/1iEXOXted-DESqkOtZIHV0ZFP3Mj5rk63?usp=sharing
+
+
+---
 
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png")
@@ -441,3 +450,6 @@ https://www.youtube.com/watch?v=zAywXRFr6_4
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/polifonia.gif")
 background-size: cover
+
+
+
