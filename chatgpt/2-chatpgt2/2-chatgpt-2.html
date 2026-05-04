@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>2-chatgpt.knit</title>
+    <title>2-chatgpt-2.knit</title>
     <meta charset="utf-8" />
-    <script src="2-chatgpt_files/header-attrs-2.30/header-attrs.js"></script>
-    <link href="2-chatgpt_files/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
-    <link href="2-chatgpt_files/tachyons-4.12.0/tachyons.min.css" rel="stylesheet" />
-    <script src="2-chatgpt_files/clipboard-2.0.6/clipboard.min.js"></script>
-    <link href="2-chatgpt_files/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
-    <script src="2-chatgpt_files/shareon-1.4.1/shareon.min.js"></script>
-    <link href="2-chatgpt_files/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
-    <script src="2-chatgpt_files/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
+    <script src="2-chatgpt-2_files/header-attrs-2.30/header-attrs.js"></script>
+    <link href="2-chatgpt-2_files/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
+    <link href="2-chatgpt-2_files/tachyons-4.12.0/tachyons.min.css" rel="stylesheet" />
+    <script src="2-chatgpt-2_files/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="2-chatgpt-2_files/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
+    <script src="2-chatgpt-2_files/shareon-1.4.1/shareon.min.js"></script>
+    <link href="2-chatgpt-2_files/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
+    <script src="2-chatgpt-2_files/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -262,12 +262,6 @@ Pruebe un prompt siguiendo este esquema.
 
 ```
 
----
-class: slideInRight, fadeOutLeft, middle 
-background-image: url("img/temp/3.png") 
-background-size: cover
-
-&lt;iframe width="800" height="450" src="https://www.youtube.com/embed/vnv9yl1ddx0?list=PL0vgVRoORhXLEEAEBaIX3E8XEupluBv1D" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 
 ---
@@ -606,54 +600,6 @@ background-size: cover
 
 ---
 class: slideInRight, fadeOutLeft, middle 
-background-image: url("img/temp/3.png") 
-background-size: cover
-
-#### **Zero-Shot Prompting**
-- **Prompt 1:** "Resume el siguiente texto en una sola oración: [texto]."
-- **Prompt 2:** "Extrae los conceptos clave de este texto : [texto]."
-
----
-class: slideInRight, fadeOutLeft, middle 
-background-image: url("img/temp/1.png") 
-background-size: cover
-
-#### **One-Shot Prompting**
-- **Prompt 1:** 
-
-```markdown
-### INSTRUCCION
-Convierte la siguiente respuesta en lenguaje académico. 
-
-### EJEMPLO
-'Me pareció raro' → 'La experiencia resultó inusual'. 
-
-### INPUT 
-[texto]
-
-```
-- **Prompt 2:** "Reformula el siguiente párrafo en un tono más divulgativo. Ejemplo: 'El neoliberalismo ha modificado la estructura económica' → 'Los cambios económicos recientes reflejan el impacto del neoliberalismo'. Input: [texto]."
-
----
-class: slideInRight, fadeOutLeft, middle 
-background-image: url("img/temp/3.png") 
-background-size: cover
-
-#### **Few-Shot Prompting**
-
-```markdown
-### INSTRUCCIÓN 
-Extrae categorías de análisis de las siguientes transcripciones de entrevistas.
-### EJEMPLOS 
-- Texto 1: "Los entrevistados mencionaron la precariedad laboral como un problema recurrente."  Categorías: Condiciones laborales, Precarización, Seguridad social.
-- Texto 2: "Muchos estudiantes sienten ansiedad por la inestabilidad económica". Categorías: Educación, Ansiedad económica, Futuro laboral.
-- Texto 3: "Las mujeres en comunidades rurales destacan la falta de oportunidades laborales." Categorías: Desigualdad de género, Oportunidades laborales, Desarrollo rural.
-- Texto 4: "Los jóvenes en barrios marginales mencionan la falta de acceso a educación superior." Categorías: Acceso educativo, Desigualdad social, Juventud.
-###INPUT
-"Los trabajadores migrantes resaltaron la falta de acceso a la salud y bajos salarios."
-```
----
-class: slideInRight, fadeOutLeft, middle 
 background-image: url("img/temp/1.png") 
 background-size: cover
 
@@ -706,44 +652,13 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/1.png") 
 background-size: cover
 
-#### 4.3 🔍 Selección e Inferencia en el Prompting
-
-- Método de dos pasos:
-    1. **Selección** de información relevante.
-    2. **Inferencia** basada en la información seleccionada.
-- Según [Creswell 2022](https://arxiv.org/abs/2205.09712), los modelos suelen desempeñarse bien en tareas de inferencia de un solo paso, pero fallan en razonamientos encadenados.
-- Separar la tarea en selección y luego inferencia permite mejorar la precisión y evitar errores.
 
 ---
 class: slideInRight, fadeOutLeft, middle 
 background-image: url("img/temp/3.png") 
 background-size: cover
 
-##### ✍️ Ejemplo:
-
-📌 **Texto Original:** "En 2023, varios países han experimentado olas de calor extremo, lo que ha generado incendios forestales y afectado la producción agrícola."  
-
-- **Paso 1 - Prompt de Selección**  
-❓ **Prompt:** Extrae los datos clave del siguiente texto.  
-✅ **Output:** Año: 2023. Fenómeno: olas de calor extremo. Consecuencias: incendios forestales, impacto en la producción agrícola.  
-
--  **Paso 2 - Prompt de Inferencia**  
-❓ **Prompt:** ¿Qué conclusiones podemos inferir a partir de la información clave?  
-✅ **Output:** El cambio climático está contribuyendo a eventos climáticos extremos que afectan la seguridad alimentaria y el medio ambiente.  
-
----
-class: slideInRight, fadeOutLeft, middle 
-background-image: url("img/temp/1.png") 
-background-size: cover
-
-**📌 Mejora obtenida con Selección e Inferencia:** En lugar de dar una conclusión genérica desde el principio, la información se estructura en dos pasos, asegurando precisión y relevancia en la inferencia.  
-
----
-class: slideInRight, fadeOutLeft, middle 
-background-image: url("img/temp/3.png") 
-background-size: cover
-
-#### 4.4 🔄 Crítica Recursiva en los Prompts
+#### 4.3 🔄 Crítica Recursiva en los Prompts
 
 - Inspirado en [Kim 2023](https://arxiv.org/abs/2303.17491).
 - Consiste en mejorar iterativamente la salida mediante autoevaluación.

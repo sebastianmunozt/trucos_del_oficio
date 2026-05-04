@@ -1,28 +1,42 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>1-chatgpt.knit</title>
-    <meta charset="utf-8" />
-    <script src="1-chatgpt_files/header-attrs-2.30/header-attrs.js"></script>
-    <link href="1-chatgpt_files/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
-    <link href="1-chatgpt_files/tachyons-4.12.0/tachyons.min.css" rel="stylesheet" />
-    <script src="1-chatgpt_files/clipboard-2.0.6/clipboard.min.js"></script>
-    <link href="1-chatgpt_files/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
-    <script src="1-chatgpt_files/shareon-1.4.1/shareon.min.js"></script>
-    <link href="1-chatgpt_files/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
-    <script src="1-chatgpt_files/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
-    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
-  </head>
-  <body>
-    <textarea id="source">
+---
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      font-family: "Outfit, Arial, sans-serif"
+
+
+---
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanExtra)
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "black",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"), 
+  base_font_size = "30px" # Ajuste del tamaño global de la fuente
+)
+
+
+```
 
 
 
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_share_again()
 
 
-
-
-
+```
 
 
 
@@ -30,13 +44,13 @@ class: slideInRight, middle
 background-image: url("img/01.gif")
 background-size: cover
 
-&lt;div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; color: black;"&gt;
+<div style="position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; color: black;">
   
-  &lt;h2 style="font-size: 100%;"&gt;¿Qué es, cómo funciona y cuáles son los sesgos de la IA generativa?&lt;/h2&gt;
+  <h2 style="font-size: 100%;">¿Qué es, cómo funciona y cuáles son los sesgos de la IA generativa?</h2>
 
-  &lt;p style="font-size: 80%; margin-top: 10px;"&gt;Por: Sebastián Muñoz&lt;/p&gt;
+  <p style="font-size: 80%; margin-top: 10px;">Por: Sebastián Muñoz</p>
 
-&lt;/div&gt;
+</div>
 
 
 
@@ -62,11 +76,11 @@ background-image: url("img/temp/4.png")
 background-size: cover
 ## Índice
 
-1. &lt;span style="font-size: 1.2em;"&gt;Introducción a los LLM&lt;/span&gt;  
-2.  &lt;span style="color:gray; font-size: 1em;"&gt;Introducción a ChatGPT&lt;/span&gt;  
-3. &lt;span style="color:gray; font-size: 1em;"&gt;Limitaciones&lt;/span&gt;  
-4.  &lt;span style="color:gray; font-size: 1em;"&gt;Bonus: ChatGPT en celular&lt;/span&gt;  
-5. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación y cierre&lt;/span&gt;  
+1. <span style="font-size: 1.2em;">Introducción a los LLM</span>  
+2.  <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3. <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4.  <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5. <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
  
 
 ---
@@ -122,9 +136,9 @@ class: slideInRight, fadeOutLeft, middle, inverse
 background-image: url("img/03.png")
 background-size: cover
 
-&lt;div style="position: absolute; bottom: 5%; left: 10%; width: 80%; background: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 10px; text-align: center; color: white;"&gt;
+<div style="position: absolute; bottom: 5%; left: 10%; width: 80%; background: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 10px; text-align: center; color: white;">
 Los LLM permiten interactuar con el "lenguaje natural" generando respuestas basadas en patrones aprendidos.
-&lt;/div&gt;
+</div>
 ---
 
 class: slideInRight, fadeOutLeft, middle
@@ -145,7 +159,7 @@ class: slideInRight, fadeOutLeft, middle
 .pull-left[
 **Ejemplo:**  
 Si le decimos a un bebé:  
-&gt; "Uno, dos..."  
+> "Uno, dos..."  
 Es probable que responda:  
 
 Los LLM operan de manera similar, **completando oraciones** según el entrenamiento previo.  ]
@@ -247,11 +261,11 @@ background-size: cover
 
 ## Índice
 
-1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción a los LLM&lt;/span&gt;  
-2. &lt;span style="font-size: 1.2em;"&gt;Introducción a ChatGPT&lt;/span&gt;  
-3. &lt;span style="color:gray; font-size: 1em;"&gt;Limitaciones&lt;/span&gt;  
-4. &lt;span style="color:gray; font-size: 1em;"&gt;Bonus: ChatGPT en celular&lt;/span&gt;  
-5. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación y cierre&lt;/span&gt;  
+1. <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2. <span style="font-size: 1.2em;">Introducción a ChatGPT</span>  
+3. <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4. <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5. <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
 
 
 ---
@@ -260,15 +274,15 @@ class: slideInRight, fadeOutLeft, bottom
 background-image: url("img/05.png")
 background-size: cover
 
-&lt;div style="font-size: 80%; line-height: 1.2;"&gt;
+<div style="font-size: 80%; line-height: 1.2;">
 
-&lt;strong&gt;¿Cómo comenzar?&lt;/strong&gt;  
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Crear una cuenta:&lt;/strong&gt; (1) Registro con &lt;strong&gt;Gmail u otro correo electrónico&lt;/strong&gt;; (2) Permite acceso a diferentes versiones y configuraciones personalizadas.&lt;/li&gt;  
-  &lt;li&gt;&lt;strong&gt;Ingresar una instrucción (prompt):&lt;/strong&gt; (1) Un &lt;em&gt;prompt&lt;/em&gt; es el &lt;strong&gt;input&lt;/strong&gt; que se escribe en ChatGPT; (2) La IA procesará el &lt;em&gt;prompt&lt;/em&gt; y generará un &lt;strong&gt;output&lt;/strong&gt;.&lt;/li&gt;  
-&lt;/ul&gt;
+<strong>¿Cómo comenzar?</strong>  
+<ul>
+  <li><strong>Crear una cuenta:</strong> (1) Registro con <strong>Gmail u otro correo electrónico</strong>; (2) Permite acceso a diferentes versiones y configuraciones personalizadas.</li>  
+  <li><strong>Ingresar una instrucción (prompt):</strong> (1) Un <em>prompt</em> es el <strong>input</strong> que se escribe en ChatGPT; (2) La IA procesará el <em>prompt</em> y generará un <strong>output</strong>.</li>  
+</ul>
 
-&lt;/div&gt;
+</div>
 
 
 
@@ -288,8 +302,8 @@ background-image: url("img/temp/3.png")
 background-size: cover
 
 💡 **Ejemplo:**  
-&gt; **Input:** "Explica que es el análisis de redes sociales (Social Network Analysis, SNA) y cómo se podría utilizar para el análisis de las redes de colaboración artística."  
-&gt; **Output:** "El Análisis de Redes Sociales (Social Network Analysis, SNA) es un enfoque metodológico utilizado para estudiar las relaciones e interacciones entre individuos, grupos, organizaciones o cualquier entidad conectada. Se basa en la teoría de grafos, donde los nodos representan actores (personas, organizaciones, etc.), y los enlaces o aristas representan las conexiones entre ellos (amistades, colaboraciones, intercambios de información, etc.). (...)."  
+> **Input:** "Explica que es el análisis de redes sociales (Social Network Analysis, SNA) y cómo se podría utilizar para el análisis de las redes de colaboración artística."  
+> **Output:** "El Análisis de Redes Sociales (Social Network Analysis, SNA) es un enfoque metodológico utilizado para estudiar las relaciones e interacciones entre individuos, grupos, organizaciones o cualquier entidad conectada. Se basa en la teoría de grafos, donde los nodos representan actores (personas, organizaciones, etc.), y los enlaces o aristas representan las conexiones entre ellos (amistades, colaboraciones, intercambios de información, etc.). (...)."  
 
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -313,27 +327,11 @@ class: slideInRight, fadeOutLeft, bottom
 background-image: url("img/7.png")
 background-size: cover
 
-&lt;div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;"&gt;
+<div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;">
 💡Diferencias clave: Los modelos más avanzados mejoran la calidad y profundidad de las respuestas, pero pueden ser más lentos y costosos.
-&lt;/div&gt;
-
----
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/3.png")
-background-size: cover
+</div>
 
 
-## Funcionalidades avanzadas  
-
-### **Plug-ins y extensiones**  
-
-- **AskTheCode**  
-  - Conecta con repositorios de **GitHub**.  
-  - Permite analizar y responder preguntas sobre código.  
-
-- **DALL·E**  
-  - Generación de imágenes a partir de texto.  
-  - Útil para ilustraciones y contenido gráfico.
 
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -399,9 +397,9 @@ class: slideInRight, fadeOutLeft, bottom
 background-image: url("img/13.png")
 background-size: cover
 
-&lt;div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;"&gt;
+<div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;">
 💡 Si cambio de tema es mejor hacerlo en un nuevo chat!
-&lt;/div&gt;
+</div>
 
 
 
@@ -423,9 +421,9 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/14.png")
 background-size: cover
 
-&lt;div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;"&gt;
+<div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: inline-block;">
 💡 En la versión gratuita puedo volver a los chats anteriores, pero no hay desarrollo de proyecto. 
-&lt;/div&gt;
+</div>
 
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -463,47 +461,16 @@ background-size: cover
 - Ejemplo: Uso de ChatGPT en varios idiomas, tonos y formas. 
 
 ---
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-## Ejemplo en Python  
-
-### **Creación de una red social de artistas**  
-
-Para modelar una red de colaboraciones musicales, definimos:  
-
-- **Nodos**: Representan a los artistas.  
-- **Aristas (edges)**: Representan colaboraciones entre ellos.  
-
----
-class: slideInRight, fadeOutLeft, middle
-
-## Definición del modelo en Python  
-
-```python
-import networkx as nx
-import matplotlib.pyplot as plt
-
-# Crear un grafo no dirigido
-G = nx.Graph()
-
-# Agregar nodos (artistas)
-artistas = ["Artista A", "Artista B", "Artista C", "Artista D"]
-G.add_nodes_from(artistas)
-```
-
----
 class: slideInRight, fadeOutLeft, middle, inverse
 background-image: url("img/temp/4.png")
 background-size: cover
 ## Índice
 
-1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción a los LLM&lt;/span&gt;  
-2. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción a ChatGPT&lt;/span&gt;  
-3. &lt;span style="font-size: 1.2em;"&gt;Limitaciones&lt;/span&gt;  
-4. &lt;span style="color:gray; font-size: 1em;"&gt;Bonus: ChatGPT en celular&lt;/span&gt;  
-5. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación y cierre&lt;/span&gt;  
+1. <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2. <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3. <span style="font-size: 1.2em;">Limitaciones</span>  
+4. <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5. <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
 
 
 ---
@@ -511,11 +478,11 @@ class: slideInRight, fadeOutLeft, middle
 background-image: url("img/07.png")
 background-size: cover
 
-&lt;div style="border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; margin: auto; color: black; font-size: 30%;"&gt;
+<div style="border: 3px solid black; padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.9); text-align: center; width: 80%; margin: auto; color: black; font-size: 30%;">
 
-&lt;h2&gt;¿Cuáles son los principales límites y problemas que han visto en ChatGPT?&lt;/h2&gt;
+<h2>¿Cuáles son los principales límites y problemas que han visto en ChatGPT?</h2>
 
-&lt;/div&gt;
+</div>
 
 
 
@@ -546,41 +513,8 @@ background-size: cover
 - **Un contexto bien gestionado** permite obtener respuestas más precisas.  
 - **Cuando el límite se alcanza**, ChatGPT olvida la información más antigua.
 
-&gt; Importancia de la iteración!
+> Importancia de la iteración!
 pero, tiene un límite!
-
----
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-### ¿Cuánta memoria puede almacenar ChatGPT?  
-
-**Límites de contexto por versión (2025)**  
-
-**GPT-4o (GPT-4 Omni)**  
-- **128,000 tokens** (~98,000 palabras).  
-- Puede manejar múltiples artículos académicos en una sola conversación.
-
-
-**GPT-4 Turbo**  
-- **32,768 tokens** (~25,000 palabras).  
-- Puede manejar **uno o dos artículos completos** en una conversación.  
-
----
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/3.png")
-background-size: cover
-
-## Límites de contexto (continuación)  
-
-**GPT-4 estándar**  
-- **8,192 tokens** (~6,000 palabras).  
-- Maneja **un artículo de menor extensión o partes de uno más largo**.  
-
-**GPT-3.5**  
-- **4,096 tokens** (~3,000 palabras).  
-- Limitado a **secciones o resúmenes de artículos académicos**.  
 
 ---
 
@@ -592,18 +526,7 @@ background-size: cover
 
 
 ---
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
 
-## Diferencias entre "Parámetros" y "Context Length"  
-
-| **Concepto**            | **Definición** | **Impacto en el modelo** |
-|-------------------------|---------------|--------------------------|
-| **Cantidad de parámetros** | Número de **pesos ajustables** en la red neuronal. | Determina la **capacidad de aprendizaje** y la **precisión de las respuestas**. |
-| **Context length** | Cantidad máxima de **tokens** en una conversación. | Afecta cuánto puede recordar el modelo en una sesión. |
-
----
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/3.png")
 background-size: cover
@@ -629,19 +552,6 @@ background-size: cover
 ➡️ **Solución**: Resumir y reintroducir información clave en la conversación.  
 
   
-
----
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-## Conclusión  
-
-📌 **El manejo del contexto es clave** para obtener respuestas precisas.  
-📌 **El límite de tokens define cuánto puede recordar ChatGPT en una conversación.**  
-📌 **Para conversaciones largas, es útil resumir información clave regularmente.**  
-
-
 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
@@ -706,9 +616,9 @@ background-size: cover
 ---
 
 
-&lt;div style="display: flex; justify-content: center; align-items: center; height: 100vh;"&gt;
-  &lt;iframe width="100%" height="100%" src="https://www.youtube.com/embed/JDTSpOPeWb0?start=63" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JDTSpOPeWb0?start=63" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 ---
@@ -720,28 +630,10 @@ background-size: cover
 
 ---
 
-&lt;div style="display: flex; justify-content: center; align-items: center; height: 100vh;"&gt;
-  &lt;iframe width="100%" height="100%" src="https://www.youtube.com/embed/0TzptxCnayk?start=760" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0TzptxCnayk?start=760" frameborder="0" allowfullscreen></iframe>
+</div>
 
-
----
-
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-### **Diferencias entre versiones gratuita y de pago**  
-
-| **Característica**    | **GPT-3.5 (Gratis)** | **GPT-4o (Pago)** |
-|----------------------|---------------------|------------------|
-| **Modelo utilizado**  | GPT-3.5             | GPT-4o |
-| **Límite de tokens**  | 4,096 (~3,000 palabras) | 128,000 (~98,000 palabras) |
-| **Acceso a Internet** | No                 | Sí (con navegador) |
-| **Análisis de datos** | No                 | Sí |
-| **Carga de archivos** | No                 | Sí |
-| **Modo de voz**       | No                 | Sí |
-| **Memoria extendida** | No                 | Sí |
 
 
 ---
@@ -850,22 +742,17 @@ background-size: cover
 .pull-right[
 ![](img/15.png)]
 
----
-class: slideInRight, fadeOutLeft, bottom
-background-image: url("img/05.png")
-background-size: cover
 
-### Explora los GTPs como SciSpace o Consensus
 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
 ## Índice
 
-1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción a los LLM&lt;/span&gt;  
-2. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción a ChatGPT&lt;/span&gt;  
-3. &lt;span style="color:gray; font-size: 1em;"&gt;Limitaciones&lt;/span&gt;  
-4. &lt;span style="font-size: 1.2em;"&gt;Bonus: ChatGPT en celular&lt;/span&gt;  
-5. &lt;span style="color:gray; font-size: 1em;"&gt;Recapitulación y cierre&lt;/span&gt;  
+1. <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2. <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3. <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4. <span style="font-size: 1.2em;">Bonus: ChatGPT en celular</span>  
+5. <span style="color:gray; font-size: 1em;">Recapitulación y cierre</span>  
 
 
 ---
@@ -879,7 +766,7 @@ background-size: cover
 - La aplicación móvil permite **interacciones por voz**.  
 - Disponible para **iOS** y **Android**:  
   - [Apple Store](https://apps.apple.com/us/app/chatgpt/id6448311069)  
-  - [Google Play Store](https://play.google.com/store/apps/details?id=com.openai.chatgpt&amp;hl=en&amp;gl=US)  
+  - [Google Play Store](https://play.google.com/store/apps/details?id=com.openai.chatgpt&hl=en&gl=US)  
 - Precaución con **aplicaciones no oficiales**, especialmente en Android.  
 
 ---
@@ -901,11 +788,11 @@ background-size: cover
 class: slideInRight, fadeOutLeft, middle, inverse
 ## Índice
 
-1. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción a los LLM&lt;/span&gt;  
-2. &lt;span style="color:gray; font-size: 1em;"&gt;Introducción a ChatGPT&lt;/span&gt;  
-3. &lt;span style="color:gray; font-size: 1em;"&gt;Limitaciones&lt;/span&gt;  
-4. &lt;span style="color:gray; font-size: 1em;"&gt;Bonus: ChatGPT en celular&lt;/span&gt;  
-5. &lt;span style="font-size: 1.2em;"&gt;Recapitulación y cierre&lt;/span&gt;  
+1. <span style="color:gray; font-size: 1em;">Introducción a los LLM</span>  
+2. <span style="color:gray; font-size: 1em;">Introducción a ChatGPT</span>  
+3. <span style="color:gray; font-size: 1em;">Limitaciones</span>  
+4. <span style="color:gray; font-size: 1em;">Bonus: ChatGPT en celular</span>  
+5. <span style="font-size: 1.2em;">Recapitulación y cierre</span>  
  
 
 ---
@@ -940,142 +827,3 @@ background-size: cover
 # Tarea: 
 - Realice una serie de prompts y trate de encontrar limitaciones (contexto), alucinaciones y sesgos, idenfiquelos y muestrelos en clase
 
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-  "slideNumberFormat": "%current%",
-  "highlightStyle": "github",
-  "highlightLines": true,
-  "ratio": "16:9",
-  "countIncrementalSlides": true,
-  "font-family": "Outfit, Arial, sans-serif"
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
-// screen reader (see PR #262)
-(function(d) {
-  let res = {};
-  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
-    const t = tr.querySelector('td:nth-child(2)').innerText;
-    tr.querySelectorAll('td:first-child .key').forEach(key => {
-      const k = key.innerText;
-      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
-    });
-  });
-  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
-})(document);
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>

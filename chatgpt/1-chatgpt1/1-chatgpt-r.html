@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>1-chatgpt.knit</title>
+    <title>1-chatgpt-r.knit</title>
     <meta charset="utf-8" />
-    <script src="1-chatgpt_files/header-attrs-2.30/header-attrs.js"></script>
-    <link href="1-chatgpt_files/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
-    <link href="1-chatgpt_files/tachyons-4.12.0/tachyons.min.css" rel="stylesheet" />
-    <script src="1-chatgpt_files/clipboard-2.0.6/clipboard.min.js"></script>
-    <link href="1-chatgpt_files/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
-    <script src="1-chatgpt_files/shareon-1.4.1/shareon.min.js"></script>
-    <link href="1-chatgpt_files/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
-    <script src="1-chatgpt_files/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
+    <script src="1-chatgpt-r_files/header-attrs-2.30/header-attrs.js"></script>
+    <link href="1-chatgpt-r_files/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
+    <link href="1-chatgpt-r_files/tachyons-4.12.0/tachyons.min.css" rel="stylesheet" />
+    <script src="1-chatgpt-r_files/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="1-chatgpt-r_files/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
+    <script src="1-chatgpt-r_files/shareon-1.4.1/shareon.min.js"></script>
+    <link href="1-chatgpt-r_files/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
+    <script src="1-chatgpt-r_files/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -317,23 +317,7 @@ background-size: cover
 💡Diferencias clave: Los modelos más avanzados mejoran la calidad y profundidad de las respuestas, pero pueden ser más lentos y costosos.
 &lt;/div&gt;
 
----
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/3.png")
-background-size: cover
 
-
-## Funcionalidades avanzadas  
-
-### **Plug-ins y extensiones**  
-
-- **AskTheCode**  
-  - Conecta con repositorios de **GitHub**.  
-  - Permite analizar y responder preguntas sobre código.  
-
-- **DALL·E**  
-  - Generación de imágenes a partir de texto.  
-  - Útil para ilustraciones y contenido gráfico.
 
 ---
 class: slideInRight, fadeOutLeft, middle
@@ -463,37 +447,6 @@ background-size: cover
 - Ejemplo: Uso de ChatGPT en varios idiomas, tonos y formas. 
 
 ---
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-## Ejemplo en Python  
-
-### **Creación de una red social de artistas**  
-
-Para modelar una red de colaboraciones musicales, definimos:  
-
-- **Nodos**: Representan a los artistas.  
-- **Aristas (edges)**: Representan colaboraciones entre ellos.  
-
----
-class: slideInRight, fadeOutLeft, middle
-
-## Definición del modelo en Python  
-
-```python
-import networkx as nx
-import matplotlib.pyplot as plt
-
-# Crear un grafo no dirigido
-G = nx.Graph()
-
-# Agregar nodos (artistas)
-artistas = ["Artista A", "Artista B", "Artista C", "Artista D"]
-G.add_nodes_from(artistas)
-```
-
----
 class: slideInRight, fadeOutLeft, middle, inverse
 background-image: url("img/temp/4.png")
 background-size: cover
@@ -550,39 +503,6 @@ background-size: cover
 pero, tiene un límite!
 
 ---
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-### ¿Cuánta memoria puede almacenar ChatGPT?  
-
-**Límites de contexto por versión (2025)**  
-
-**GPT-4o (GPT-4 Omni)**  
-- **128,000 tokens** (~98,000 palabras).  
-- Puede manejar múltiples artículos académicos en una sola conversación.
-
-
-**GPT-4 Turbo**  
-- **32,768 tokens** (~25,000 palabras).  
-- Puede manejar **uno o dos artículos completos** en una conversación.  
-
----
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/3.png")
-background-size: cover
-
-## Límites de contexto (continuación)  
-
-**GPT-4 estándar**  
-- **8,192 tokens** (~6,000 palabras).  
-- Maneja **un artículo de menor extensión o partes de uno más largo**.  
-
-**GPT-3.5**  
-- **4,096 tokens** (~3,000 palabras).  
-- Limitado a **secciones o resúmenes de artículos académicos**.  
-
----
 
 class: slideInRight, fadeOutLeft, middle, inverse
 background-image: url("img/temp/4.png")
@@ -592,18 +512,7 @@ background-size: cover
 
 
 ---
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
 
-## Diferencias entre "Parámetros" y "Context Length"  
-
-| **Concepto**            | **Definición** | **Impacto en el modelo** |
-|-------------------------|---------------|--------------------------|
-| **Cantidad de parámetros** | Número de **pesos ajustables** en la red neuronal. | Determina la **capacidad de aprendizaje** y la **precisión de las respuestas**. |
-| **Context length** | Cantidad máxima de **tokens** en una conversación. | Afecta cuánto puede recordar el modelo en una sesión. |
-
----
 class: slideInRight, fadeOutLeft, middle
 background-image: url("img/temp/3.png")
 background-size: cover
@@ -629,19 +538,6 @@ background-size: cover
 ➡️ **Solución**: Resumir y reintroducir información clave en la conversación.  
 
   
-
----
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-## Conclusión  
-
-📌 **El manejo del contexto es clave** para obtener respuestas precisas.  
-📌 **El límite de tokens define cuánto puede recordar ChatGPT en una conversación.**  
-📌 **Para conversaciones largas, es útil resumir información clave regularmente.**  
-
-
 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
@@ -724,24 +620,6 @@ background-size: cover
   &lt;iframe width="100%" height="100%" src="https://www.youtube.com/embed/0TzptxCnayk?start=760" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-
----
-
-class: slideInRight, fadeOutLeft, middle
-background-image: url("img/temp/1.png")
-background-size: cover
-
-### **Diferencias entre versiones gratuita y de pago**  
-
-| **Característica**    | **GPT-3.5 (Gratis)** | **GPT-4o (Pago)** |
-|----------------------|---------------------|------------------|
-| **Modelo utilizado**  | GPT-3.5             | GPT-4o |
-| **Límite de tokens**  | 4,096 (~3,000 palabras) | 128,000 (~98,000 palabras) |
-| **Acceso a Internet** | No                 | Sí (con navegador) |
-| **Análisis de datos** | No                 | Sí |
-| **Carga de archivos** | No                 | Sí |
-| **Modo de voz**       | No                 | Sí |
-| **Memoria extendida** | No                 | Sí |
 
 
 ---
@@ -850,12 +728,7 @@ background-size: cover
 .pull-right[
 ![](img/15.png)]
 
----
-class: slideInRight, fadeOutLeft, bottom
-background-image: url("img/05.png")
-background-size: cover
 
-### Explora los GTPs como SciSpace o Consensus
 
 ---
 class: slideInRight, fadeOutLeft, middle, inverse
